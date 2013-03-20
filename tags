@@ -1,0 +1,1796 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+<C-W><C-F>	bundle/vim-ruby/ftplugin/ruby.vim	/^    nnoremap <silent> <buffer> <C-W><C-F> :<C-U>exe <SID>gf(v:count1,"\\<Lt>C-W>\\<Lt>C-F>",'split')<CR>$/;"	m
+<C-W><C-]>	bundle/vim-ruby/ftplugin/ruby.vim	/^    nnoremap <silent> <buffer> <C-W><C-]>  :<C-U>exe v:count1."stag <C-R>=RubyCursorIdentifier()<CR>"<CR>$/;"	m
+<C-W>]	bundle/vim-ruby/ftplugin/ruby.vim	/^    nnoremap <silent> <buffer> <C-W>]      :<C-U>exe v:count1."stag <C-R>=RubyCursorIdentifier()<CR>"<CR>$/;"	m
+<C-W>f	bundle/vim-ruby/ftplugin/ruby.vim	/^    nnoremap <silent> <buffer> <C-W>f     :<C-U>exe <SID>gf(v:count1,"\\<Lt>C-W>f",'split')<CR>$/;"	m
+<C-W>g<C-]>	bundle/vim-ruby/ftplugin/ruby.vim	/^    nnoremap <silent> <buffer> <C-W>g<C-]> :<C-U>exe        "stjump <C-R>=RubyCursorIdentifier()<CR>"<CR>$/;"	m
+<C-W>g]	bundle/vim-ruby/ftplugin/ruby.vim	/^    nnoremap <silent> <buffer> <C-W>g]     :<C-U>exe      "stselect <C-R>=RubyCursorIdentifier()<CR>"<CR>$/;"	m
+<C-W>gf	bundle/vim-ruby/ftplugin/ruby.vim	/^    nnoremap <silent> <buffer> <C-W>gf    :<C-U>exe <SID>gf(v:count1,"\\<Lt>C-W>gf",'tabedit')<CR>$/;"	m
+<C-W>g}	bundle/vim-ruby/ftplugin/ruby.vim	/^    nnoremap <silent> <buffer> <C-W>g}     :<C-U>exe        "ptjump <C-R>=RubyCursorIdentifier()<CR>"<CR>$/;"	m
+<C-W>}	bundle/vim-ruby/ftplugin/ruby.vim	/^    nnoremap <silent> <buffer> <C-W>}      :<C-U>exe          "ptag <C-R>=RubyCursorIdentifier()<CR>"<CR>$/;"	m
+<C-X><CR>	bundle/vim-endwise/plugin/endwise.vim	/^    imap <C-X><CR> <CR><Plug>AlwaysEnd$/;"	m
+<C-]>	bundle/vim-ruby/ftplugin/ruby.vim	/^    nnoremap <silent> <buffer> <C-]>       :<C-U>exe  v:count1."tag <C-R>=RubyCursorIdentifier()<CR>"<CR>$/;"	m
+<CR>	bundle/vim-endwise/plugin/endwise.vim	/^    imap <CR>      <CR><Plug>DiscretionaryEnd$/;"	m
+<M-o>	bundle/vim-endwise/plugin/endwise.vim	/^    inoremap <M-o> <C-O>o$/;"	m
+<Plug>AlwaysEnd	bundle/vim-endwise/plugin/endwise.vim	/^  imap    <script> <Plug>AlwaysEnd        <SID>AlwaysEnd$/;"	m
+<Plug>DiscretionaryEnd	bundle/vim-endwise/plugin/endwise.vim	/^  imap    <script> <Plug>DiscretionaryEnd <SID>DiscretionaryEnd$/;"	m
+<SID>AlwaysEnd	bundle/vim-endwise/plugin/endwise.vim	/^  inoremap <silent> <SID>AlwaysEnd        <C-R>=<SID>crend(1)<CR>$/;"	m
+<SID>DiscretionaryEnd	bundle/vim-endwise/plugin/endwise.vim	/^  inoremap <silent> <SID>DiscretionaryEnd <C-R>=<SID>crend(0)<CR>$/;"	m
+<SID>xx	bundle/vim-rails/autoload/rails.vim	/^map <SID>xx <SID>xx$/;"	m
+Abbrev	bundle/vim-rails/autoload/rails.vim	/^function! s:Abbrev(bang,...) abort$/;"	f
+AcceptSelection	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:AcceptSelection(mode)$/;"	f
+Ack	bundle/ack.vim/plugin/ack.vim	/^command! -bang -nargs=* -complete=file Ack call s:Ack('grep<bang>',<q-args>)$/;"	c
+Ack	bundle/ack.vim/plugin/ack.vim	/^function! s:Ack(cmd, args)$/;"	f
+AckAdd	bundle/ack.vim/plugin/ack.vim	/^command! -bang -nargs=* -complete=file AckAdd call s:Ack('grepadd<bang>', <q-args>)$/;"	c
+AckFile	bundle/ack.vim/plugin/ack.vim	/^command! -bang -nargs=* -complete=file AckFile call s:Ack('grep<bang> -g', <q-args>)$/;"	c
+AckFromSearch	bundle/ack.vim/plugin/ack.vim	/^command! -bang -nargs=* -complete=file AckFromSearch call s:AckFromSearch('grep<bang>', <q-args>)$/;"	c
+AckFromSearch	bundle/ack.vim/plugin/ack.vim	/^function! s:AckFromSearch(cmd, args)$/;"	f
+AckHelp	bundle/ack.vim/plugin/ack.vim	/^command! -bang -nargs=* -complete=help AckHelp call s:AckHelp('grep<bang>',<q-args>)$/;"	c
+AckHelp	bundle/ack.vim/plugin/ack.vim	/^function! s:AckHelp(cmd,args)$/;"	f
+AddBracketExpand	bundle/vim-rails/autoload/rails.vim	/^function! s:AddBracketExpand(abbr,expn)$/;"	f
+AddColonExpand	bundle/vim-rails/autoload/rails.vim	/^function! s:AddColonExpand(abbr,expn)$/;"	f
+AddDivider	bundle/vim-powerline/autoload/Pl/Parser.vim	/^function! s:AddDivider(text, side, mode, colors, prev, curr, next) " {{{$/;"	f
+AddParenExpand	bundle/vim-rails/autoload/rails.vim	/^function! s:AddParenExpand(abbr,expn,...)$/;"	f
+AddSelectiveExpand	bundle/vim-rails/autoload/rails.vim	/^function! s:AddSelectiveExpand(abbr,pat,expn,...)$/;"	f
+AddTabExpand	bundle/vim-rails/autoload/rails.vim	/^function! s:AddTabExpand(abbr,expn)$/;"	f
+Alternate	bundle/vim-rails/autoload/rails.vim	/^function! s:Alternate(cmd,line1,line2,count,...)$/;"	f
+BackupDir	bundle/vim-ruby/bin/vim-ruby-install.rb	/^  class BackupDir$/;"	c	class:VimRubyInstaller
+Bar	bundle/vim-ruby/etc/examples/indent/end_constructs.rb	/^  class Bar$/;"	c	class:Foo
+Blame	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:Blame(bang,line1,line2,count,args) abort$/;"	f
+BlameCommit	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:BlameCommit(cmd) abort$/;"	f
+BlameJump	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:BlameJump(suffix) abort$/;"	f
+BlameSyntax	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:BlameSyntax() abort$/;"	f
+BlockGetCommentRx	bundle/tComment/autoload/tcomment.vim	/^function! s:BlockGetCommentRx(cdef)$/;"	f
+BlockGetCommentString	bundle/tComment/autoload/tcomment.vim	/^function! s:BlockGetCommentString(cdef)$/;"	f
+BlockGetMiddleString	bundle/tComment/autoload/tcomment.vim	/^function! s:BlockGetMiddleString(cdef)$/;"	f
+Browse	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:Browse(bang,line1,count,...) abort$/;"	f
+BufAbbreviations	bundle/vim-rails/autoload/rails.vim	/^function! s:BufAbbreviations()$/;"	f
+BufCommands	bundle/vim-rails/autoload/rails.vim	/^function! s:BufCommands()$/;"	f
+BufDatabase	bundle/vim-rails/autoload/rails.vim	/^function! s:BufDatabase(...)$/;"	f
+BufInit	bundle/vim-rails/plugin/rails.vim	/^function! s:BufInit(path)$/;"	f
+BufMappings	bundle/vim-rails/autoload/rails.vim	/^function! s:BufMappings()$/;"	f
+BufNavCommands	bundle/vim-rails/autoload/rails.vim	/^function! s:BufNavCommands()$/;"	f
+BufProjectionCommands	bundle/vim-rails/autoload/rails.vim	/^function! s:BufProjectionCommands()$/;"	f
+BufReadIndex	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:BufReadIndex()$/;"	f
+BufReadIndexFile	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:BufReadIndexFile()$/;"	f
+BufReadObject	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:BufReadObject()$/;"	f
+BufScriptWrappers	bundle/vim-rails/autoload/rails.vim	/^function! s:BufScriptWrappers()$/;"	f
+BufSettings	bundle/vim-rails/autoload/rails.vim	/^function! s:BufSettings()$/;"	f
+BufSyntax	bundle/vim-rails/autoload/rails.vim	/^function! s:BufSyntax()$/;"	f
+BufWriteIndexFile	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:BufWriteIndexFile()$/;"	f
+BuildPrompt	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:BuildPrompt(upd)$/;"	f
+Bundle	bundle/vundle/autoload/vundle.vim	/^com! -nargs=+         Bundle$/;"	c
+BundleClean	bundle/vundle/autoload/vundle.vim	/^com! -nargs=? -bang   BundleClean$/;"	c
+BundleDocs	bundle/vundle/autoload/vundle.vim	/^com! -nargs=0         BundleDocs $/;"	c
+BundleInstall	bundle/vundle/autoload/vundle.vim	/^com! -nargs=? -bang -complete=custom,vundle#scripts#complete BundleInstall$/;"	c
+BundleList	bundle/vundle/autoload/vundle.vim	/^com! -nargs=0 -bang BundleList$/;"	c
+BundleSearch	bundle/vundle/autoload/vundle.vim	/^com! -nargs=? -bang -complete=custom,vundle#scripts#complete BundleSearch$/;"	c
+BundleUpdate	bundle/vundle/autoload/vundle.vim	/^com! BundleUpdate BundleInstall!$/;"	c
+Bundles	bundle/vundle/autoload/vundle.vim	/^com! -nargs=? -bang -complete=custom,vundle#scripts#complete Bundles$/;"	c
+CHILD	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    CHILD = 4$/;"	v	class:Token
+CHILD	bundle/sparkup/sparkup	/^    CHILD = 4$/;"	v	class:Token
+CHILD	bundle/sparkup/sparkup.py	/^    CHILD = 4$/;"	v	class:Token
+CHILD	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    CHILD = 4$/;"	v	class:Token
+CTAGS	bundle/ctags.vim/plugin/ctags.vim	/^command! CTAGS let generate_tags=1|call GenerateTags()$/;"	c
+CheckConditions	bundle/vim-powerline/autoload/Pl/Segment.vim	/^function! s:CheckConditions(params) " {{{$/;"	f
+ClearAllCtrlPCaches	bundle/ctrlp.vim/plugin/ctrlp.vim	/^com! -bar ClearAllCtrlPCaches cal ctrlp#clra()$/;"	c
+ClearCtrlPCache	bundle/ctrlp.vim/plugin/ctrlp.vim	/^com! -bar ClearCtrlPCache     cal ctrlp#clr()$/;"	c
+Close	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:Close()$/;"	f
+Colorscheme.vim	bundle/vim-powerline/autoload/Pl/Colorscheme.vim	1;"	F
+CommandEdit	bundle/vim-rails/autoload/rails.vim	/^function! s:CommandEdit(cmd, name, options, ...)$/;"	f
+CommandList	bundle/vim-rails/autoload/rails.vim	/^function! s:CommandList(A,L,P)$/;"	f
+CommentBlock	bundle/tComment/autoload/tcomment.vim	/^function! s:CommentBlock(beg, end, uncomment, checkRx, cdef, indentStr)$/;"	f
+CommentDef	bundle/tComment/autoload/tcomment.vim	/^function! s:CommentDef(beg, end, checkRx, commentMode, cstart, cend)$/;"	f
+CommentMode	bundle/tComment/autoload/tcomment.vim	/^function! s:CommentMode(commentMode, newmode) "{{{3$/;"	f
+Commit	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:Commit(args) abort$/;"	f
+CommitComplete	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:CommitComplete(A,L,P) abort$/;"	f
+CompilerSet	bundle/vim-ruby/compiler/eruby.vim	/^  command -nargs=* CompilerSet setlocal <args>$/;"	c
+CompilerSet	bundle/vim-ruby/compiler/rspec.vim	/^  command -nargs=* CompilerSet setlocal <args>$/;"	c
+CompilerSet	bundle/vim-ruby/compiler/ruby.vim	/^  command -nargs=* CompilerSet setlocal <args>$/;"	c
+CompilerSet	bundle/vim-ruby/compiler/rubyunit.vim	/^  command -nargs=* CompilerSet setlocal <args>$/;"	c
+Complete_cd	bundle/vim-rails/autoload/rails.vim	/^function! s:Complete_cd(ArgLead, CmdLine, CursorPos)$/;"	f
+Complete_console	bundle/vim-rails/autoload/rails.vim	/^function! s:Complete_console(A,L,P)$/;"	f
+Complete_destroy	bundle/vim-rails/autoload/rails.vim	/^function! s:Complete_destroy(A,L,P)$/;"	f
+Complete_edit	bundle/vim-rails/autoload/rails.vim	/^function! s:Complete_edit(ArgLead, CmdLine, CursorPos)$/;"	f
+Complete_environments	bundle/vim-rails/autoload/rails.vim	/^function! s:Complete_environments(...)$/;"	f
+Complete_find	bundle/vim-rails/autoload/rails.vim	/^function! s:Complete_find(ArgLead, CmdLine, CursorPos)$/;"	f
+Complete_generate	bundle/vim-rails/autoload/rails.vim	/^function! s:Complete_generate(A,L,P)$/;"	f
+Complete_preview	bundle/vim-rails/autoload/rails.vim	/^function! s:Complete_preview(A,L,P)$/;"	f
+Complete_rake	bundle/vim-rails/autoload/rails.vim	/^function! s:Complete_rake(A,L,P)$/;"	f
+Complete_related	bundle/vim-rails/autoload/rails.vim	/^function! s:Complete_related(A,L,P)$/;"	f
+Complete_ruby	bundle/vim-rails/autoload/rails.vim	/^function! s:Complete_ruby(A,L,P)$/;"	f
+Complete_script	bundle/vim-rails/autoload/rails.vim	/^function! s:Complete_script(ArgLead,CmdLine,P)$/;"	f
+Complete_server	bundle/vim-rails/autoload/rails.vim	/^function! s:Complete_server(A,L,P)$/;"	f
+Complete_set	bundle/vim-rails/autoload/rails.vim	/^function! s:Complete_set(A,L,P)$/;"	f
+ConstructFromComments	bundle/tComment/autoload/tcomment.vim	/^function! s:ConstructFromComments(commentMode)$/;"	f
+CreateCoordKeyDict	bundle/vim-easymotion/autoload/EasyMotion.vim	/^		function! s:CreateCoordKeyDict(groups, ...)$/;"	f
+CreateNewFile	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:CreateNewFile(...)$/;"	f
+Cterm2GUI	bundle/vim-powerline/autoload/Pl/Hi.vim	/^function! s:Cterm2GUI(cterm) " {{{$/;"	f
+CtrlP	bundle/ctrlp.vim/plugin/ctrlp.vim	/^com! -n=? -com=custom,ctrlp#utils#dircompl CtrlP$/;"	c
+CtrlPAug	bundle/ctrlp.vim/autoload/ctrlp.vim	/^	aug CtrlPAug$/;"	a
+CtrlPBookmarkDir	bundle/ctrlp.vim/plugin/ctrlp.vim	/^com! -bar CtrlPBookmarkDir cal ctrlp#init(ctrlp#bookmarkdir#id())$/;"	c
+CtrlPBookmarkDirAdd	bundle/ctrlp.vim/plugin/ctrlp.vim	/^com! -n=? -com=custom,ctrlp#utils#dircompl CtrlPBookmarkDirAdd$/;"	c
+CtrlPBufTag	bundle/ctrlp.vim/plugin/ctrlp.vim	/^com! -n=? -com=buffer CtrlPBufTag$/;"	c
+CtrlPBufTagAll	bundle/ctrlp.vim/plugin/ctrlp.vim	/^com! -bar CtrlPBufTagAll cal ctrlp#init(ctrlp#buffertag#cmd(1))$/;"	c
+CtrlPBuffer	bundle/ctrlp.vim/plugin/ctrlp.vim	/^com! -bar CtrlPBuffer   cal ctrlp#init(1)$/;"	c
+CtrlPChange	bundle/ctrlp.vim/plugin/ctrlp.vim	/^com! -n=? -com=buffer CtrlPChange$/;"	c
+CtrlPChangeAll	bundle/ctrlp.vim/plugin/ctrlp.vim	/^com! -bar CtrlPChangeAll   cal ctrlp#init(ctrlp#changes#cmd(1))$/;"	c
+CtrlPClearAllCaches	bundle/ctrlp.vim/plugin/ctrlp.vim	/^com! -bar CtrlPClearAllCaches cal ctrlp#clra()$/;"	c
+CtrlPClearCache	bundle/ctrlp.vim/plugin/ctrlp.vim	/^com! -bar CtrlPClearCache     cal ctrlp#clr()$/;"	c
+CtrlPCurFile	bundle/ctrlp.vim/plugin/ctrlp.vim	/^com! -bar CtrlPCurFile cal ctrlp#init(0, { 'mode': 'c' })$/;"	c
+CtrlPCurWD	bundle/ctrlp.vim/plugin/ctrlp.vim	/^com! -bar CtrlPCurWD   cal ctrlp#init(0, { 'mode': '' })$/;"	c
+CtrlPDir	bundle/ctrlp.vim/plugin/ctrlp.vim	/^com! -n=? -com=custom,ctrlp#utils#dircompl CtrlPDir$/;"	c
+CtrlPLastMode	bundle/ctrlp.vim/plugin/ctrlp.vim	/^com! -n=? CtrlPLastMode cal ctrlp#init(-1, { 'args': <q-args> })$/;"	c
+CtrlPLine	bundle/ctrlp.vim/plugin/ctrlp.vim	/^com! -bar CtrlPLine      cal ctrlp#init(ctrlp#line#id())$/;"	c
+CtrlPMRUFiles	bundle/ctrlp.vim/plugin/ctrlp.vim	/^com! -n=? -com=custom,ctrlp#utils#dircompl CtrlPMRUFiles$/;"	c
+CtrlPMixed	bundle/ctrlp.vim/plugin/ctrlp.vim	/^com! -bar CtrlPMixed       cal ctrlp#init(ctrlp#mixed#id())$/;"	c
+CtrlPQuickfix	bundle/ctrlp.vim/plugin/ctrlp.vim	/^com! -bar CtrlPQuickfix cal ctrlp#init(ctrlp#quickfix#id())$/;"	c
+CtrlPRTS	bundle/ctrlp.vim/plugin/ctrlp.vim	/^com! -bar CtrlPRTS       cal ctrlp#init(ctrlp#rtscript#id())$/;"	c
+CtrlPRoot	bundle/ctrlp.vim/plugin/ctrlp.vim	/^com! -bar CtrlPRoot    cal ctrlp#init(0, { 'mode': 'r' })$/;"	c
+CtrlPTag	bundle/ctrlp.vim/plugin/ctrlp.vim	/^com! -bar CtrlPTag      cal ctrlp#init(ctrlp#tag#id())$/;"	c
+CtrlPUndo	bundle/ctrlp.vim/plugin/ctrlp.vim	/^com! -bar CtrlPUndo      cal ctrlp#init(ctrlp#undo#id())$/;"	c
+CustomComplete	bundle/vim-rails/autoload/rails.vim	/^function! s:CustomComplete(A,L,P,cmd)$/;"	f
+DefRuby	bundle/vim-ruby/autoload/rubycomplete.vim	/^function! s:DefRuby()$/;"	f
+DefaultValue	bundle/tComment/autoload/tcomment.vim	/^function! s:DefaultValue(option)$/;"	f
+Detect	bundle/vim-rails/plugin/rails.vim	/^function! s:Detect(filename)$/;"	f
+Dialect	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^class Dialect:$/;"	c
+Dialect	bundle/sparkup/sparkup	/^class Dialect:$/;"	c
+Dialect	bundle/sparkup/sparkup.py	/^class Dialect:$/;"	c
+Dialect	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^class Dialect:$/;"	c
+Diff	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:Diff(bang,...)$/;"	f
+DirComplete	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:DirComplete(A,L,P) abort$/;"	f
+ELEMENT	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    ELEMENT = 2 $/;"	v	class:Token
+ELEMENT	bundle/sparkup/sparkup	/^    ELEMENT = 2 $/;"	v	class:Token
+ELEMENT	bundle/sparkup/sparkup.py	/^    ELEMENT = 2 $/;"	v	class:Token
+ELEMENT	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    ELEMENT = 2 $/;"	v	class:Token
+EasyMotion	bundle/vim-easymotion/autoload/EasyMotion.vim	/^	function! s:EasyMotion(regexp, direction, visualmode, mode) " {{{$/;"	f
+EasyMotion#E	bundle/vim-easymotion/autoload/EasyMotion.vim	/^	function! EasyMotion#E(visualmode, direction) " {{{$/;"	f
+EasyMotion#EW	bundle/vim-easymotion/autoload/EasyMotion.vim	/^	function! EasyMotion#EW(visualmode, direction) " {{{$/;"	f
+EasyMotion#F	bundle/vim-easymotion/autoload/EasyMotion.vim	/^	function! EasyMotion#F(visualmode, direction) " {{{$/;"	f
+EasyMotion#InitHL	bundle/vim-easymotion/autoload/EasyMotion.vim	/^	function! EasyMotion#InitHL(group, colors) " {{{$/;"	f
+EasyMotion#InitMappings	bundle/vim-easymotion/autoload/EasyMotion.vim	/^	function! EasyMotion#InitMappings(motions) "{{{$/;"	f
+EasyMotion#InitOptions	bundle/vim-easymotion/autoload/EasyMotion.vim	/^	function! EasyMotion#InitOptions(options) " {{{$/;"	f
+EasyMotion#JK	bundle/vim-easymotion/autoload/EasyMotion.vim	/^	function! EasyMotion#JK(visualmode, direction) " {{{$/;"	f
+EasyMotion#Search	bundle/vim-easymotion/autoload/EasyMotion.vim	/^	function! EasyMotion#Search(visualmode, direction) " {{{$/;"	f
+EasyMotion#T	bundle/vim-easymotion/autoload/EasyMotion.vim	/^	function! EasyMotion#T(visualmode, direction) " {{{$/;"	f
+EasyMotion#WB	bundle/vim-easymotion/autoload/EasyMotion.vim	/^	function! EasyMotion#WB(visualmode, direction) " {{{$/;"	f
+EasyMotion#WBW	bundle/vim-easymotion/autoload/EasyMotion.vim	/^	function! EasyMotion#WBW(visualmode, direction) " {{{$/;"	f
+EasyMotion.vim	bundle/vim-easymotion/autoload/EasyMotion.vim	1;"	F
+EasyMotion.vim	bundle/vim-easymotion/plugin/EasyMotion.vim	1;"	F
+EasyMotionInitHL	bundle/vim-easymotion/plugin/EasyMotion.vim	/^			augroup EasyMotionInitHL$/;"	a
+Edit	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:Edit(cmd,bang,...) abort$/;"	f
+Edit	bundle/vim-rails/autoload/rails.vim	/^function! s:Edit(count,cmd,...)$/;"	f
+EditComplete	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:EditComplete(A,L,P) abort$/;"	f
+EditRunComplete	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:EditRunComplete(A,L,P) abort$/;"	f
+EditSimpleRb	bundle/vim-rails/autoload/rails.vim	/^function! s:EditSimpleRb(cmd,name,target,prefix,suffix,...)$/;"	f
+Element	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^class Element:$/;"	c
+Element	bundle/sparkup/sparkup	/^class Element:$/;"	c
+Element	bundle/sparkup/sparkup.py	/^class Element:$/;"	c
+Element	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^class Element:$/;"	c
+EncodeCommentPart	bundle/tComment/autoload/tcomment.vim	/^function! s:EncodeCommentPart(string)$/;"	f
+EndColRx	bundle/tComment/autoload/tcomment.vim	/^function! s:EndColRx(pos)$/;"	f
+EndLineRx	bundle/tComment/autoload/tcomment.vim	/^function! s:EndLineRx(pos)$/;"	f
+EndPosRx	bundle/tComment/autoload/tcomment.vim	/^function! s:EndPosRx(mode, line, col)$/;"	f
+Env	bundle/vim-ruby/bin/vim-ruby-install.rb	/^class Env$/;"	c
+ErrMsg	bundle/vim-ruby/autoload/rubycomplete.vim	/^function! s:ErrMsg(msg)$/;"	f
+ExecuteInTree	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:ExecuteInTree(cmd) abort$/;"	f
+ExtendCDef	bundle/tComment/autoload/tcomment.vim	/^function! s:ExtendCDef(beg, end, commentMode, cdef, args)$/;"	f
+ExtraBrackets	bundle/vim-ruby/indent/ruby.vim	/^function s:ExtraBrackets(lnum)$/;"	f
+Extract	bundle/vim-rails/autoload/rails.vim	/^function! s:Extract(bang,...) range abort$/;"	f
+ExtractCommentsPart	bundle/tComment/autoload/tcomment.vim	/^function! s:ExtractCommentsPart(key)$/;"	f
+FileRead	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:FileRead()$/;"	f
+FileWriter	bundle/vim-ruby/bin/vim-ruby-install.rb	/^class FileWriter$/;"	c
+Filetype	bundle/tComment/autoload/tcomment.vim	/^function! s:Filetype(...) "{{{3$/;"	f
+Find	bundle/vim-rails/autoload/rails.vim	/^function! s:Find(count,cmd,...)$/;"	f
+FinishCommit	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:FinishCommit()$/;"	f
+Foo	bundle/vim-ruby/etc/examples/indent/end_constructs.rb	/^module Foo$/;"	m
+Foo	bundle/vim-ruby/etc/examples/indent/nested_hashes.rb	/^class Foo$/;"	c
+ForceUpdate	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:ForceUpdate()$/;"	f
+Functions.vim	bundle/vim-powerline/autoload/Powerline/Functions.vim	1;"	F
+GF	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:GF(mode) abort$/;"	f
+GenerateTags	bundle/ctags.vim/plugin/ctags.vim	/^function! GenerateTags()$/;"	f
+GetBufferRubyClass	bundle/vim-ruby/autoload/rubycomplete.vim	/^function! s:GetBufferRubyClass(name, ...)$/;"	f
+GetBufferRubyEntity	bundle/vim-ruby/autoload/rubycomplete.vim	/^function! s:GetBufferRubyEntity( name, type, ... )$/;"	f
+GetBufferRubyModule	bundle/vim-ruby/autoload/rubycomplete.vim	/^function! s:GetBufferRubyModule(name, ...)$/;"	f
+GetBufferRubySingletonMethods	bundle/vim-ruby/autoload/rubycomplete.vim	/^function! s:GetBufferRubySingletonMethods(name)$/;"	f
+GetChar	bundle/vim-easymotion/autoload/EasyMotion.vim	/^	function! s:GetChar() " {{{$/;"	f
+GetCommentDefinition	bundle/tComment/autoload/tcomment.vim	/^function! s:GetCommentDefinition(beg, end, commentMode, ...)$/;"	f
+GetCommentDefinitionForType	bundle/tComment/autoload/tcomment.vim	/^function! s:GetCommentDefinitionForType(beg, end, commentMode, filetype) "{{{3$/;"	f
+GetCommentReplace	bundle/tComment/autoload/tcomment.vim	/^function! s:GetCommentReplace(cdef, cms0)$/;"	f
+GetCustomCommentString	bundle/tComment/autoload/tcomment.vim	/^function! s:GetCustomCommentString(ft, commentMode, ...)$/;"	f
+GetDocLocations	bundle/ack.vim/plugin/ack.vim	/^function! s:GetDocLocations()$/;"	f
+GetErubyIndent	bundle/vim-ruby/indent/eruby.vim	/^function! GetErubyIndent(...)$/;"	f
+GetIndentString	bundle/tComment/autoload/tcomment.vim	/^function! s:GetIndentString(line, start)$/;"	f
+GetLine	bundle/ctags.vim/plugin/ctags.vim	/^function! GetLine(i)$/;"	f
+GetMSL	bundle/vim-ruby/indent/ruby.vim	/^function s:GetMSL(lnum)$/;"	f
+GetRubyIndent	bundle/vim-ruby/indent/ruby.vim	/^function GetRubyIndent(...)$/;"	f
+GetRubyVarType	bundle/vim-ruby/autoload/rubycomplete.vim	/^function! s:GetRubyVarType(v)$/;"	f
+GetSearchChar	bundle/vim-easymotion/autoload/EasyMotion.vim	/^	function! s:GetSearchChar(visualmode) " {{{$/;"	f
+GetStartEnd	bundle/tComment/autoload/tcomment.vim	/^function! s:GetStartEnd(beg, end, commentMode) "{{{3$/;"	f
+GetSyntaxName	bundle/tComment/autoload/tcomment.vim	/^function! s:GetSyntaxName(lnum, col) "{{{3$/;"	f
+GetTagName	bundle/ctags.vim/plugin/ctags.vim	/^function! GetTagName(curline)$/;"	f
+Git	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:Git(bang,cmd) abort$/;"	f
+GitComplete	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:GitComplete(A,L,P) abort$/;"	f
+GitGutter	bundle/vim-gitgutter/plugin/gitgutter.vim	/^command GitGutter call GitGutter()$/;"	c
+GitGutter	bundle/vim-gitgutter/plugin/gitgutter.vim	/^function! GitGutter()$/;"	f
+GitGutterDisable	bundle/vim-gitgutter/plugin/gitgutter.vim	/^command GitGutterDisable call GitGutterDisable()$/;"	c
+GitGutterDisable	bundle/vim-gitgutter/plugin/gitgutter.vim	/^function! GitGutterDisable()$/;"	f
+GitGutterEnable	bundle/vim-gitgutter/plugin/gitgutter.vim	/^command GitGutterEnable call GitGutterEnable()$/;"	c
+GitGutterEnable	bundle/vim-gitgutter/plugin/gitgutter.vim	/^function! GitGutterEnable()$/;"	f
+GitGutterGetHunks	bundle/vim-gitgutter/plugin/gitgutter.vim	/^function! GitGutterGetHunks()$/;"	f
+GitGutterLineHighlightsDisable	bundle/vim-gitgutter/plugin/gitgutter.vim	/^command GitGutterLineHighlightsDisable call GitGutterLineHighlightsDisable()$/;"	c
+GitGutterLineHighlightsDisable	bundle/vim-gitgutter/plugin/gitgutter.vim	/^function! GitGutterLineHighlightsDisable()$/;"	f
+GitGutterLineHighlightsEnable	bundle/vim-gitgutter/plugin/gitgutter.vim	/^command GitGutterLineHighlightsEnable call GitGutterLineHighlightsEnable()$/;"	c
+GitGutterLineHighlightsEnable	bundle/vim-gitgutter/plugin/gitgutter.vim	/^function! GitGutterLineHighlightsEnable()$/;"	f
+GitGutterLineHighlightsToggle	bundle/vim-gitgutter/plugin/gitgutter.vim	/^command GitGutterLineHighlightsToggle call GitGutterLineHighlightsToggle()$/;"	c
+GitGutterLineHighlightsToggle	bundle/vim-gitgutter/plugin/gitgutter.vim	/^function! GitGutterLineHighlightsToggle()$/;"	f
+GitGutterNextHunk	bundle/vim-gitgutter/plugin/gitgutter.vim	/^command GitGutterNextHunk call GitGutterNextHunk()$/;"	c
+GitGutterNextHunk	bundle/vim-gitgutter/plugin/gitgutter.vim	/^function! GitGutterNextHunk()$/;"	f
+GitGutterPrevHunk	bundle/vim-gitgutter/plugin/gitgutter.vim	/^command GitGutterPrevHunk call GitGutterPrevHunk()$/;"	c
+GitGutterPrevHunk	bundle/vim-gitgutter/plugin/gitgutter.vim	/^function! GitGutterPrevHunk()$/;"	f
+GitGutterToggle	bundle/vim-gitgutter/plugin/gitgutter.vim	/^command GitGutterToggle call GitGutterToggle()$/;"	c
+GitGutterToggle	bundle/vim-gitgutter/plugin/gitgutter.vim	/^function! GitGutterToggle()$/;"	f
+GlobPath	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:GlobPath(dirs, depth)$/;"	f
+Grep	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:Grep(cmd,bang,arg) abort$/;"	f
+GroupingAlgorithmOriginal	bundle/vim-easymotion/autoload/EasyMotion.vim	/^		function! s:GroupingAlgorithmOriginal(targets, keys)$/;"	f
+GroupingAlgorithmSCTree	bundle/vim-easymotion/autoload/EasyMotion.vim	/^		function! s:GroupingAlgorithmSCTree(targets, keys)$/;"	f
+GuessCurrentCommentString	bundle/tComment/autoload/tcomment.vim	/^function! s:GuessCurrentCommentString(commentMode)$/;"	f
+GuessFileType	bundle/tComment/autoload/tcomment.vim	/^function! s:GuessFileType(beg, end, commentMode, filetype, ...)$/;"	f
+Hi.vim	bundle/vim-powerline/autoload/Pl/Hi.vim	1;"	F
+HiDefaults	bundle/vim-rails/autoload/rails.vim	/^function! s:HiDefaults()$/;"	f
+HlCreate	bundle/vim-powerline/autoload/Pl/Parser.vim	/^function! s:HlCreate(hl) " {{{$/;"	f
+HlExists	bundle/vim-powerline/autoload/Pl/Parser.vim	/^function! s:HlExists(hl) " {{{$/;"	f
+HtmlDialect	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^class HtmlDialect(Dialect):$/;"	c
+HtmlDialect	bundle/sparkup/sparkup	/^class HtmlDialect(Dialect):$/;"	c
+HtmlDialect	bundle/sparkup/sparkup.py	/^class HtmlDialect(Dialect):$/;"	c
+HtmlDialect	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^class HtmlDialect(Dialect):$/;"	c
+Invert	bundle/vim-rails/autoload/rails.vim	/^function! s:Invert(bang)$/;"	f
+IsInClassDef	bundle/vim-ruby/autoload/rubycomplete.vim	/^function! s:IsInClassDef()$/;"	f
+IsInString	bundle/vim-ruby/indent/ruby.vim	/^function s:IsInString(lnum, col)$/;"	f
+IsInStringOrComment	bundle/vim-ruby/indent/ruby.vim	/^function s:IsInStringOrComment(lnum, col)$/;"	f
+IsInStringOrDocumentation	bundle/vim-ruby/indent/ruby.vim	/^function s:IsInStringOrDocumentation(lnum, col)$/;"	f
+IsPosInClassDef	bundle/vim-ruby/autoload/rubycomplete.vim	/^function! s:IsPosInClassDef(pos)$/;"	f
+JumpInit	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:JumpInit() abort$/;"	f
+KeyLoop	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:KeyLoop()$/;"	f
+LAck	bundle/ack.vim/plugin/ack.vim	/^command! -bang -nargs=* -complete=file LAck call s:Ack('lgrep<bang>', <q-args>)$/;"	c
+LAckAdd	bundle/ack.vim/plugin/ack.vim	/^command! -bang -nargs=* -complete=file LAckAdd call s:Ack('lgrepadd<bang>', <q-args>)$/;"	c
+LAckHelp	bundle/ack.vim/plugin/ack.vim	/^command! -bang -nargs=* -complete=help LAckHelp call s:AckHelp('lgrep<bang>',<q-args>)$/;"	c
+Log	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:Log(cmd,...)$/;"	f
+Log	bundle/vim-rails/autoload/rails.vim	/^function! s:Log(bang,arg)$/;"	f
+Makefile	bundle/sparkup/Makefile	1;"	F
+MapNorms	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:MapNorms()$/;"	f
+MapSpecs	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:MapSpecs()$/;"	f
+MarkToOpen	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:MarkToOpen()$/;"	f
+Match	bundle/vim-ruby/indent/ruby.vim	/^function s:Match(lnum, regex)$/;"	f
+Match.vim	bundle/vim-powerline/autoload/Pl/Match.vim	1;"	F
+MatchIt	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:MatchIt(items, pat, limit, exc)$/;"	f
+MatchLast	bundle/vim-ruby/indent/ruby.vim	/^function s:MatchLast(lnum, regex)$/;"	f
+MatchedItems	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:MatchedItems(items, pat, limit)$/;"	f
+Matches.vim	bundle/vim-powerline/autoload/Powerline/Matches.vim	1;"	F
+Message	bundle/vim-easymotion/autoload/EasyMotion.vim	/^	function! s:Message(message) " {{{$/;"	f
+Mod.vim	bundle/vim-powerline/autoload/Pl/Mod.vim	1;"	F
+Move	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:Move(force,destination)$/;"	f
+MoveComplete	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:MoveComplete(A,L,P)$/;"	f
+Navcommand	bundle/vim-rails/autoload/rails.vim	/^function! s:Navcommand(bang,...)$/;"	f
+Open	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:Open()$/;"	f
+OpenMulti	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:OpenMulti(...)$/;"	f
+OpenNoMarks	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:OpenNoMarks(md, line)$/;"	f
+Options	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^class Options:$/;"	c
+Options	bundle/sparkup/sparkup	/^class Options:$/;"	c
+Options	bundle/sparkup/sparkup.py	/^class Options:$/;"	c
+Options	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^class Options:$/;"	c
+PARENT	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    PARENT = 8$/;"	v	class:Token
+PARENT	bundle/sparkup/sparkup	/^    PARENT = 8$/;"	v	class:Token
+PARENT	bundle/sparkup/sparkup.py	/^    PARENT = 8$/;"	v	class:Token
+PARENT	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    PARENT = 8$/;"	v	class:Token
+ParseArgs	bundle/tComment/autoload/tcomment.vim	/^function! s:ParseArgs(beg, end, commentMode, arglist) "{{{3$/;"	f
+ParseSegments	bundle/vim-powerline/autoload/Pl/Parser.vim	/^function! s:ParseSegments(mode, side, segments, ...) " {{{$/;"	f
+Parser	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^class Parser:$/;"	c
+Parser	bundle/sparkup/sparkup	/^class Parser:$/;"	c
+Parser	bundle/sparkup/sparkup.py	/^class Parser:$/;"	c
+Parser	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^class Parser:$/;"	c
+Parser.vim	bundle/vim-powerline/autoload/Pl/Parser.vim	1;"	F
+Pl#ClearCache	bundle/vim-powerline/autoload/Pl.vim	/^	function! Pl#ClearCache() " {{{$/;"	f
+Pl#Colorscheme#Apply	bundle/vim-powerline/autoload/Pl/Colorscheme.vim	/^function! Pl#Colorscheme#Apply(colorscheme, buffer_segments) " {{{$/;"	f
+Pl#Colorscheme#Init	bundle/vim-powerline/autoload/Pl/Colorscheme.vim	/^function! Pl#Colorscheme#Init(hi) " {{{$/;"	f
+Pl#Hi#Allocate	bundle/vim-powerline/autoload/Pl/Hi.vim	/^function! Pl#Hi#Allocate(colors) " {{{$/;"	f
+Pl#Hi#Segments	bundle/vim-powerline/autoload/Pl/Hi.vim	/^function! Pl#Hi#Segments(segments, mode_colors) " {{{$/;"	f
+Pl#Load	bundle/vim-powerline/autoload/Pl.vim	/^	function! Pl#Load() " {{{$/;"	f
+Pl#LoadCache	bundle/vim-powerline/autoload/Pl.vim	/^	function! Pl#LoadCache() " {{{$/;"	f
+Pl#Match#Add	bundle/vim-powerline/autoload/Pl/Match.vim	/^function! Pl#Match#Add(pat, expr) " {{{$/;"	f
+Pl#Match#Any	bundle/vim-powerline/autoload/Pl/Match.vim	/^function! Pl#Match#Any(...) " {{{$/;"	f
+Pl#Match#Validate	bundle/vim-powerline/autoload/Pl/Match.vim	/^function! Pl#Match#Validate(theme, window) " {{{$/;"	f
+Pl#Mod#AddSegmentMod	bundle/vim-powerline/autoload/Pl/Mod.vim	/^function! Pl#Mod#AddSegmentMod(action, properties) " {{{$/;"	f
+Pl#Mod#ApplySegmentMods	bundle/vim-powerline/autoload/Pl/Mod.vim	/^function! Pl#Mod#ApplySegmentMods(theme) " {{{$/;"	f
+Pl#Parser#GetStatusline	bundle/vim-powerline/autoload/Pl/Parser.vim	/^function! Pl#Parser#GetStatusline(segments) " {{{$/;"	f
+Pl#Parser#ParseChars	bundle/vim-powerline/autoload/Pl/Parser.vim	/^function! Pl#Parser#ParseChars(arg) " {{{$/;"	f
+Pl#ReloadColorscheme	bundle/vim-powerline/autoload/Pl.vim	/^	function! Pl#ReloadColorscheme() " {{{$/;"	f
+Pl#Segment#Create	bundle/vim-powerline/autoload/Pl/Segment.vim	/^function! Pl#Segment#Create(name, ...) " {{{$/;"	f
+Pl#Segment#Get	bundle/vim-powerline/autoload/Pl/Segment.vim	/^function! Pl#Segment#Get(name) " {{{$/;"	f
+Pl#Segment#Init	bundle/vim-powerline/autoload/Pl/Segment.vim	/^function! Pl#Segment#Init(params) " {{{$/;"	f
+Pl#Segment#Modes	bundle/vim-powerline/autoload/Pl/Segment.vim	/^function! Pl#Segment#Modes(modes) " {{{$/;"	f
+Pl#Segment#NoPadding	bundle/vim-powerline/autoload/Pl/Segment.vim	/^function! Pl#Segment#NoPadding() " {{{$/;"	f
+Pl#Segment#Split	bundle/vim-powerline/autoload/Pl/Segment.vim	/^function! Pl#Segment#Split(...) " {{{$/;"	f
+Pl#Segment#Truncate	bundle/vim-powerline/autoload/Pl/Segment.vim	/^function! Pl#Segment#Truncate() " {{{$/;"	f
+Pl#Statusline	bundle/vim-powerline/autoload/Pl.vim	/^	function! Pl#Statusline(statusline, current) " {{{$/;"	f
+Pl#StatuslineCallback	bundle/vim-powerline/autoload/Pl.vim	/^	function! Pl#StatuslineCallback(statusline, args) " {{{$/;"	f
+Pl#Theme#Buffer	bundle/vim-powerline/autoload/Pl/Theme.vim	/^function! Pl#Theme#Buffer(ns, ...) " {{{$/;"	f
+Pl#Theme#Callback	bundle/vim-powerline/autoload/Pl/Theme.vim	/^function! Pl#Theme#Callback(name, expr) " {{{$/;"	f
+Pl#Theme#Create	bundle/vim-powerline/autoload/Pl/Theme.vim	/^function! Pl#Theme#Create(...) " {{{$/;"	f
+Pl#Theme#InsertSegment	bundle/vim-powerline/autoload/Pl/Theme.vim	/^function! Pl#Theme#InsertSegment(new_segment, where, target_segment) " {{{$/;"	f
+Pl#Theme#RemoveSegment	bundle/vim-powerline/autoload/Pl/Theme.vim	/^function! Pl#Theme#RemoveSegment(target_segment) " {{{$/;"	f
+Pl#Theme#ReplaceSegment	bundle/vim-powerline/autoload/Pl/Theme.vim	/^function! Pl#Theme#ReplaceSegment(old_segment, new_segment) " {{{$/;"	f
+Pl#UpdateStatusline	bundle/vim-powerline/autoload/Pl.vim	/^	function! Pl#UpdateStatusline(current, ...) " {{{$/;"	f
+Pl.vim	bundle/vim-powerline/autoload/Pl.vim	1;"	F
+Powerline#Functions#GetCharCode	bundle/vim-powerline/autoload/Powerline/Functions.vim	/^function! Powerline#Functions#GetCharCode() " {{{$/;"	f
+Powerline#Functions#GetFilepath	bundle/vim-powerline/autoload/Powerline/Functions.vim	/^function! Powerline#Functions#GetFilepath() " {{{$/;"	f
+Powerline#Functions#GetFilesize	bundle/vim-powerline/autoload/Powerline/Functions.vim	/^function! Powerline#Functions#GetFilesize() " {{{$/;"	f
+Powerline#Functions#GetMode	bundle/vim-powerline/autoload/Powerline/Functions.vim	/^function! Powerline#Functions#GetMode() " {{{$/;"	f
+Powerline#Functions#GetShortPath	bundle/vim-powerline/autoload/Powerline/Functions.vim	/^function! Powerline#Functions#GetShortPath(threshold) " {{{$/;"	f
+Powerline#Functions#GetWSMarker	bundle/vim-powerline/autoload/Powerline/Functions.vim	/^function! Powerline#Functions#GetWSMarker() " {{{$/;"	f
+Powerline#Functions#ft_man#GetName	bundle/vim-powerline/autoload/Powerline/Functions/ft_man.vim	/^function! Powerline#Functions#ft_man#GetName() " {{{$/;"	f
+Powerline#Functions#fugitive#GetBranch	bundle/vim-powerline/autoload/Powerline/Functions/fugitive.vim	/^function! Powerline#Functions#fugitive#GetBranch(symbol) " {{{$/;"	f
+Powerline#Functions#hgrev#Status	bundle/vim-powerline/autoload/Powerline/Functions/hgrev.vim	/^function! Powerline#Functions#hgrev#Status(symbol) " {{{$/;"	f
+Powerline#Functions#syntastic#GetErrors	bundle/vim-powerline/autoload/Powerline/Functions/syntastic.vim	/^function! Powerline#Functions#syntastic#GetErrors(line_symbol) " {{{$/;"	f
+Powerline.vim	bundle/vim-powerline/plugin/Powerline.vim	1;"	F
+PowerlineClearCache	bundle/vim-powerline/plugin/Powerline.vim	/^	command! PowerlineClearCache call Pl#ClearCache()$/;"	c
+PowerlineReloadColorscheme	bundle/vim-powerline/plugin/Powerline.vim	/^	command! PowerlineReloadColorscheme call Pl#ReloadColorscheme()$/;"	c
+PowerlineStartup	bundle/vim-powerline/plugin/Powerline.vim	/^	augroup PowerlineStartup$/;"	a
+PrevNonBlankNonString	bundle/vim-ruby/indent/ruby.vim	/^function s:PrevNonBlankNonString(lnum)$/;"	f
+Preview	bundle/vim-rails/autoload/rails.vim	/^function! s:Preview(bang,lnum,arg)$/;"	f
+ProcessedLine	bundle/tComment/autoload/tcomment.vim	/^function! s:ProcessedLine(uncomment, match, checkRx, replace)$/;"	f
+Prompt	bundle/vim-easymotion/autoload/EasyMotion.vim	/^	function! s:Prompt(message) " {{{$/;"	f
+PromptUser	bundle/vim-easymotion/autoload/EasyMotion.vim	/^	function! s:PromptUser(groups) "{{{$/;"	f
+PrtAdd	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:PrtAdd(char)$/;"	f
+PrtBS	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:PrtBS()$/;"	f
+PrtClear	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:PrtClear()$/;"	f
+PrtClearCache	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:PrtClearCache()$/;"	f
+PrtCurEnd	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:PrtCurEnd()$/;"	f
+PrtCurLeft	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:PrtCurLeft()$/;"	f
+PrtCurRight	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:PrtCurRight()$/;"	f
+PrtCurStart	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:PrtCurStart()$/;"	f
+PrtDelete	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:PrtDelete()$/;"	f
+PrtDeleteEnt	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:PrtDeleteEnt()$/;"	f
+PrtDeleteMRU	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:PrtDeleteMRU()$/;"	f
+PrtDeleteWord	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:PrtDeleteWord()$/;"	f
+PrtExit	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:PrtExit()$/;"	f
+PrtExpandDir	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:PrtExpandDir()$/;"	f
+PrtFocusMap	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:PrtFocusMap(char)$/;"	f
+PrtHistory	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:PrtHistory(...)$/;"	f
+PrtInsert	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:PrtInsert(...)$/;"	f
+PrtSelectJump	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:PrtSelectJump(char)$/;"	f
+PrtSelectMove	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:PrtSelectMove(dir)$/;"	f
+PrtSwitcher	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:PrtSwitcher()$/;"	f
+README	bundle/sparkup/Makefile	/^README=README.md$/;"	m
+Rails	bundle/vim-rails/plugin/rails.vim	/^command! -bar -bang -nargs=* -complete=dir Rails :if s:autoload()|execute rails#new_app_command(<bang>0,<f-args>)|endif$/;"	c
+RailsBufInit	bundle/vim-rails/autoload/rails.vim	/^function! RailsBufInit(path)$/;"	f
+RailsFile	bundle/vim-rails/autoload/rails.vim	/^function! RailsFile()$/;"	f
+RailsFilePath	bundle/vim-rails/autoload/rails.vim	/^function! RailsFilePath()$/;"	f
+RailsFileType	bundle/vim-rails/autoload/rails.vim	/^function! RailsFileType()$/;"	f
+RailsFind	bundle/vim-rails/autoload/rails.vim	/^function! s:RailsFind()$/;"	f
+RailsIncludeexpr	bundle/vim-rails/autoload/rails.vim	/^function! RailsIncludeexpr()$/;"	f
+RailsIncludefind	bundle/vim-rails/autoload/rails.vim	/^function! s:RailsIncludefind(str,...)$/;"	f
+RailsNamedRoutes	bundle/vim-rails/autoload/rails.vim	/^function! RailsNamedRoutes()$/;"	f
+RailsRevision	bundle/vim-rails/autoload/rails.vim	/^function! RailsRevision()$/;"	f
+RailsRoot	bundle/vim-rails/autoload/rails.vim	/^function! RailsRoot()$/;"	f
+Rake	bundle/vim-rails/autoload/rails.vim	/^function! s:Rake(bang,lnum,arg)$/;"	f
+Refresh	bundle/vim-rails/autoload/rails.vim	/^function! s:Refresh(bang)$/;"	f
+RefreshBuffer	bundle/vim-rails/autoload/rails.vim	/^function! s:RefreshBuffer()$/;"	f
+Related	bundle/vim-rails/autoload/rails.vim	/^function! s:Related(cmd,line1,line2,count,...)$/;"	f
+Remove	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:Remove(force)$/;"	f
+Render	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:Render(lines, pat)$/;"	f
+RepeatCommentstring	bundle/tComment/autoload/tcomment.vim	/^function! s:RepeatCommentstring(cdef) "{{{3$/;"	f
+ReplaceCmd	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:ReplaceCmd(cmd,...) abort$/;"	f
+ReplaceInLine	bundle/tComment/autoload/tcomment.vim	/^function! s:ReplaceInLine(text) "{{{3$/;"	f
+Reset	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:Reset(args)$/;"	f
+Router	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^class Router:$/;"	c
+Router	bundle/sparkup/sparkup	/^class Router:$/;"	c
+Router	bundle/sparkup/sparkup.py	/^class Router:$/;"	c
+Router	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^class Router:$/;"	c
+RubyBalloonexpr	bundle/vim-ruby/ftplugin/ruby.vim	/^function! RubyBalloonexpr()$/;"	f
+RubyCursorIdentifier	bundle/vim-ruby/ftplugin/ruby.vim	/^function! RubyCursorIdentifier()$/;"	f
+RubyExtract	bundle/vim-rails/autoload/rails.vim	/^function! s:RubyExtract(bang, root, before, name) range abort$/;"	f
+SIBLING	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    SIBLING = 16$/;"	v	class:Token
+SIBLING	bundle/sparkup/sparkup	/^    SIBLING = 16$/;"	v	class:Token
+SIBLING	bundle/sparkup/sparkup.py	/^    SIBLING = 16$/;"	v	class:Token
+SIBLING	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    SIBLING = 16$/;"	v	class:Token
+SPARKUP_PY	bundle/sparkup/Makefile	/^SPARKUP_PY=sparkup$/;"	m
+SYM_ATTR	bundle/vim-powerline/fontpatcher/fontpatcher	/^SYM_ATTR = {$/;"	v
+Segment.vim	bundle/vim-powerline/autoload/Pl/Segment.vim	1;"	F
+Segments.vim	bundle/vim-powerline/autoload/Powerline/Segments.vim	1;"	F
+Set	bundle/vim-rails/autoload/rails.vim	/^function! s:Set(bang,...)$/;"	f
+SetBasePath	bundle/vim-rails/autoload/rails.vim	/^function! s:SetBasePath()$/;"	f
+SetDefTxt	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:SetDefTxt()$/;"	f
+SetLines	bundle/vim-easymotion/autoload/EasyMotion.vim	/^	function! s:SetLines(lines, key) " {{{$/;"	f
+SetOptDefault	bundle/vim-rails/plugin/rails.vim	/^function! s:SetOptDefault(opt,val)$/;"	f
+SetWD	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:SetWD(args)$/;"	f
+Sparkup	bundle/sparkup/vim/ftplugin/html/sparkup.vim	/^function! s:Sparkup()$/;"	f
+SparkupNext	bundle/sparkup/vim/ftplugin/html/sparkup.vim	/^function! s:SparkupNext()$/;"	f
+SparkupTest	bundle/sparkup/sparkup-unittest.py	/^class SparkupTest:$/;"	c
+SpecInputs	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:SpecInputs(str)$/;"	f
+SplitPattern	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:SplitPattern(str)$/;"	f
+StageDiff	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:StageDiff(diff) abort$/;"	f
+StageDiffEdit	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:StageDiffEdit() abort$/;"	f
+StageNext	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:StageNext(count)$/;"	f
+StagePatch	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:StagePatch(lnum1,lnum2) abort$/;"	f
+StagePrevious	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:StagePrevious(count)$/;"	f
+StageReloadSeek	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:StageReloadSeek(target,lnum1,lnum2)$/;"	f
+StageToggle	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:StageToggle(lnum1,lnum2) abort$/;"	f
+StartColRx	bundle/tComment/autoload/tcomment.vim	/^function! s:StartColRx(pos)$/;"	f
+StartLineRx	bundle/tComment/autoload/tcomment.vim	/^function! s:StartLineRx(pos)$/;"	f
+StartPosRx	bundle/tComment/autoload/tcomment.vim	/^function! s:StartPosRx(mode, line, col)$/;"	f
+Startup	bundle/vim-powerline/plugin/Powerline.vim	/^	function! s:Startup()$/;"	f
+Status	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:Status() abort$/;"	f
+Stridx	bundle/ctags.vim/plugin/ctags.vim	/^    function! Stridx(haysack, needle)$/;"	f
+TComment	bundle/tComment/plugin/tcomment.vim	/^command! -bang -range -nargs=* -complete=customlist,tcomment#CompleteArgs TComment$/;"	c
+TCommentAs	bundle/tComment/plugin/tcomment.vim	/^command! -bang -complete=customlist,tcomment#Complete -range -nargs=+ TCommentAs $/;"	c
+TCommentBlock	bundle/tComment/plugin/tcomment.vim	/^command! -bang -range -nargs=* -complete=customlist,tcomment#CompleteArgs TCommentBlock$/;"	c
+TCommentInline	bundle/tComment/plugin/tcomment.vim	/^command! -bang -range -nargs=* -complete=customlist,tcomment#CompleteArgs TCommentInline$/;"	c
+TCommentMaybeInline	bundle/tComment/plugin/tcomment.vim	/^command! -bang -range -nargs=* -complete=customlist,tcomment#CompleteArgs TCommentMaybeInline$/;"	c
+TCommentRight	bundle/tComment/plugin/tcomment.vim	/^command! -bang -range -nargs=* -complete=customlist,tcomment#CompleteArgs TCommentRight$/;"	c
+TargetDirectory	bundle/vim-ruby/bin/vim-ruby-install.rb	/^class TargetDirectory$/;"	c
+TargetDirectory	bundle/vim-ruby/bin/vim-ruby-install.rb	/^class TargetDirectory::Finder$/;"	c
+Theme.vim	bundle/vim-powerline/autoload/Pl/Theme.vim	1;"	F
+ToggleByFname	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:ToggleByFname()$/;"	f
+ToggleFocus	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:ToggleFocus()$/;"	f
+ToggleKeyLoop	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:ToggleKeyLoop()$/;"	f
+ToggleRegex	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:ToggleRegex()$/;"	f
+ToggleType	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:ToggleType(dir)$/;"	f
+Token	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^class Token:$/;"	c
+Token	bundle/sparkup/sparkup	/^class Token:$/;"	c
+Token	bundle/sparkup/sparkup.py	/^class Token:$/;"	c
+Token	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^class Token:$/;"	c
+UnreplaceInLine	bundle/tComment/autoload/tcomment.vim	/^function! s:UnreplaceInLine(text) "{{{3$/;"	f
+Update	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:Update(str)$/;"	f
+UserCmd	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:UserCmd(lscmd)$/;"	f
+VERSION	bundle/sparkup/Makefile	/^VERSION=`date '+%Y%m%d'`$/;"	m
+VarReset	bundle/vim-easymotion/autoload/EasyMotion.vim	/^	function! s:VarReset(var, ...) " {{{$/;"	f
+VimRubyInstaller	bundle/vim-ruby/bin/vim-ruby-install.rb	/^class VimRubyInstaller$/;"	c
+Wq	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:Wq(force,...) abort$/;"	f
+Write	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:Write(force,...) abort$/;"	f
+X	bundle/desert-warm-256/colors/desert-warm-256.vim	/^    fun <SID>X(group, fg, ...)$/;"	f
+X	bundle/vim-ruby/etc/examples/indent/blocks.rb	/^module X$/;"	m
+[M	bundle/vim-ruby/ftplugin/ruby.vim	/^  nnoremap <silent> <buffer> [M :<C-U>call <SID>searchsyn('\\<end\\>','rubyDefine','b','n')<CR>$/;"	m
+[[	bundle/vim-ruby/ftplugin/ruby.vim	/^  nnoremap <silent> <buffer> [[ :<C-U>call <SID>searchsyn('\\<\\%(class\\<Bar>module\\)\\>','rubyModule\\<Bar>rubyClass','b','n')<CR>$/;"	m
+[]	bundle/vim-ruby/bin/vim-ruby-install.rb	/^    def [](path)$/;"	f	class:VimRubyInstaller.BackupDir
+[]	bundle/vim-ruby/bin/vim-ruby-install.rb	/^  def [](path)$/;"	f	class:TargetDirectory
+[]	bundle/vim-ruby/ftplugin/ruby.vim	/^  nnoremap <silent> <buffer> [] :<C-U>call <SID>searchsyn('\\<end\\>','rubyModule\\<Bar>rubyClass','b','n')<CR>$/;"	m
+[m	bundle/vim-ruby/ftplugin/ruby.vim	/^  nnoremap <silent> <buffer> [m :<C-U>call <SID>searchsyn('\\<def\\>','rubyDefine','b','n')<CR>$/;"	m
+]M	bundle/vim-ruby/ftplugin/ruby.vim	/^  nnoremap <silent> <buffer> ]M :<C-U>call <SID>searchsyn('\\<end\\>','rubyDefine','','n')<CR>$/;"	m
+][	bundle/vim-ruby/ftplugin/ruby.vim	/^  nnoremap <silent> <buffer> ][ :<C-U>call <SID>searchsyn('\\<end\\>','rubyModule\\<Bar>rubyClass','','n')<CR>$/;"	m
+]]	bundle/vim-ruby/ftplugin/ruby.vim	/^  nnoremap <silent> <buffer> ]] :<C-U>call <SID>searchsyn('\\<\\%(class\\<Bar>module\\)\\>','rubyModule\\<Bar>rubyClass','','n')<CR>$/;"	m
+]m	bundle/vim-ruby/ftplugin/ruby.vim	/^  nnoremap <silent> <buffer> ]m :<C-U>call <SID>searchsyn('\\<def\\>','rubyDefine','','n')<CR>$/;"	m
+__getattr__	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    def __getattr__(self, attr):$/;"	m	class:Options	file:
+__getattr__	bundle/sparkup/sparkup	/^    def __getattr__(self, attr):$/;"	m	class:Options	file:
+__getattr__	bundle/sparkup/sparkup.py	/^    def __getattr__(self, attr):$/;"	m	class:Options	file:
+__getattr__	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    def __getattr__(self, attr):$/;"	m	class:Options	file:
+__init__	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^                 attributes=None, name=None, text=None):$/;"	m	class:Element
+__init__	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    def __init__(self):$/;"	m	class:Router
+__init__	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    def __init__(self, options=None, str='', dialect=HtmlDialect()):$/;"	m	class:Parser
+__init__	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    def __init__(self, router, argv, options=None):$/;"	m	class:Options
+__init__	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    def __init__(self, str, parser=None):$/;"	m	class:Token
+__init__	bundle/sparkup/sparkup	/^                 attributes=None, name=None, text=None):$/;"	m	class:Element
+__init__	bundle/sparkup/sparkup	/^    def __init__(self):$/;"	m	class:Router
+__init__	bundle/sparkup/sparkup	/^    def __init__(self, options=None, str='', dialect=HtmlDialect()):$/;"	m	class:Parser
+__init__	bundle/sparkup/sparkup	/^    def __init__(self, router, argv, options=None):$/;"	m	class:Options
+__init__	bundle/sparkup/sparkup	/^    def __init__(self, str, parser=None):$/;"	m	class:Token
+__init__	bundle/sparkup/sparkup.py	/^                 attributes=None, name=None, text=None):$/;"	m	class:Element
+__init__	bundle/sparkup/sparkup.py	/^    def __init__(self):$/;"	m	class:Router
+__init__	bundle/sparkup/sparkup.py	/^    def __init__(self, options=None, str='', dialect=HtmlDialect()):$/;"	m	class:Parser
+__init__	bundle/sparkup/sparkup.py	/^    def __init__(self, router, argv, options=None):$/;"	m	class:Options
+__init__	bundle/sparkup/sparkup.py	/^    def __init__(self, str, parser=None):$/;"	m	class:Token
+__init__	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^                 attributes=None, name=None, text=None):$/;"	m	class:Element
+__init__	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    def __init__(self):$/;"	m	class:Router
+__init__	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    def __init__(self, options=None, str='', dialect=HtmlDialect()):$/;"	m	class:Parser
+__init__	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    def __init__(self, router, argv, options=None):$/;"	m	class:Options
+__init__	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    def __init__(self, str, parser=None):$/;"	m	class:Token
+__str__	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    def __str__(self):$/;"	m	class:Token	file:
+__str__	bundle/sparkup/sparkup	/^    def __str__(self):$/;"	m	class:Token	file:
+__str__	bundle/sparkup/sparkup.py	/^    def __str__(self):$/;"	m	class:Token	file:
+__str__	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    def __str__(self):$/;"	m	class:Token	file:
+_ensure_directory_exists	bundle/vim-ruby/bin/vim-ruby-install.rb	/^  def _ensure_directory_exists(path)$/;"	f	class:FileWriter
+_fill_attributes	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    def _fill_attributes(self):$/;"	m	class:Element
+_fill_attributes	bundle/sparkup/sparkup	/^    def _fill_attributes(self):$/;"	m	class:Element
+_fill_attributes	bundle/sparkup/sparkup.py	/^    def _fill_attributes(self):$/;"	m	class:Element
+_fill_attributes	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    def _fill_attributes(self):$/;"	m	class:Element
+_init_element	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    def _init_element(self):$/;"	m	class:Token
+_init_element	bundle/sparkup/sparkup	/^    def _init_element(self):$/;"	m	class:Token
+_init_element	bundle/sparkup/sparkup.py	/^    def _init_element(self):$/;"	m	class:Token
+_init_element	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    def _init_element(self):$/;"	m	class:Token
+_last	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    _last = None$/;"	v	class:Parser
+_last	bundle/sparkup/sparkup	/^    _last = None$/;"	v	class:Parser
+_last	bundle/sparkup/sparkup.py	/^    _last = None$/;"	v	class:Parser
+_last	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    _last = None$/;"	v	class:Parser
+_parse	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    def _parse(self):$/;"	m	class:Parser
+_parse	bundle/sparkup/sparkup	/^    def _parse(self):$/;"	m	class:Parser
+_parse	bundle/sparkup/sparkup.py	/^    def _parse(self):$/;"	m	class:Parser
+_parse	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    def _parse(self):$/;"	m	class:Parser
+_populate	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    def _populate(self):$/;"	m	class:Element
+_populate	bundle/sparkup/sparkup	/^    def _populate(self):$/;"	m	class:Element
+_populate	bundle/sparkup/sparkup.py	/^    def _populate(self):$/;"	m	class:Element
+_populate	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    def _populate(self):$/;"	m	class:Element
+_potential_directories	bundle/vim-ruby/bin/vim-ruby-install.rb	/^  def _potential_directories$/;"	f	class:TargetDirectory
+_same_contents?	bundle/vim-ruby/bin/vim-ruby-install.rb	/^  def _same_contents?(p1, p2)$/;"	f	class:VimRubyInstaller
+_textmatify	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    def _textmatify(self, output):$/;"	m	class:Parser
+_textmatify	bundle/sparkup/sparkup	/^    def _textmatify(self, output):$/;"	m	class:Parser
+_textmatify	bundle/sparkup/sparkup.py	/^    def _textmatify(self, output):$/;"	m	class:Parser
+_textmatify	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    def _textmatify(self, output):$/;"	m	class:Parser
+_tokenize	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    def _tokenize(self):$/;"	m	class:Parser
+_tokenize	bundle/sparkup/sparkup	/^    def _tokenize(self):$/;"	m	class:Parser
+_tokenize	bundle/sparkup/sparkup.py	/^    def _tokenize(self):$/;"	m	class:Parser
+_tokenize	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    def _tokenize(self):$/;"	m	class:Parser
+_valid_vim_ruby_dir	bundle/vim-ruby/bin/vim-ruby-install.rb	/^  def Env._valid_vim_ruby_dir(dir)$/;"	F	class:Env
+_vim_system_dir	bundle/vim-ruby/bin/vim-ruby-install.rb	/^  def _vim_system_dir$/;"	f	class:TargetDirectory
+_vim_user_dir	bundle/vim-ruby/bin/vim-ruby-install.rb	/^  def _vim_user_dir$/;"	f	class:TargetDirectory
+aM	bundle/vim-ruby/ftplugin/ruby.vim	/^    onoremap <silent> <buffer> aM :<C-U>call <SID>wrap_a('[[','][')<CR>$/;"	m
+abolish_l	bundle/vim-rails/plugin/rails.vim	/^function! s:abolish_l(word)$/;"	f
+abolish_setup	bundle/vim-rails/plugin/rails.vim	/^function! s:abolish_setup()$/;"	f
+abolish_t	bundle/vim-rails/plugin/rails.vim	/^function! s:abolish_t(word)$/;"	f
+ack.vim	bundle/ack.vim/plugin/ack.vim	1;"	F
+add_methods	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:add_methods(namespace, method_names) abort$/;"	f
+add_methods	bundle/vim-rails/autoload/rails.vim	/^function! s:add_methods(namespace, method_names)$/;"	f
+add_sign	bundle/vim-gitgutter/plugin/gitgutter.vim	/^function! s:add_sign(line_number, name, file_name)$/;"	f
+addfilecmds	bundle/vim-rails/autoload/rails.vim	/^function! s:addfilecmds(type)$/;"	f
+addtomrufs	bundle/ctrlp.vim/autoload/ctrlp/mrufiles.vim	/^fu! s:addtomrufs(fname)$/;"	f
+align_matrix	bundle/vim-powerline/fontpatcher/fontpatcher	/^			align_matrix = psMat.translate(0, 0)$/;"	v
+align_matrix	bundle/vim-powerline/fontpatcher/fontpatcher	/^			align_matrix = psMat.translate(font_dim['width'] - sym_dim['width'], 0)$/;"	v
+align_matrix	bundle/vim-powerline/fontpatcher/fontpatcher	/^			align_matrix = psMat.translate(font_dim['width'] \/ 2 - sym_dim['width'] \/ 2 , 0)$/;"	v
+am	bundle/vim-ruby/ftplugin/ruby.vim	/^    onoremap <silent> <buffer> am :<C-U>call <SID>wrap_a('[m',']M')<CR>$/;"	m
+app_background_script_command	bundle/vim-rails/autoload/rails.vim	/^function! s:app_background_script_command(cmd) dict abort$/;"	f
+app_config	bundle/vim-rails/autoload/rails.vim	/^function! s:app_config(...) dict abort$/;"	f
+app_dbext_settings	bundle/vim-rails/autoload/rails.vim	/^function! s:app_dbext_settings(environment) dict$/;"	f
+app_default_locale	bundle/vim-rails/autoload/rails.vim	/^function! s:app_default_locale() dict abort$/;"	f
+app_environments	bundle/vim-rails/autoload/rails.vim	/^function! s:app_environments() dict$/;"	f
+app_eval	bundle/vim-rails/autoload/rails.vim	/^function! s:app_eval(ruby,...) dict abort$/;"	f
+app_execute_script_command	bundle/vim-rails/autoload/rails.vim	/^function! s:app_execute_script_command(cmd) dict abort$/;"	f
+app_file	bundle/vim-rails/autoload/rails.vim	/^function! s:app_file(name) dict abort$/;"	f
+app_find_file	bundle/vim-rails/autoload/rails.vim	/^function! s:app_find_file(name, ...) dict abort$/;"	f
+app_gems	bundle/vim-rails/autoload/rails.vim	/^function! s:app_gems() dict abort$/;"	f
+app_generator_command	bundle/vim-rails/autoload/rails.vim	/^function! s:app_generator_command(bang,...) dict$/;"	f
+app_generators	bundle/vim-rails/autoload/rails.vim	/^function! s:app_generators() dict abort$/;"	f
+app_has	bundle/vim-rails/autoload/rails.vim	/^function! s:app_has(feature) dict$/;"	f
+app_has_file	bundle/vim-rails/autoload/rails.vim	/^function! s:app_has_file(file) dict$/;"	f
+app_has_gem	bundle/vim-rails/autoload/rails.vim	/^function! s:app_has_gem(gem) dict abort$/;"	f
+app_has_path	bundle/vim-rails/autoload/rails.vim	/^function! s:app_has_path(path) dict$/;"	f
+app_lightweight_ruby_eval	bundle/vim-rails/autoload/rails.vim	/^function! s:app_lightweight_ruby_eval(ruby,...) dict abort$/;"	f
+app_migration	bundle/vim-rails/autoload/rails.vim	/^function! s:app_migration(file) dict$/;"	f
+app_named_route_file	bundle/vim-rails/autoload/rails.vim	/^function! s:app_named_route_file(route) dict$/;"	f
+app_path	bundle/vim-rails/autoload/rails.vim	/^function! s:app_path(...) dict$/;"	f
+app_projections	bundle/vim-rails/autoload/rails.vim	/^function! s:app_projections() dict abort$/;"	f
+app_rake_tasks	bundle/vim-rails/autoload/rails.vim	/^function! s:app_rake_tasks() dict$/;"	f
+app_relglob	bundle/vim-rails/autoload/rails.vim	/^function! s:app_relglob(path,glob,...) dict$/;"	f
+app_route_names	bundle/vim-rails/autoload/rails.vim	/^function! s:app_route_names() dict$/;"	f
+app_ruby_shell_command	bundle/vim-rails/autoload/rails.vim	/^function! s:app_ruby_shell_command(cmd) dict abort$/;"	f
+app_runner_command	bundle/vim-rails/autoload/rails.vim	/^function! s:app_runner_command(count,args) dict$/;"	f
+app_script_command	bundle/vim-rails/autoload/rails.vim	/^function! s:app_script_command(bang,...) dict$/;"	f
+app_script_shell_command	bundle/vim-rails/autoload/rails.vim	/^function! s:app_script_shell_command(cmd) dict abort$/;"	f
+app_server_command	bundle/vim-rails/autoload/rails.vim	/^function! s:app_server_command(bang,arg) dict$/;"	f
+app_source_callback	bundle/vim-rails/autoload/rails.vim	/^function! s:app_source_callback(file) dict$/;"	f
+app_tags_command	bundle/vim-rails/autoload/rails.vim	/^function! s:app_tags_command() dict$/;"	f
+app_test_suites	bundle/vim-rails/autoload/rails.vim	/^function! s:app_test_suites() dict$/;"	f
+app_user_assertions	bundle/vim-rails/autoload/rails.vim	/^function! s:app_user_assertions() dict$/;"	f
+app_user_classes	bundle/vim-rails/autoload/rails.vim	/^function! s:app_user_classes() dict$/;"	f
+append	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    def append(self, object):$/;"	m	class:Element
+append	bundle/sparkup/sparkup	/^    def append(self, object):$/;"	m	class:Element
+append	bundle/sparkup/sparkup.py	/^    def append(self, object):$/;"	m	class:Element
+append	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    def append(self, object):$/;"	m	class:Element
+argmaps	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:argmaps(md, i)$/;"	f
+argparse	bundle/vim-powerline/fontpatcher/fontpatcher	/^import argparse$/;"	i
+args	bundle/vim-powerline/fontpatcher/fontpatcher	/^args = parser.parse_args()$/;"	v
+ask_user	bundle/vim-ruby/bin/vim-ruby-install.rb	/^  def Env.ask_user(message)$/;"	F	class:Env
+at	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:at(str)$/;"	f
+attributes	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    attributes = None$/;"	v	class:Element
+attributes	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    attributes = None$/;"	v	class:Token
+attributes	bundle/sparkup/sparkup	/^    attributes = None$/;"	v	class:Element
+attributes	bundle/sparkup/sparkup	/^    attributes = None$/;"	v	class:Token
+attributes	bundle/sparkup/sparkup.py	/^    attributes = None$/;"	v	class:Element
+attributes	bundle/sparkup/sparkup.py	/^    attributes = None$/;"	v	class:Token
+attributes	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    attributes = None$/;"	v	class:Element
+attributes	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    attributes = None$/;"	v	class:Token
+autocamelize	bundle/vim-rails/autoload/rails.vim	/^function! s:autocamelize(files,test)$/;"	f
+autocmds	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:autocmds()$/;"	f
+autoload	bundle/vim-rails/plugin/rails.vim	/^function! s:autoload(...)$/;"	f
+b:browsefilter	bundle/vim-ruby/ftplugin/eruby.vim	/^  let b:browsefilter="eRuby Files (*.erb, *.rhtml)\\t*.erb;*.rhtml\\n" . s:browsefilter$/;"	v
+b:browsefilter	bundle/vim-ruby/ftplugin/ruby.vim	/^  let b:browsefilter = "Ruby Source Files (*.rb)\\t*.rb\\n" .$/;"	v
+b:current_syntax	bundle/vim-ruby/syntax/eruby.vim	/^let b:current_syntax = 'eruby'$/;"	v
+b:current_syntax	bundle/vim-ruby/syntax/ruby.vim	/^let b:current_syntax = "ruby"$/;"	v
+b:did_ftplugin	bundle/vim-ruby/ftplugin/eruby.vim	/^let b:did_ftplugin = 1$/;"	v
+b:did_ftplugin	bundle/vim-ruby/ftplugin/ruby.vim	/^let b:did_ftplugin = 1$/;"	v
+b:did_indent	bundle/vim-ruby/indent/eruby.vim	/^let b:did_indent = 1$/;"	v
+b:did_indent	bundle/vim-ruby/indent/ruby.vim	/^let b:did_indent = 1$/;"	v
+b:eruby_nest_level	bundle/vim-ruby/syntax/eruby.vim	/^  let b:eruby_nest_level = 1$/;"	v
+b:eruby_nest_level	bundle/vim-ruby/syntax/eruby.vim	/^  let b:eruby_nest_level = strlen(substitute(substitute(substitute(expand("%:t"),'@','','g'),'\\c\\.\\%(erb\\|rhtml\\)\\>','@','g'),'[^@]','','g'))$/;"	v
+b:eruby_subtype	bundle/vim-ruby/ftplugin/eruby.vim	/^    let b:eruby_subtype = 'html'$/;"	v
+b:eruby_subtype	bundle/vim-ruby/ftplugin/eruby.vim	/^    let b:eruby_subtype = 'javascript'$/;"	v
+b:eruby_subtype	bundle/vim-ruby/ftplugin/eruby.vim	/^    let b:eruby_subtype = 'ruby'$/;"	v
+b:eruby_subtype	bundle/vim-ruby/ftplugin/eruby.vim	/^    let b:eruby_subtype = 'text'$/;"	v
+b:eruby_subtype	bundle/vim-ruby/ftplugin/eruby.vim	/^    let b:eruby_subtype = 'yaml'$/;"	v
+b:eruby_subtype	bundle/vim-ruby/ftplugin/eruby.vim	/^    let b:eruby_subtype = g:eruby_default_subtype$/;"	v
+b:eruby_subtype	bundle/vim-ruby/ftplugin/eruby.vim	/^    let b:eruby_subtype = matchstr(substitute(expand("%:t"),'\\c\\%(\\.erb\\|\\.eruby\\|\\.erubis\\)\\+$','',''),'\\.\\zs\\w\\+$')$/;"	v
+b:eruby_subtype	bundle/vim-ruby/ftplugin/eruby.vim	/^  let b:eruby_subtype = matchstr(&filetype,'^eruby\\.\\zs\\w\\+')$/;"	v
+b:eruby_subtype	bundle/vim-ruby/ftplugin/eruby.vim	/^  let b:eruby_subtype = matchstr(s:lines,'eruby_subtype=\\zs\\w\\+')$/;"	v
+b:eruby_subtype	bundle/vim-ruby/syntax/eruby.vim	/^    let b:eruby_subtype = 'html'$/;"	v
+b:eruby_subtype	bundle/vim-ruby/syntax/eruby.vim	/^    let b:eruby_subtype = 'javascript'$/;"	v
+b:eruby_subtype	bundle/vim-ruby/syntax/eruby.vim	/^    let b:eruby_subtype = 'ruby'$/;"	v
+b:eruby_subtype	bundle/vim-ruby/syntax/eruby.vim	/^    let b:eruby_subtype = 'text'$/;"	v
+b:eruby_subtype	bundle/vim-ruby/syntax/eruby.vim	/^    let b:eruby_subtype = 'yaml'$/;"	v
+b:eruby_subtype	bundle/vim-ruby/syntax/eruby.vim	/^    let b:eruby_subtype = g:eruby_default_subtype$/;"	v
+b:eruby_subtype	bundle/vim-ruby/syntax/eruby.vim	/^    let b:eruby_subtype = matchstr(substitute(expand("%:t"),'\\c\\%(\\.erb\\|\\.eruby\\|\\.erubis\\)\\+$','',''),'\\.\\zs\\w\\+$')$/;"	v
+b:eruby_subtype	bundle/vim-ruby/syntax/eruby.vim	/^  let b:eruby_subtype = matchstr(&filetype,'^eruby\\.\\zs\\w\\+')$/;"	v
+b:eruby_subtype	bundle/vim-ruby/syntax/eruby.vim	/^  let b:eruby_subtype = matchstr(s:lines,'eruby_subtype=\\zs\\w\\+')$/;"	v
+b:eruby_subtype_indentexpr	bundle/vim-ruby/indent/eruby.vim	/^let b:eruby_subtype_indentexpr = &l:indentexpr$/;"	v
+b:match_ignorecase	bundle/vim-ruby/ftplugin/ruby.vim	/^  let b:match_ignorecase = 0$/;"	v
+b:match_skip	bundle/vim-ruby/ftplugin/ruby.vim	/^  let b:match_skip =$/;"	v
+b:match_words	bundle/vim-ruby/ftplugin/eruby.vim	/^  let b:match_words = s:match_words$/;"	v
+b:match_words	bundle/vim-ruby/ftplugin/ruby.vim	/^  let b:match_words =$/;"	v
+b:ruby_no_expensive	bundle/vim-ruby/syntax/ruby.vim	/^  let b:ruby_no_expensive = 1$/;"	v
+b:ruby_version	bundle/vim-ruby/ftplugin/ruby.vim	/^    let b:ruby_version = get(readfile(s:version_file, '', 1), '')$/;"	v
+b:undo_ftplugin	bundle/vim-ruby/ftplugin/eruby.vim	/^let b:undo_ftplugin = "setl cms< "$/;"	v
+b:undo_ftplugin	bundle/vim-ruby/ftplugin/ruby.vim	/^    let b:undo_ftplugin = b:undo_ftplugin$/;"	v
+b:undo_ftplugin	bundle/vim-ruby/ftplugin/ruby.vim	/^  let b:undo_ftplugin = b:undo_ftplugin$/;"	v
+b:undo_ftplugin	bundle/vim-ruby/ftplugin/ruby.vim	/^let b:undo_ftplugin = "setl fo< inc< inex< sua< def< com< cms< path< tags< kp<"$/;"	v
+backup	bundle/vim-ruby/bin/vim-ruby-install.rb	/^    def backup(basedir, path)$/;"	f	class:VimRubyInstaller.BackupDir
+blocks.rb	bundle/vim-ruby/etc/examples/indent/blocks.rb	1;"	F
+bookmarkdir.vim	bundle/ctrlp.vim/autoload/ctrlp/bookmarkdir.vim	1;"	F
+buffer	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:buffer(...) abort$/;"	f
+buffer_app	bundle/vim-rails/autoload/rails.vim	/^function! s:buffer_app() dict abort$/;"	f
+buffer_commit	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:buffer_commit() dict abort$/;"	f
+buffer_compare_age	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:buffer_compare_age(commit) dict abort$/;"	f
+buffer_containing_commit	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:buffer_containing_commit() dict abort$/;"	f
+buffer_expand	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:buffer_expand(rev) dict abort$/;"	f
+buffer_getline	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:buffer_getline(lnum) dict abort$/;"	f
+buffer_getline	bundle/vim-rails/autoload/rails.vim	/^function! s:buffer_getline(...) dict abort$/;"	f
+buffer_getvar	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:buffer_getvar(var) dict abort$/;"	f
+buffer_getvar	bundle/vim-rails/autoload/rails.vim	/^function! s:buffer_getvar(varname) dict abort$/;"	f
+buffer_lines	bundle/vim-rails/autoload/rails.vim	/^function! s:buffer_lines() dict abort$/;"	f
+buffer_name	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:buffer_name() dict abort$/;"	f
+buffer_name	bundle/vim-rails/autoload/rails.vim	/^function! s:buffer_name() dict abort$/;"	f
+buffer_number	bundle/vim-rails/autoload/rails.vim	/^function! s:buffer_number() dict abort$/;"	f
+buffer_path	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:buffer_path(...) dict abort$/;"	f
+buffer_path	bundle/vim-rails/autoload/rails.vim	/^function! s:buffer_path() dict abort$/;"	f
+buffer_repo	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:buffer_repo() dict abort$/;"	f
+buffer_rev	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:buffer_rev() dict abort$/;"	f
+buffer_setvar	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:buffer_setvar(var,value) dict abort$/;"	f
+buffer_setvar	bundle/vim-rails/autoload/rails.vim	/^function! s:buffer_setvar(varname, val) dict abort$/;"	f
+buffer_sha1	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:buffer_sha1() dict abort$/;"	f
+buffer_spec	bundle/vim-fugitive/plugin/fugitive.vim	/^  function! s:buffer_spec() dict abort$/;"	f
+buffer_type	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:buffer_type(...) dict abort$/;"	f
+buffer_type_name	bundle/vim-rails/autoload/rails.vim	/^function! s:buffer_type_name(...) dict abort$/;"	f
+buffer_up	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:buffer_up(...) dict abort$/;"	f
+buffertag.vim	bundle/ctrlp.vim/autoload/ctrlp/buffertag.vim	1;"	F
+buffunc	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:buffunc(e)$/;"	f
+buftab	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:buftab(bufnr, md)$/;"	f
+bufwins	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:bufwins(bufnr)$/;"	f
+build_path	bundle/vim-ruby/ftplugin/ruby.vim	/^function! s:build_path(path)$/;"	f
+buildpat	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:buildpat(lst)$/;"	f
+bundle.path	bundle/vundle/autoload/vundle/config.vim	/^func! s:bundle.path()$/;"	f
+cache_clear	bundle/vim-rails/autoload/rails.vim	/^function! s:cache_clear(...) dict$/;"	f
+cache_get	bundle/vim-rails/autoload/rails.vim	/^function! s:cache_get(...) dict$/;"	f
+cache_has	bundle/vim-rails/autoload/rails.vim	/^function! s:cache_has(key) dict$/;"	f
+cache_needs	bundle/vim-rails/autoload/rails.vim	/^function! s:cache_needs(key) dict$/;"	f
+cache_set	bundle/vim-rails/autoload/rails.vim	/^function! s:cache_set(key,value) dict$/;"	f
+cachefile	bundle/ctrlp.vim/autoload/ctrlp/bookmarkdir.vim	/^fu! s:cachefile()$/;"	f
+caret	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    caret = None$/;"	v	class:Parser
+caret	bundle/sparkup/sparkup	/^    caret = None$/;"	v	class:Parser
+caret	bundle/sparkup/sparkup.py	/^    caret = None$/;"	v	class:Parser
+caret	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    caret = None$/;"	v	class:Parser
+cases	bundle/sparkup/sparkup-unittest.py	/^    cases = {$/;"	v	class:SparkupTest
+changelist	bundle/ctrlp.vim/autoload/ctrlp/changes.vim	/^fu! s:changelist(bufnr)$/;"	f
+changes.vim	bundle/ctrlp.vim/autoload/ctrlp/changes.vim	1;"	F
+checkbuf	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:checkbuf()$/;"	f
+children	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    children = None$/;"	v	class:Element
+children	bundle/sparkup/sparkup	/^    children = None$/;"	v	class:Element
+children	bundle/sparkup/sparkup.py	/^    children = None$/;"	v	class:Element
+children	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    children = None$/;"	v	class:Element
+chknearby	bundle/ctrlp.vim/autoload/ctrlp/buffertag.vim	/^fu! s:chknearby(pat)$/;"	f
+choices	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:choices(str, choices, func, args)$/;"	f
+chop	bundle/ctrlp.vim/autoload/ctrlp/mrufiles.vim	/^fu! s:chop(mrufs)$/;"	f
+clear_signs	bundle/vim-gitgutter/plugin/gitgutter.vim	/^function! s:clear_signs(file_name)$/;"	f
+closing_brackets.rb	bundle/vim-ruby/etc/examples/indent/closing_brackets.rb	1;"	F
+closing_tag	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    closing_tag = None$/;"	v	class:Element
+closing_tag	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    closing_tag = None$/;"	v	class:Token
+closing_tag	bundle/sparkup/sparkup	/^    closing_tag = None$/;"	v	class:Element
+closing_tag	bundle/sparkup/sparkup	/^    closing_tag = None$/;"	v	class:Token
+closing_tag	bundle/sparkup/sparkup.py	/^    closing_tag = None$/;"	v	class:Element
+closing_tag	bundle/sparkup/sparkup.py	/^    closing_tag = None$/;"	v	class:Token
+closing_tag	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    closing_tag = None$/;"	v	class:Element
+closing_tag	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    closing_tag = None$/;"	v	class:Token
+cmdline_keys	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    cmdline_keys = [$/;"	v	class:Options
+cmdline_keys	bundle/sparkup/sparkup	/^    cmdline_keys = [$/;"	v	class:Options
+cmdline_keys	bundle/sparkup/sparkup.py	/^    cmdline_keys = [$/;"	v	class:Options
+cmdline_keys	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    cmdline_keys = [$/;"	v	class:Options
+color	bundle/desert-warm-256/colors/desert-warm-256.vim	/^    fun <SID>color(r, g, b)$/;"	f
+color_efm	bundle/vim-rails/autoload/rails.vim	/^function! s:color_efm(pre, before, after)$/;"	f
+colors_name	bundle/vim-colors-github/colors/github.vim	/^let colors_name="github"$/;"	v
+combine_projections	bundle/vim-rails/autoload/rails.vim	/^function! s:combine_projections(dest, src, ...) abort$/;"	f
+command	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:command(definition) abort$/;"	f
+command_in_directory_of_current_file	bundle/vim-gitgutter/plugin/gitgutter.vim	/^function! s:command_in_directory_of_current_file(cmd)$/;"	f
+comparent	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:comparent(...)$/;"	f
+compfnlen	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:compfnlen(...)$/;"	f
+completion_filter	bundle/vim-rails/autoload/rails.vim	/^function! s:completion_filter(results,A)$/;"	f
+compmatlen	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:compmatlen(...)$/;"	f
+compmreb	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:compmreb(...)$/;"	f
+compmref	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:compmref(...)$/;"	f
+comptime	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:comptime(...)$/;"	f
+compval	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:compval(...)$/;"	f
+compval	bundle/ctrlp.vim/autoload/ctrlp/undo.vim	/^fu! s:compval(...)$/;"	f
+config.vim	bundle/vundle/autoload/vundle/config.vim	1;"	F
+contents	bundle/vim-ruby/bin/vim-ruby-install.rb	/^    def contents$/;"	f	class:VimRubyInstaller.BackupDir
+continuations.rb	bundle/vim-ruby/etc/examples/indent/continuations.rb	1;"	F
+controller	bundle/vim-rails/autoload/rails.vim	/^function! s:controller(...)$/;"	f
+controllerEdit	bundle/vim-rails/autoload/rails.vim	/^function! s:controllerEdit(cmd,...)$/;"	f
+controllerList	bundle/vim-rails/autoload/rails.vim	/^function! s:controllerList(A,L,P)$/;"	f
+copy	bundle/vim-ruby/bin/vim-ruby-install.rb	/^  def copy(path)$/;"	f	class:TargetDirectory
+copy	bundle/vim-ruby/bin/vim-ruby-install.rb	/^  def copy(source_path, target_path)$/;"	f	class:FileWriter
+create_changelog	bundle/vundle/autoload/vundle/scripts.vim	/^func! s:create_changelog() abort$/;"	f
+crend	bundle/vim-endwise/plugin/endwise.vim	/^function! s:crend(always)$/;"	f
+ctags.vim	bundle/ctags.vim/plugin/ctags.vim	1;"	F
+ctrlp#acceptfile	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! ctrlp#acceptfile(mode, line, ...)$/;"	f
+ctrlp#bookmarkdir#accept	bundle/ctrlp.vim/autoload/ctrlp/bookmarkdir.vim	/^fu! ctrlp#bookmarkdir#accept(mode, str)$/;"	f
+ctrlp#bookmarkdir#add	bundle/ctrlp.vim/autoload/ctrlp/bookmarkdir.vim	/^fu! ctrlp#bookmarkdir#add(dir)$/;"	f
+ctrlp#bookmarkdir#id	bundle/ctrlp.vim/autoload/ctrlp/bookmarkdir.vim	/^fu! ctrlp#bookmarkdir#id()$/;"	f
+ctrlp#bookmarkdir#init	bundle/ctrlp.vim/autoload/ctrlp/bookmarkdir.vim	/^fu! ctrlp#bookmarkdir#init()$/;"	f
+ctrlp#bookmarkdir#remove	bundle/ctrlp.vim/autoload/ctrlp/bookmarkdir.vim	/^fu! ctrlp#bookmarkdir#remove(entries)$/;"	f
+ctrlp#buffers	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! ctrlp#buffers(...)$/;"	f
+ctrlp#buffertag#accept	bundle/ctrlp.vim/autoload/ctrlp/buffertag.vim	/^fu! ctrlp#buffertag#accept(mode, str)$/;"	f
+ctrlp#buffertag#cmd	bundle/ctrlp.vim/autoload/ctrlp/buffertag.vim	/^fu! ctrlp#buffertag#cmd(mode, ...)$/;"	f
+ctrlp#buffertag#exit	bundle/ctrlp.vim/autoload/ctrlp/buffertag.vim	/^fu! ctrlp#buffertag#exit()$/;"	f
+ctrlp#buffertag#init	bundle/ctrlp.vim/autoload/ctrlp/buffertag.vim	/^fu! ctrlp#buffertag#init(fname)$/;"	f
+ctrlp#buffertag#opts	bundle/ctrlp.vim/autoload/ctrlp/buffertag.vim	/^fu! ctrlp#buffertag#opts()$/;"	f
+ctrlp#call	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! ctrlp#call(func, ...)$/;"	f
+ctrlp#changes#accept	bundle/ctrlp.vim/autoload/ctrlp/changes.vim	/^fu! ctrlp#changes#accept(mode, str)$/;"	f
+ctrlp#changes#cmd	bundle/ctrlp.vim/autoload/ctrlp/changes.vim	/^fu! ctrlp#changes#cmd(mode, ...)$/;"	f
+ctrlp#changes#exit	bundle/ctrlp.vim/autoload/ctrlp/changes.vim	/^fu! ctrlp#changes#exit()$/;"	f
+ctrlp#changes#init	bundle/ctrlp.vim/autoload/ctrlp/changes.vim	/^fu! ctrlp#changes#init(original_bufnr, bufnr)$/;"	f
+ctrlp#clr	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! ctrlp#clr(...)$/;"	f
+ctrlp#clra	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! ctrlp#clra()$/;"	f
+ctrlp#complen	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! ctrlp#complen(...)$/;"	f
+ctrlp#dir#accept	bundle/ctrlp.vim/autoload/ctrlp/dir.vim	/^fu! ctrlp#dir#accept(mode, str)$/;"	f
+ctrlp#dir#id	bundle/ctrlp.vim/autoload/ctrlp/dir.vim	/^fu! ctrlp#dir#id()$/;"	f
+ctrlp#dir#init	bundle/ctrlp.vim/autoload/ctrlp/dir.vim	/^fu! ctrlp#dir#init(...)$/;"	f
+ctrlp#dirnfile	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! ctrlp#dirnfile(entries)$/;"	f
+ctrlp#exit	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! ctrlp#exit()$/;"	f
+ctrlp#files	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! ctrlp#files()$/;"	f
+ctrlp#getcline	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! ctrlp#getcline()$/;"	f
+ctrlp#getmarkedlist	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! ctrlp#getmarkedlist()$/;"	f
+ctrlp#hicheck	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! ctrlp#hicheck(grp, defgrp)$/;"	f
+ctrlp#init	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! ctrlp#init(type, ...)$/;"	f
+ctrlp#j2l	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! ctrlp#j2l(nr)$/;"	f
+ctrlp#line#accept	bundle/ctrlp.vim/autoload/ctrlp/line.vim	/^fu! ctrlp#line#accept(mode, str)$/;"	f
+ctrlp#line#id	bundle/ctrlp.vim/autoload/ctrlp/line.vim	/^fu! ctrlp#line#id()$/;"	f
+ctrlp#line#init	bundle/ctrlp.vim/autoload/ctrlp/line.vim	/^fu! ctrlp#line#init()$/;"	f
+ctrlp#mixed#id	bundle/ctrlp.vim/autoload/ctrlp/mixed.vim	/^fu! ctrlp#mixed#id()$/;"	f
+ctrlp#mixed#init	bundle/ctrlp.vim/autoload/ctrlp/mixed.vim	/^fu! ctrlp#mixed#init(clim)$/;"	f
+ctrlp#modfilecond	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! ctrlp#modfilecond(w)$/;"	f
+ctrlp#mrufiles#add	bundle/ctrlp.vim/autoload/ctrlp/mrufiles.vim	/^fu! ctrlp#mrufiles#add(fn)$/;"	f
+ctrlp#mrufiles#bufs	bundle/ctrlp.vim/autoload/ctrlp/mrufiles.vim	/^fu! ctrlp#mrufiles#bufs()$/;"	f
+ctrlp#mrufiles#cachefile	bundle/ctrlp.vim/autoload/ctrlp/mrufiles.vim	/^fu! ctrlp#mrufiles#cachefile()$/;"	f
+ctrlp#mrufiles#init	bundle/ctrlp.vim/autoload/ctrlp/mrufiles.vim	/^fu! ctrlp#mrufiles#init()$/;"	f
+ctrlp#mrufiles#list	bundle/ctrlp.vim/autoload/ctrlp/mrufiles.vim	/^fu! ctrlp#mrufiles#list(...)$/;"	f
+ctrlp#mrufiles#opts	bundle/ctrlp.vim/autoload/ctrlp/mrufiles.vim	/^fu! ctrlp#mrufiles#opts()$/;"	f
+ctrlp#mrufiles#refresh	bundle/ctrlp.vim/autoload/ctrlp/mrufiles.vim	/^fu! ctrlp#mrufiles#refresh(...)$/;"	f
+ctrlp#mrufiles#remove	bundle/ctrlp.vim/autoload/ctrlp/mrufiles.vim	/^fu! ctrlp#mrufiles#remove(files)$/;"	f
+ctrlp#normcmd	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! ctrlp#normcmd(cmd, ...)$/;"	f
+ctrlp#nosy	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! ctrlp#nosy()$/;"	f
+ctrlp#progress	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! ctrlp#progress(enum, ...)$/;"	f
+ctrlp#prtclear	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! ctrlp#prtclear()$/;"	f
+ctrlp#quickfix#accept	bundle/ctrlp.vim/autoload/ctrlp/quickfix.vim	/^fu! ctrlp#quickfix#accept(mode, str)$/;"	f
+ctrlp#quickfix#id	bundle/ctrlp.vim/autoload/ctrlp/quickfix.vim	/^fu! ctrlp#quickfix#id()$/;"	f
+ctrlp#quickfix#init	bundle/ctrlp.vim/autoload/ctrlp/quickfix.vim	/^fu! ctrlp#quickfix#init()$/;"	f
+ctrlp#recordhist	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! ctrlp#recordhist()$/;"	f
+ctrlp#rmbasedir	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! ctrlp#rmbasedir(items)$/;"	f
+ctrlp#rtscript#id	bundle/ctrlp.vim/autoload/ctrlp/rtscript.vim	/^fu! ctrlp#rtscript#id()$/;"	f
+ctrlp#rtscript#init	bundle/ctrlp.vim/autoload/ctrlp/rtscript.vim	/^fu! ctrlp#rtscript#init(caching)$/;"	f
+ctrlp#setdir	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! ctrlp#setdir(path, ...)$/;"	f
+ctrlp#setlcdir	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! ctrlp#setlcdir()$/;"	f
+ctrlp#setlines	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! ctrlp#setlines(...)$/;"	f
+ctrlp#statusline	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! ctrlp#statusline()$/;"	f
+ctrlp#switchtype	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! ctrlp#switchtype(id)$/;"	f
+ctrlp#syntax	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! ctrlp#syntax()$/;"	f
+ctrlp#tabcount	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! ctrlp#tabcount()$/;"	f
+ctrlp#tag#accept	bundle/ctrlp.vim/autoload/ctrlp/tag.vim	/^fu! ctrlp#tag#accept(mode, str)$/;"	f
+ctrlp#tag#enter	bundle/ctrlp.vim/autoload/ctrlp/tag.vim	/^fu! ctrlp#tag#enter()$/;"	f
+ctrlp#tag#id	bundle/ctrlp.vim/autoload/ctrlp/tag.vim	/^fu! ctrlp#tag#id()$/;"	f
+ctrlp#tag#init	bundle/ctrlp.vim/autoload/ctrlp/tag.vim	/^fu! ctrlp#tag#init()$/;"	f
+ctrlp#undo#accept	bundle/ctrlp.vim/autoload/ctrlp/undo.vim	/^fu! ctrlp#undo#accept(mode, str)$/;"	f
+ctrlp#undo#enter	bundle/ctrlp.vim/autoload/ctrlp/undo.vim	/^fu! ctrlp#undo#enter()$/;"	f
+ctrlp#undo#exit	bundle/ctrlp.vim/autoload/ctrlp/undo.vim	/^fu! ctrlp#undo#exit()$/;"	f
+ctrlp#undo#id	bundle/ctrlp.vim/autoload/ctrlp/undo.vim	/^fu! ctrlp#undo#id()$/;"	f
+ctrlp#undo#init	bundle/ctrlp.vim/autoload/ctrlp/undo.vim	/^fu! ctrlp#undo#init()$/;"	f
+ctrlp#utils#cachedir	bundle/ctrlp.vim/autoload/ctrlp/utils.vim	/^fu! ctrlp#utils#cachedir()$/;"	f
+ctrlp#utils#cachefile	bundle/ctrlp.vim/autoload/ctrlp/utils.vim	/^fu! ctrlp#utils#cachefile(...)$/;"	f
+ctrlp#utils#dircompl	bundle/ctrlp.vim/autoload/ctrlp/utils.vim	/^fu! ctrlp#utils#dircompl(...)$/;"	f
+ctrlp#utils#fnesc	bundle/ctrlp.vim/autoload/ctrlp/utils.vim	/^fu! ctrlp#utils#fnesc(path, type, ...)$/;"	f
+ctrlp#utils#glob	bundle/ctrlp.vim/autoload/ctrlp/utils.vim	/^fu! ctrlp#utils#glob(...)$/;"	f
+ctrlp#utils#globpath	bundle/ctrlp.vim/autoload/ctrlp/utils.vim	/^fu! ctrlp#utils#globpath(...)$/;"	f
+ctrlp#utils#lash	bundle/ctrlp.vim/autoload/ctrlp/utils.vim	/^fu! ctrlp#utils#lash()$/;"	f
+ctrlp#utils#mkdir	bundle/ctrlp.vim/autoload/ctrlp/utils.vim	/^fu! ctrlp#utils#mkdir(dir)$/;"	f
+ctrlp#utils#opts	bundle/ctrlp.vim/autoload/ctrlp/utils.vim	/^fu! ctrlp#utils#opts()$/;"	f
+ctrlp#utils#readfile	bundle/ctrlp.vim/autoload/ctrlp/utils.vim	/^fu! ctrlp#utils#readfile(file)$/;"	f
+ctrlp#utils#writecache	bundle/ctrlp.vim/autoload/ctrlp/utils.vim	/^fu! ctrlp#utils#writecache(lines, ...)$/;"	f
+ctrlp.vim	bundle/ctrlp.vim/autoload/ctrlp.vim	1;"	F
+ctrlp.vim	bundle/ctrlp.vim/plugin/ctrlp.vim	1;"	F
+ctrlp.vim	bundle/vim-powerline/autoload/Powerline/Segments/ctrlp.vim	1;"	F
+current_compiler	bundle/vim-ruby/compiler/eruby.vim	/^let current_compiler = "eruby"$/;"	v
+current_compiler	bundle/vim-ruby/compiler/rspec.vim	/^let current_compiler = "rspec"$/;"	v
+current_compiler	bundle/vim-ruby/compiler/ruby.vim	/^let current_compiler = "ruby"$/;"	v
+current_compiler	bundle/vim-ruby/compiler/rubyunit.vim	/^let current_compiler = "rubyunit"$/;"	v
+current_file	bundle/vim-gitgutter/plugin/gitgutter.vim	/^function! s:current_file()$/;"	f
+debug	bundle/vim-rails/autoload/rails.vim	/^function! s:debug(str)$/;"	f
+default.vim	bundle/vim-powerline/autoload/Powerline/Colorschemes/default.vim	1;"	F
+default.vim	bundle/vim-powerline/autoload/Powerline/Themes/default.vim	1;"	F
+define_commands	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:define_commands()$/;"	f
+define_highlights	bundle/vim-gitgutter/plugin/gitgutter.vim	/^function! s:define_highlights()$/;"	f
+define_navcommand	bundle/vim-rails/autoload/rails.vim	/^function! s:define_navcommand(name, projection) abort$/;"	f
+define_signs	bundle/vim-gitgutter/plugin/gitgutter.vim	/^function! s:define_signs()$/;"	f
+delent	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:delent(rfunc)$/;"	f
+depth	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    depth = -1$/;"	v	class:Element
+depth	bundle/sparkup/sparkup	/^    depth = -1$/;"	v	class:Element
+depth	bundle/sparkup/sparkup.py	/^    depth = -1$/;"	v	class:Element
+depth	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    depth = -1$/;"	v	class:Element
+desert-warm-256.vim	bundle/desert-warm-256/colors/desert-warm-256.vim	1;"	F
+determine_home_dir	bundle/vim-ruby/bin/vim-ruby-install.rb	/^  def Env.determine_home_dir$/;"	F	class:Env
+determine_source_directory	bundle/vim-ruby/bin/vim-ruby-install.rb	/^  def Env.determine_source_directory$/;"	F	class:Env
+determine_target_os	bundle/vim-ruby/bin/vim-ruby-install.rb	/^  def Env.determine_target_os$/;"	F	class:Env
+determine_vim_dir	bundle/vim-ruby/bin/vim-ruby-install.rb	/^  def Env.determine_vim_dir$/;"	F	class:Env
+dialect	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    dialect = None$/;"	v	class:Parser
+dialect	bundle/sparkup/sparkup	/^    dialect = None$/;"	v	class:Parser
+dialect	bundle/sparkup/sparkup.py	/^    dialect = None$/;"	v	class:Parser
+dialect	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    dialect = None$/;"	v	class:Parser
+dict2list	bundle/ctrlp.vim/autoload/ctrlp/undo.vim	/^fu! s:dict2list(dict)$/;"	f
+dictindex	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:dictindex(dict, expr)$/;"	f
+diff_window_count	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:diff_window_count()$/;"	f
+diffoff	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:diffoff()$/;"	f
+diffoff_all	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:diffoff_all(dir)$/;"	f
+diffthis	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:diffthis()$/;"	f
+dir.vim	bundle/ctrlp.vim/autoload/ctrlp/dir.vim	1;"	F
+dircompl	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:dircompl(be, sd)$/;"	f
+directory_of_current_file	bundle/vim-gitgutter/plugin/gitgutter.vim	/^function! s:directory_of_current_file()$/;"	f
+discard_stdout_and_stderr	bundle/vim-gitgutter/plugin/gitgutter.vim	/^function! s:discard_stdout_and_stderr()$/;"	f
+dismrk	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:dismrk()$/;"	f
+division	bundle/vim-powerline/fontpatcher/fontpatcher	/^from __future__ import division$/;"	i
+djump	bundle/vim-rails/autoload/rails.vim	/^function! s:djump(def)$/;"	f
+dohighlight	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:dohighlight()$/;"	f
+dosigns	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:dosigns()$/;"	f
+dotcmp	bundle/vim-rails/autoload/rails.vim	/^function! s:dotcmp(i1, i2)$/;"	f
+dprint	bundle/vim-ruby/autoload/rubycomplete.vim	/^function! s:dprint(msg)$/;"	f
+edit	bundle/vim-rails/autoload/rails.vim	/^function! s:edit(cmd,file,...)$/;"	f
+editcmdfor	bundle/vim-rails/autoload/rails.vim	/^function! s:editcmdfor(cmd)$/;"	f
+elapsed	bundle/ctrlp.vim/autoload/ctrlp/undo.vim	/^fu! s:elapsed(nr)$/;"	f
+end_constructs.rb	bundle/vim-ruby/etc/examples/indent/end_constructs.rb	1;"	F
+endof	bundle/vim-rails/autoload/rails.vim	/^function! s:endof(lnum)$/;"	f
+endwise.vim	bundle/vim-endwise/plugin/endwise.vim	1;"	F
+environment	bundle/vim-rails/autoload/rails.vim	/^function! s:environment()$/;"	f
+error	bundle/vim-rails/autoload/rails.vim	/^function! s:error(str)$/;"	f
+error	bundle/vim-rails/plugin/rails.vim	/^function! s:error(str)$/;"	f
+eruby.vim	bundle/vim-ruby/compiler/eruby.vim	1;"	F
+eruby.vim	bundle/vim-ruby/ftplugin/eruby.vim	1;"	F
+eruby.vim	bundle/vim-ruby/indent/eruby.vim	1;"	F
+eruby.vim	bundle/vim-ruby/syntax/eruby.vim	1;"	F
+escarg	bundle/vim-rails/autoload/rails.vim	/^function! s:escarg(p)$/;"	f
+esccmd	bundle/vim-rails/autoload/rails.vim	/^function! s:esccmd(p)$/;"	f
+esctagscmd	bundle/ctrlp.vim/autoload/ctrlp/buffertag.vim	/^fu! s:esctagscmd(bin, args, ...)$/;"	f
+escvar	bundle/vim-rails/plugin/rails.vim	/^function! s:escvar(r)$/;"	f
+excl	bundle/ctrlp.vim/autoload/ctrlp/mrufiles.vim	/^fu! s:excl(fn)$/;"	f
+execextvar	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:execextvar(key)$/;"	f
+exectags	bundle/ctrlp.vim/autoload/ctrlp/buffertag.vim	/^fu! s:exectags(cmd)$/;"	f
+exectagsonfile	bundle/ctrlp.vim/autoload/ctrlp/buffertag.vim	/^fu! s:exectagsonfile(fname, ftype)$/;"	f
+exists_current_file	bundle/vim-gitgutter/plugin/gitgutter.vim	/^function! s:exists_current_file()$/;"	f
+exit	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    def exit(self):$/;"	m	class:Router
+exit	bundle/sparkup/sparkup	/^    def exit(self):$/;"	m	class:Router
+exit	bundle/sparkup/sparkup.py	/^    def exit(self):$/;"	m	class:Router
+exit	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    def exit(self):$/;"	m	class:Router
+expand	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    expand = False$/;"	v	class:Element
+expand	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    expand = False$/;"	v	class:Token
+expand	bundle/sparkup/sparkup	/^    expand = False$/;"	v	class:Element
+expand	bundle/sparkup/sparkup	/^    expand = False$/;"	v	class:Token
+expand	bundle/sparkup/sparkup.py	/^    expand = False$/;"	v	class:Element
+expand	bundle/sparkup/sparkup.py	/^    expand = False$/;"	v	class:Token
+expand	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    expand = False$/;"	v	class:Element
+expand	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    expand = False$/;"	v	class:Token
+expand_path	bundle/vundle/autoload/vundle/config.vim	/^func! s:expand_path(path) abort$/;"	f
+extension	bundle/vim-powerline/fontpatcher/fontpatcher	/^		extension = 'otf'$/;"	v
+extractdbvar	bundle/vim-rails/autoload/rails.vim	/^function! s:extractdbvar(str,arg)$/;"	f
+fetch_scripts	bundle/vundle/autoload/vundle/scripts.vim	/^func! s:fetch_scripts(to)$/;"	f
+file_getline	bundle/vim-rails/autoload/rails.vim	/^function! s:file_getline(lnum,...) dict abort$/;"	f
+file_lines	bundle/vim-rails/autoload/rails.vim	/^function! s:file_lines() dict abort$/;"	f
+file_name	bundle/vim-rails/autoload/rails.vim	/^function! s:file_name() dict abort$/;"	f
+file_path	bundle/vim-rails/autoload/rails.vim	/^function! s:file_path() dict abort$/;"	f
+fileinput	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^import fileinput$/;"	i
+fileinput	bundle/sparkup/sparkup	/^import fileinput$/;"	i
+fileinput	bundle/sparkup/sparkup.py	/^import fileinput$/;"	i
+fileinput	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^import fileinput$/;"	i
+filter	bundle/ctrlp.vim/autoload/ctrlp/tag.vim	/^fu! s:filter(tags)$/;"	f
+find_other_signs	bundle/vim-gitgutter/plugin/gitgutter.vim	/^function! s:find_other_signs(file_name)$/;"	f
+find_projection	bundle/vim-rails/autoload/rails.vim	/^function! s:find_projection(projections, filename) abort$/;"	f
+find_target_directory	bundle/vim-ruby/bin/vim-ruby-install.rb	/^  def find_target_directory$/;"	f	class:TargetDirectory
+findamethod	bundle/vim-rails/autoload/rails.vim	/^function! s:findamethod(func,repl)$/;"	f
+findasymbol	bundle/vim-rails/autoload/rails.vim	/^function! s:findasymbol(sym,repl)$/;"	f
+findcmdfor	bundle/vim-rails/autoload/rails.vim	/^function! s:findcmdfor(cmd)$/;"	f
+findcommon	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:findcommon(items, seed)$/;"	f
+findcount	bundle/ctrlp.vim/autoload/ctrlp/tag.vim	/^fu! s:findcount(str)$/;"	f
+findedit	bundle/vim-rails/autoload/rails.vim	/^function! s:findedit(cmd,files,...) abort$/;"	f
+finder	bundle/vim-ruby/bin/vim-ruby-install.rb	/^  def self.finder$/;"	F	class:TargetDirectory
+findfromview	bundle/vim-rails/autoload/rails.vim	/^function! s:findfromview(func,repl)$/;"	f
+findit	bundle/vim-rails/autoload/rails.vim	/^function! s:findit(pat,repl)$/;"	f
+findlayout	bundle/vim-rails/autoload/rails.vim	/^function! s:findlayout(name)$/;"	f
+findroot	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:findroot(curr, mark, depth, type)$/;"	f
+findview	bundle/vim-rails/autoload/rails.vim	/^function! s:findview(name)$/;"	f
+fixturesEdit	bundle/vim-rails/autoload/rails.vim	/^function! s:fixturesEdit(cmd,...)$/;"	f
+fixturesList	bundle/vim-rails/autoload/rails.vim	/^function! s:fixturesList(A,L,P)$/;"	f
+flatten	bundle/ctrlp.vim/autoload/ctrlp/undo.vim	/^fu! s:flatten(tree, cur)$/;"	f
+fnameescape	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:fnameescape(file) abort$/;"	f
+fnameescape	bundle/vim-rails/autoload/rails.vim	/^function! s:fnameescape(file) abort$/;"	f
+fnesc	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:fnesc(...)$/;"	f
+font	bundle/vim-powerline/fontpatcher/fontpatcher	/^		font = fontforge.open(font_path)$/;"	v
+font_dim	bundle/vim-powerline/fontpatcher/fontpatcher	/^	font_dim = {$/;"	v
+font_ycenter	bundle/vim-powerline/fontpatcher/fontpatcher	/^		font_ycenter = font_dim['height'] \/ 2$/;"	v
+fontforge	bundle/vim-powerline/fontpatcher/fontpatcher	/^	import fontforge$/;"	i
+fontpatcher	bundle/vim-powerline/fontpatcher/fontpatcher	1;"	F
+foo	bundle/vim-ruby/etc/examples/indent/blocks.rb	/^def foo$/;"	f
+foo	bundle/vim-ruby/etc/examples/indent/blocks.rb	/^def foo(job)$/;"	f
+format	bundle/ctrlp.vim/autoload/ctrlp/undo.vim	/^fu! s:format(...)$/;"	f
+format	bundle/vim-rails/autoload/rails.vim	/^function! s:format()$/;"	f
+formatline	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:formatline(str)$/;"	f
+formatul	bundle/ctrlp.vim/autoload/ctrlp/undo.vim	/^fu! s:formatul(...)$/;"	f
+ft_man.vim	bundle/vim-powerline/autoload/Powerline/Functions/ft_man.vim	1;"	F
+ft_man.vim	bundle/vim-powerline/autoload/Powerline/Segments/ft_man.vim	1;"	F
+fugitive	bundle/vim-fugitive/plugin/fugitive.vim	/^augroup fugitive$/;"	a
+fugitive#buffer	bundle/vim-fugitive/plugin/fugitive.vim	/^function! fugitive#buffer(...) abort$/;"	f
+fugitive#detect	bundle/vim-fugitive/plugin/fugitive.vim	/^function! fugitive#detect(path)$/;"	f
+fugitive#extract_git_dir	bundle/vim-fugitive/plugin/fugitive.vim	/^function! fugitive#extract_git_dir(path) abort$/;"	f
+fugitive#foldtext	bundle/vim-fugitive/plugin/fugitive.vim	/^function! fugitive#foldtext() abort$/;"	f
+fugitive#head	bundle/vim-fugitive/plugin/fugitive.vim	/^function! fugitive#head(...)$/;"	f
+fugitive#is_git_dir	bundle/vim-fugitive/plugin/fugitive.vim	/^function! fugitive#is_git_dir(path) abort$/;"	f
+fugitive#reload_status	bundle/vim-fugitive/plugin/fugitive.vim	/^function! fugitive#reload_status() abort$/;"	f
+fugitive#repo	bundle/vim-fugitive/plugin/fugitive.vim	/^function! fugitive#repo(...)$/;"	f
+fugitive#statusline	bundle/vim-fugitive/plugin/fugitive.vim	/^function! fugitive#statusline(...)$/;"	f
+fugitive.vim	bundle/vim-fugitive/plugin/fugitive.vim	1;"	F
+fugitive.vim	bundle/vim-powerline/autoload/Powerline/Functions/fugitive.vim	1;"	F
+fugitive.vim	bundle/vim-powerline/autoload/Powerline/Segments/fugitive.vim	1;"	F
+fugitive_blame	bundle/vim-fugitive/plugin/fugitive.vim	/^augroup fugitive_blame$/;"	a
+fugitive_commit	bundle/vim-fugitive/plugin/fugitive.vim	/^augroup fugitive_commit$/;"	a
+fugitive_diff	bundle/vim-fugitive/plugin/fugitive.vim	/^augroup fugitive_diff$/;"	a
+fugitive_files	bundle/vim-fugitive/plugin/fugitive.vim	/^augroup fugitive_files$/;"	a
+fugitive_foldtext	bundle/vim-fugitive/plugin/fugitive.vim	/^augroup fugitive_foldtext$/;"	a
+fugitive_remove	bundle/vim-fugitive/plugin/fugitive.vim	/^augroup fugitive_remove$/;"	a
+fugitive_temp	bundle/vim-fugitive/plugin/fugitive.vim	/^augroup fugitive_temp$/;"	a
+fugitive_utility	bundle/vim-fugitive/plugin/fugitive.vim	/^augroup fugitive_utility$/;"	a
+function	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:function(name) abort$/;"	f
+function	bundle/vim-rails/autoload/rails.vim	/^function! s:function(name)$/;"	f
+function	bundle/vim-rails/plugin/rails.vim	/^function! s:function(name)$/;"	f
+fuzzyglob	bundle/vim-rails/autoload/rails.vim	/^function! s:fuzzyglob(arg)$/;"	f
+g:EasyMotion_loaded	bundle/vim-easymotion/plugin/EasyMotion.vim	/^	let g:EasyMotion_loaded = 1$/;"	v
+g:Pl#HL	bundle/vim-powerline/autoload/Pl.vim	/^	let g:Pl#HL = []$/;"	v
+g:Pl#OLD_STL	bundle/vim-powerline/autoload/Pl.vim	/^	let g:Pl#OLD_STL = ''$/;"	v
+g:Pl#Parser#Symbols	bundle/vim-powerline/autoload/Pl/Parser.vim	/^	let g:Pl#Parser#Symbols[g:Powerline_symbols].dividers = g:Powerline_dividers_override$/;"	v
+g:Pl#Parser#Symbols	bundle/vim-powerline/autoload/Pl/Parser.vim	/^	let g:Pl#Parser#Symbols[g:Powerline_symbols].symbols[s:key] = s:value$/;"	v
+g:Pl#Parser#Symbols	bundle/vim-powerline/autoload/Pl/Parser.vim	/^let g:Pl#Parser#Symbols = {$/;"	v
+g:Pl#THEME	bundle/vim-powerline/autoload/Pl.vim	/^	let g:Pl#THEME = []$/;"	v
+g:Pl#THEME_CALLBACKS	bundle/vim-powerline/autoload/Pl.vim	/^	let g:Pl#THEME_CALLBACKS = []$/;"	v
+g:Powerline#Colorschemes#default#colorscheme	bundle/vim-powerline/autoload/Powerline/Colorschemes/default.vim	/^let g:Powerline#Colorschemes#default#colorscheme = Pl#Colorscheme#Init([$/;"	v
+g:Powerline#Colorschemes#solarized#colorscheme	bundle/vim-powerline/autoload/Powerline/Colorschemes/solarized.vim	/^let g:Powerline#Colorschemes#solarized#colorscheme = Pl#Colorscheme#Init([$/;"	v
+g:Powerline#Colorschemes#solarized16#colorscheme	bundle/vim-powerline/autoload/Powerline/Colorschemes/solarized16.vim	/^let g:Powerline#Colorschemes#solarized16#colorscheme= Pl#Colorscheme#Init([$/;"	v
+g:Powerline#Colorschemes#solarized256#colorscheme	bundle/vim-powerline/autoload/Powerline/Colorschemes/solarized256.vim	/^let g:Powerline#Colorschemes#solarized256#colorscheme = Pl#Colorscheme#Init([$/;"	v
+g:Powerline#Matches#matches	bundle/vim-powerline/autoload/Powerline/Matches.vim	/^let g:Powerline#Matches#matches = {$/;"	v
+g:Powerline#Segments#ctrlp#segments	bundle/vim-powerline/autoload/Powerline/Segments/ctrlp.vim	/^let g:Powerline#Segments#ctrlp#segments = Pl#Segment#Init(['ctrlp'$/;"	v
+g:Powerline#Segments#ctrlp#segments#focus	bundle/vim-powerline/autoload/Powerline/Segments/ctrlp.vim	/^	let g:Powerline#Segments#ctrlp#segments#focus = '%{"%0"}'$/;"	v
+g:Powerline#Segments#ctrlp#segments#next	bundle/vim-powerline/autoload/Powerline/Segments/ctrlp.vim	/^	let g:Powerline#Segments#ctrlp#segments#next = '%-3{"%5"}'$/;"	v
+g:Powerline#Segments#ctrlp#segments#prev	bundle/vim-powerline/autoload/Powerline/Segments/ctrlp.vim	/^	let g:Powerline#Segments#ctrlp#segments#prev = '%-3{"%3"}'$/;"	v
+g:Powerline#Segments#ft_man#segments	bundle/vim-powerline/autoload/Powerline/Segments/ft_man.vim	/^let g:Powerline#Segments#ft_man#segments = Pl#Segment#Init(['ft_man',$/;"	v
+g:Powerline#Segments#fugitive#segments	bundle/vim-powerline/autoload/Powerline/Segments/fugitive.vim	/^let g:Powerline#Segments#fugitive#segments = Pl#Segment#Init(['fugitive',$/;"	v
+g:Powerline#Segments#hgrev#segments	bundle/vim-powerline/autoload/Powerline/Segments/hgrev.vim	/^let g:Powerline#Segments#hgrev#segments = Pl#Segment#Init(['hgrev',$/;"	v
+g:Powerline#Segments#rvm#segments	bundle/vim-powerline/autoload/Powerline/Segments/rvm.vim	/^let g:Powerline#Segments#rvm#segments = Pl#Segment#Init(['rvm',$/;"	v
+g:Powerline#Segments#segments	bundle/vim-powerline/autoload/Powerline/Segments.vim	/^let g:Powerline#Segments#segments = Pl#Segment#Init([$/;"	v
+g:Powerline#Segments#syntastic#segments	bundle/vim-powerline/autoload/Powerline/Segments/syntastic.vim	/^let g:Powerline#Segments#syntastic#segments = Pl#Segment#Init(['syntastic',$/;"	v
+g:Powerline#Segments#tagbar#segments	bundle/vim-powerline/autoload/Powerline/Segments/tagbar.vim	/^let g:Powerline#Segments#tagbar#segments = Pl#Segment#Init(['tagbar',$/;"	v
+g:Powerline#Segments#virtualenv#segments	bundle/vim-powerline/autoload/Powerline/Segments/virtualenv.vim	/^let g:Powerline#Segments#virtualenv#segments = Pl#Segment#Init(['virtualenv',$/;"	v
+g:Powerline#Themes#default#theme	bundle/vim-powerline/autoload/Powerline/Themes/default.vim	/^let g:Powerline#Themes#default#theme = Pl#Theme#Create($/;"	v
+g:Powerline#Themes#solarized16#theme	bundle/vim-powerline/autoload/Powerline/Themes/solarized16.vim	/^let g:Powerline#Themes#solarized16#theme = Pl#Theme#Create($/;"	v
+g:Powerline#Themes#solarized256#theme	bundle/vim-powerline/autoload/Powerline/Themes/solarized256.vim	/^let g:Powerline#Themes#solarized256#theme = Pl#Theme#Create($/;"	v
+g:Powerline_cache_dir	bundle/vim-powerline/plugin/Powerline.vim	/^		let g:Powerline_cache_dir = simplify(expand('<sfile>:p:h') .'\/..')$/;"	v
+g:Powerline_loaded	bundle/vim-powerline/plugin/Powerline.vim	/^	let g:Powerline_loaded = 1$/;"	v
+g:ack_apply_lmappings	bundle/ack.vim/plugin/ack.vim	/^  let g:ack_apply_lmappings = !exists("g:ack_lhandler")$/;"	v
+g:ack_apply_qmappings	bundle/ack.vim/plugin/ack.vim	/^  let g:ack_apply_qmappings = !exists("g:ack_qhandler")$/;"	v
+g:ack_lhandler	bundle/ack.vim/plugin/ack.vim	/^  let g:ack_lhandler="botright lopen"$/;"	v
+g:ack_qhandler	bundle/ack.vim/plugin/ack.vim	/^  let g:ack_qhandler="botright copen"$/;"	v
+g:ackprg	bundle/ack.vim/plugin/ack.vim	/^  let g:ackprg=s:ackcommand." -H --nocolor --nogroup --column"$/;"	v
+g:autoloaded_rails	bundle/vim-rails/autoload/rails.vim	/^let g:autoloaded_rails = '4.4'$/;"	v
+g:colors_name	bundle/Zenburn/colors/zenburn.vim	/^let g:colors_name="zenburn"$/;"	v
+g:colors_name	bundle/desert-warm-256/colors/desert-warm-256.vim	/^let g:colors_name='desert-warm-256'$/;"	v
+g:colors_name	bundle/molokai/colors/molokai.vim	/^let g:colors_name="molokai"$/;"	v
+g:ctags_args	bundle/ctags.vim/plugin/ctags.vim	/^    let g:ctags_args='-I __declspec+'$/;"	v
+g:ctags_obligatory_args	bundle/ctags.vim/plugin/ctags.vim	/^let g:ctags_obligatory_args = '-n --sort=no -o -'$/;"	v
+g:ctags_path	bundle/ctags.vim/plugin/ctags.vim	/^    let g:ctags_path=$VIM.'\/ctags\/ctags'$/;"	v
+g:ctags_pattern	bundle/ctags.vim/plugin/ctags.vim	/^let g:ctags_pattern="^\\\\(.\\\\{-}\\\\)\\t.\\\\{-}\\t\\\\(\\\\d*\\\\).*"$/;"	v
+g:did_ruby_ftplugin_functions	bundle/vim-ruby/ftplugin/ruby.vim	/^let g:did_ruby_ftplugin_functions = 1$/;"	v
+g:eruby_default_subtype	bundle/vim-ruby/ftplugin/eruby.vim	/^  let g:eruby_default_subtype = "html"$/;"	v
+g:eruby_default_subtype	bundle/vim-ruby/syntax/eruby.vim	/^  let g:eruby_default_subtype = "html"$/;"	v
+g:fugitive_git_executable	bundle/vim-fugitive/plugin/fugitive.vim	/^  let g:fugitive_git_executable = 'git'$/;"	v
+g:fugitive_summary_format	bundle/vim-fugitive/plugin/fugitive.vim	/^  let g:fugitive_summary_format = '%s'$/;"	v
+g:gitgutter_enabled	bundle/vim-gitgutter/plugin/gitgutter.vim	/^  let g:gitgutter_enabled = 1$/;"	v
+g:gitgutter_highlights	bundle/vim-gitgutter/plugin/gitgutter.vim	/^  let g:gitgutter_highlights = 1$/;"	v
+g:loaded_ctrlp	bundle/ctrlp.vim/plugin/ctrlp.vim	/^let g:loaded_ctrlp = 1$/;"	v
+g:loaded_ctrlp_bookmarkdir	bundle/ctrlp.vim/autoload/ctrlp/bookmarkdir.vim	/^let g:loaded_ctrlp_bookmarkdir = 1$/;"	v
+g:loaded_ctrlp_buftag	bundle/ctrlp.vim/autoload/ctrlp/buffertag.vim	/^let g:loaded_ctrlp_buftag = 1$/;"	v
+g:loaded_ctrlp_changes	bundle/ctrlp.vim/autoload/ctrlp/changes.vim	/^let g:loaded_ctrlp_changes = 1$/;"	v
+g:loaded_ctrlp_line	bundle/ctrlp.vim/autoload/ctrlp/line.vim	/^let g:loaded_ctrlp_line = 1$/;"	v
+g:loaded_ctrlp_quickfix	bundle/ctrlp.vim/autoload/ctrlp/quickfix.vim	/^let g:loaded_ctrlp_quickfix = 1$/;"	v
+g:loaded_ctrlp_tag	bundle/ctrlp.vim/autoload/ctrlp/tag.vim	/^let g:loaded_ctrlp_tag = 1$/;"	v
+g:loaded_ctrlp_undo	bundle/ctrlp.vim/autoload/ctrlp/undo.vim	/^let g:loaded_ctrlp_undo = 1$/;"	v
+g:loaded_endwise	bundle/vim-endwise/plugin/endwise.vim	/^let g:loaded_endwise = 1$/;"	v
+g:loaded_fugitive	bundle/vim-fugitive/plugin/fugitive.vim	/^let g:loaded_fugitive = 1$/;"	v
+g:loaded_gitgutter	bundle/vim-gitgutter/plugin/gitgutter.vim	/^let g:loaded_gitgutter = 1$/;"	v
+g:loaded_rails	bundle/vim-rails/plugin/rails.vim	/^let g:loaded_rails = 1$/;"	v
+g:rails_no_abbreviations	bundle/vim-rails/autoload/rails.vim	/^  let g:rails_no_abbreviations = 1$/;"	v
+g:ruby_default_path	bundle/vim-ruby/ftplugin/ruby.vim	/^      let g:ruby_default_path = map(split($RUBYLIB,':'), 'v:val ==# "." ? "" : v:val')$/;"	v
+g:ruby_default_path	bundle/vim-ruby/ftplugin/ruby.vim	/^      let g:ruby_default_path = s:query_path($HOME)$/;"	v
+g:ruby_version_paths	bundle/vim-ruby/ftplugin/ruby.vim	/^      let g:ruby_version_paths[b:ruby_version] = s:query_path(fnamemodify(s:version_file, ':p:h'))$/;"	v
+g:ruby_version_paths	bundle/vim-ruby/ftplugin/ruby.vim	/^  let g:ruby_version_paths = {}$/;"	v
+g:rubycomplete_buffer_loading	bundle/vim-ruby/autoload/rubycomplete.vim	/^    let g:rubycomplete_buffer_loading = 0$/;"	v
+g:rubycomplete_classes_in_global	bundle/vim-ruby/autoload/rubycomplete.vim	/^    let g:rubycomplete_classes_in_global = 0$/;"	v
+g:rubycomplete_include_object	bundle/vim-ruby/autoload/rubycomplete.vim	/^    let g:rubycomplete_include_object = 0$/;"	v
+g:rubycomplete_include_objectspace	bundle/vim-ruby/autoload/rubycomplete.vim	/^    let g:rubycomplete_include_objectspace = 0$/;"	v
+g:rubycomplete_rails	bundle/vim-ruby/autoload/rubycomplete.vim	/^    let g:rubycomplete_rails = 0$/;"	v
+g:sparkupExecuteMapping	bundle/sparkup/vim/ftplugin/html/sparkup.vim	/^  let g:sparkupExecuteMapping = '<c-e>'$/;"	v
+g:sparkupNextMapping	bundle/sparkup/vim/ftplugin/html/sparkup.vim	/^  let g:sparkupNextMapping = '<c-n>'$/;"	v
+g:tcomment#ignore_char_type	bundle/tComment/autoload/tcomment.vim	/^    let g:tcomment#ignore_char_type = 1   "{{{2$/;"	v
+g:tcomment#replacements_c	bundle/tComment/autoload/tcomment.vim	/^    let g:tcomment#replacements_c = {$/;"	v
+g:tcomment#syntax_substitute	bundle/tComment/autoload/tcomment.vim	/^    let g:tcomment#syntax_substitute = {$/;"	v
+g:tcommentBlankLines	bundle/tComment/autoload/tcomment.vim	/^    let g:tcommentBlankLines = 1    "{{{2$/;"	v
+g:tcommentBlockC	bundle/tComment/autoload/tcomment.vim	/^    let g:tcommentBlockC = {$/;"	v
+g:tcommentBlockC2	bundle/tComment/autoload/tcomment.vim	/^    let g:tcommentBlockC2 = {$/;"	v
+g:tcommentBlockXML	bundle/tComment/autoload/tcomment.vim	/^    let g:tcommentBlockXML = "<!--%s-->\\n  "   "{{{2$/;"	v
+g:tcommentGuessFileType	bundle/tComment/autoload/tcomment.vim	/^    let g:tcommentGuessFileType = 0   "{{{2$/;"	v
+g:tcommentGuessFileType_django	bundle/tComment/autoload/tcomment.vim	/^    let g:tcommentGuessFileType_django = 1   "{{{2$/;"	v
+g:tcommentGuessFileType_dsl	bundle/tComment/autoload/tcomment.vim	/^    let g:tcommentGuessFileType_dsl = 'xml'   "{{{2$/;"	v
+g:tcommentGuessFileType_eruby	bundle/tComment/autoload/tcomment.vim	/^    let g:tcommentGuessFileType_eruby = 1   "{{{2$/;"	v
+g:tcommentGuessFileType_html	bundle/tComment/autoload/tcomment.vim	/^    let g:tcommentGuessFileType_html = 1   "{{{2$/;"	v
+g:tcommentGuessFileType_php	bundle/tComment/autoload/tcomment.vim	/^    let g:tcommentGuessFileType_php = 'html'   "{{{2$/;"	v
+g:tcommentGuessFileType_smarty	bundle/tComment/autoload/tcomment.vim	/^    let g:tcommentGuessFileType_smarty = 1   "{{{2$/;"	v
+g:tcommentGuessFileType_tskeleton	bundle/tComment/autoload/tcomment.vim	/^    let g:tcommentGuessFileType_tskeleton = 1   "{{{2$/;"	v
+g:tcommentGuessFileType_vim	bundle/tComment/autoload/tcomment.vim	/^    let g:tcommentGuessFileType_vim = 1   "{{{2$/;"	v
+g:tcommentIgnoreTypes_php	bundle/tComment/autoload/tcomment.vim	/^    let g:tcommentIgnoreTypes_php = 'sql'   "{{{2$/;"	v
+g:tcommentInlineC	bundle/tComment/autoload/tcomment.vim	/^    let g:tcommentInlineC = g:tcommentLineC   "{{{2$/;"	v
+g:tcommentInlineXML	bundle/tComment/autoload/tcomment.vim	/^    let g:tcommentInlineXML = "<!-- %s -->"   "{{{2$/;"	v
+g:tcommentLineC	bundle/tComment/autoload/tcomment.vim	/^    let g:tcommentLineC = {$/;"	v
+g:tcommentMapLeader1	bundle/tComment/plugin/tcomment.vim	/^    let g:tcommentMapLeader1 = '<c-_>' "{{{2$/;"	v
+g:tcommentMapLeader2	bundle/tComment/plugin/tcomment.vim	/^    let g:tcommentMapLeader2 = '<Leader>_' "{{{2$/;"	v
+g:tcommentMapLeaderOp1	bundle/tComment/plugin/tcomment.vim	/^    let g:tcommentMapLeaderOp1 = 'gc' "{{{2$/;"	v
+g:tcommentMapLeaderOp2	bundle/tComment/plugin/tcomment.vim	/^    let g:tcommentMapLeaderOp2 = 'gC' "{{{2$/;"	v
+g:tcommentModeExtra	bundle/tComment/autoload/tcomment.vim	/^    let g:tcommentModeExtra = ''   "{{{2$/;"	v
+g:tcommentOpModeExtra	bundle/tComment/autoload/tcomment.vim	/^    let g:tcommentOpModeExtra = ''   "{{{2$/;"	v
+g:tcommentOptions	bundle/tComment/autoload/tcomment.vim	/^    let g:tcommentOptions = {}   "{{{2$/;"	v
+g:tcommentSyntaxMap	bundle/tComment/autoload/tcomment.vim	/^    let g:tcommentSyntaxMap = {$/;"	v
+g:zenburn_alternate_Error	bundle/Zenburn/colors/zenburn.vim	/^    let g:zenburn_alternate_Error = 0$/;"	v
+g:zenburn_alternate_Include	bundle/Zenburn/colors/zenburn.vim	/^    let g:zenburn_alternate_Include = 0$/;"	v
+g:zenburn_alternate_Visual	bundle/Zenburn/colors/zenburn.vim	/^    let g:zenburn_alternate_Visual = 0$/;"	v
+g:zenburn_color_also_Ignore	bundle/Zenburn/colors/zenburn.vim	/^    let g:zenburn_color_also_Ignore = 0$/;"	v
+g:zenburn_disable_Label_underline	bundle/Zenburn/colors/zenburn.vim	/^    let g:zenburn_disable_Label_underline = 0$/;"	v
+g:zenburn_enable_TagHighlight	bundle/Zenburn/colors/zenburn.vim	/^    let g:zenburn_enable_TagHighlight = 0$/;"	v
+g:zenburn_force_dark_Background	bundle/Zenburn/colors/zenburn.vim	/^    let g:zenburn_force_dark_Background = 0$/;"	v
+g:zenburn_high_Contrast	bundle/Zenburn/colors/zenburn.vim	/^    let g:zenburn_high_Contrast = 0$/;"	v
+g:zenburn_old_Visual	bundle/Zenburn/colors/zenburn.vim	/^    let g:zenburn_old_Visual = 0$/;"	v
+g:zenburn_transparent	bundle/Zenburn/colors/zenburn.vim	/^    let g:zenburn_transparent = 0$/;"	v
+g:zenburn_unified_CursorColumn	bundle/Zenburn/colors/zenburn.vim	/^    let g:zenburn_unified_CursorColumn = 0$/;"	v
+g<C-]>	bundle/vim-ruby/ftplugin/ruby.vim	/^    nnoremap <silent> <buffer> g<C-]>      :<C-U>exe         "tjump <C-R>=RubyCursorIdentifier()<CR>"<CR>$/;"	m
+g]	bundle/vim-ruby/ftplugin/ruby.vim	/^    nnoremap <silent> <buffer> g]          :<C-U>exe       "tselect <C-R>=RubyCursorIdentifier()<CR>"<CR>$/;"	m
+get	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    def get(self, attr):$/;"	m	class:Options
+get	bundle/sparkup/sparkup	/^    def get(self, attr):$/;"	m	class:Options
+get	bundle/sparkup/sparkup.py	/^    def get(self, attr):$/;"	m	class:Options
+get	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    def get(self, attr):$/;"	m	class:Options
+get_closing_tag	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    def get_closing_tag(self):$/;"	m	class:Element
+get_closing_tag	bundle/sparkup/sparkup	/^    def get_closing_tag(self):$/;"	m	class:Element
+get_closing_tag	bundle/sparkup/sparkup.py	/^    def get_closing_tag(self):$/;"	m	class:Element
+get_closing_tag	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    def get_closing_tag(self):$/;"	m	class:Element
+get_default_tag	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    def get_default_tag(self):$/;"	m	class:Element
+get_default_tag	bundle/sparkup/sparkup	/^    def get_default_tag(self):$/;"	m	class:Element
+get_default_tag	bundle/sparkup/sparkup.py	/^    def get_default_tag(self):$/;"	m	class:Element
+get_default_tag	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    def get_default_tag(self):$/;"	m	class:Element
+get_dim	bundle/vim-powerline/fontpatcher/fontpatcher	/^	def get_dim(glyph):$/;"	f
+get_last_child	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    def get_last_child(self):$/;"	m	class:Element
+get_last_child	bundle/sparkup/sparkup	/^    def get_last_child(self):$/;"	m	class:Element
+get_last_child	bundle/sparkup/sparkup.py	/^    def get_last_child(self):$/;"	m	class:Element
+get_last_child	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    def get_last_child(self):$/;"	m	class:Element
+get_opening_tag	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    def get_opening_tag(self):$/;"	m	class:Element
+get_opening_tag	bundle/sparkup/sparkup	/^    def get_opening_tag(self):$/;"	m	class:Element
+get_opening_tag	bundle/sparkup/sparkup.py	/^    def get_opening_tag(self):$/;"	m	class:Element
+get_opening_tag	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    def get_opening_tag(self):$/;"	m	class:Element
+getbookmarks	bundle/ctrlp.vim/autoload/ctrlp/bookmarkdir.vim	/^fu! s:getbookmarks()$/;"	f
+getenv	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:getenv()$/;"	f
+getextvar	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:getextvar(key)$/;"	f
+gethistdata	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:gethistdata()$/;"	f
+gethistloc	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:gethistloc()$/;"	f
+getinput	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:getinput(...)$/;"	f
+getinput	bundle/ctrlp.vim/autoload/ctrlp/bookmarkdir.vim	/^fu! s:getinput(str, ...)$/;"	f
+getnewmix	bundle/ctrlp.vim/autoload/ctrlp/mixed.vim	/^fu! s:getnewmix(cwd, clim)$/;"	f
+getopt	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^import getopt$/;"	i
+getopt	bundle/sparkup/sparkup	/^import getopt$/;"	i
+getopt	bundle/sparkup/sparkup.py	/^import getopt$/;"	i
+getopt	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^import getopt$/;"	i
+getopt	bundle/vim-rails/autoload/rails.vim	/^function! s:getopt(opt,...)$/;"	f
+getparent	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:getparent(item)$/;"	f
+getpidfor	bundle/vim-rails/autoload/rails.vim	/^function! s:getpidfor(bind,port)$/;"	f
+getregs	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:getregs()$/;"	f
+getundo	bundle/ctrlp.vim/autoload/ctrlp/undo.vim	/^fu! s:getundo()$/;"	f
+gf	bundle/vim-ruby/ftplugin/ruby.vim	/^    nnoremap <silent> <buffer> gf         :<C-U>exe <SID>gf(v:count1,"gf",'edit')<CR>$/;"	m
+gf	bundle/vim-ruby/ftplugin/ruby.vim	/^function! s:gf(count,map,edit) abort$/;"	f
+gitgutter	bundle/vim-gitgutter/plugin/gitgutter.vim	/^augroup gitgutter$/;"	a
+gitgutter.vim	bundle/vim-gitgutter/plugin/gitgutter.vim	1;"	F
+github.vim	bundle/vim-colors-github/colors/github.vim	1;"	F
+github_url	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:github_url(repo,url,rev,commit,path,type,line1,line2) abort$/;"	f
+glbpath	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:glbpath(...)$/;"	f
+globdirs	bundle/ctrlp.vim/autoload/ctrlp/dir.vim	/^fu! s:globdirs(dirs, depth)$/;"	f
+grey_color	bundle/desert-warm-256/colors/desert-warm-256.vim	/^    fun <SID>grey_color(n)$/;"	f
+grey_level	bundle/desert-warm-256/colors/desert-warm-256.vim	/^    fun <SID>grey_level(n)$/;"	f
+grey_number	bundle/desert-warm-256/colors/desert-warm-256.vim	/^    fun <SID>grey_number(x)$/;"	f
+gsub	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:gsub(str,pat,rep) abort$/;"	f
+gsub	bundle/vim-rails/autoload/rails.vim	/^function! s:gsub(str,pat,rep)$/;"	f
+has	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    def has(self, attr):$/;"	m	class:Options
+has	bundle/sparkup/sparkup	/^    def has(self, attr):$/;"	m	class:Options
+has	bundle/sparkup/sparkup.py	/^    def has(self, attr):$/;"	m	class:Options
+has	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    def has(self, attr):$/;"	m	class:Options
+has_doc	bundle/vundle/autoload/vundle/installer.vim	/^func! s:has_doc(rtp) abort$/;"	f
+headntail	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:headntail(str)$/;"	f
+help	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    def help(self):$/;"	m	class:Router
+help	bundle/sparkup/sparkup	/^    def help(self):$/;"	m	class:Router
+help	bundle/sparkup/sparkup.py	/^    def help(self):$/;"	m	class:Router
+help	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    def help(self):$/;"	m	class:Router
+help_content	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    help_content = [$/;"	v	class:Router
+help_content	bundle/sparkup/sparkup	/^    help_content = [$/;"	v	class:Router
+help_content	bundle/sparkup/sparkup.py	/^    help_content = [$/;"	v	class:Router
+help_content	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    help_content = [$/;"	v	class:Router
+helpermethods	bundle/vim-rails/autoload/rails.vim	/^function! s:helpermethods()$/;"	f
+helptags	bundle/vundle/autoload/vundle/installer.vim	/^func! s:helptags(rtp) abort$/;"	f
+hgrev.vim	bundle/vim-powerline/autoload/Powerline/Functions/hgrev.vim	1;"	F
+hgrev.vim	bundle/vim-powerline/autoload/Powerline/Segments/hgrev.vim	1;"	F
+highlight	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:highlight(pat, grp)$/;"	f
+iM	bundle/vim-ruby/ftplugin/ruby.vim	/^    onoremap <silent> <buffer> iM :<C-U>call <SID>wrap_i('[[','][')<CR>$/;"	m
+ignore	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:ignore()$/;"	f
+im	bundle/vim-ruby/ftplugin/ruby.vim	/^    onoremap <silent> <buffer> im :<C-U>call <SID>wrap_i('[m',']M')<CR>$/;"	m
+indent	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    indent = ''$/;"	v	class:Parser
+indent	bundle/sparkup/sparkup	/^    indent = ''$/;"	v	class:Parser
+indent	bundle/sparkup/sparkup.py	/^    indent = ''$/;"	v	class:Parser
+indent	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    indent = ''$/;"	v	class:Parser
+init	bundle/vim-gitgutter/plugin/gitgutter.vim	/^function! s:init()$/;"	f
+init	bundle/vundle/test/files/test.erl	/^init(_) ->$/;"	f	module:mmc_logmon_sup
+initOpenURL	bundle/vim-rails/autoload/rails.vim	/^function! s:initOpenURL()$/;"	f
+initialize	bundle/vim-ruby/bin/vim-ruby-install.rb	/^    def initialize(path)$/;"	f	class:VimRubyInstaller.BackupDir
+initialize	bundle/vim-ruby/bin/vim-ruby-install.rb	/^  def initialize(directory, writer)$/;"	f	class:TargetDirectory
+initialize	bundle/vim-ruby/bin/vim-ruby-install.rb	/^  def initialize(ending, file_permissions=0644, directory_permissions=0755)$/;"	f	class:FileWriter
+initialize	bundle/vim-ruby/bin/vim-ruby-install.rb	/^  def initialize(source, target)$/;"	f	class:VimRubyInstaller
+insertcache	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:insertcache(str)$/;"	f
+insertstr	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:insertstr()$/;"	f
+install	bundle/vim-ruby/bin/vim-ruby-install.rb	/^  def install$/;"	f	class:VimRubyInstaller
+installer.vim	bundle/vundle/autoload/vundle/installer.vim	1;"	F
+instaweb_url	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:instaweb_url(repo,rev,commit,path,type,...) abort$/;"	f
+invertrange	bundle/vim-rails/autoload/rails.vim	/^function! s:invertrange(beg,end)$/;"	f
+is_active	bundle/vim-gitgutter/plugin/gitgutter.vim	/^function! s:is_active()$/;"	f
+is_added	bundle/vim-gitgutter/plugin/gitgutter.vim	/^function! s:is_added(from_count, to_count)$/;"	f
+is_in_a_git_repo	bundle/vim-gitgutter/plugin/gitgutter.vim	/^function! s:is_in_a_git_repo()$/;"	f
+is_modified	bundle/vim-gitgutter/plugin/gitgutter.vim	/^function! s:is_modified(from_count, to_count)$/;"	f
+is_modified_and_added	bundle/vim-gitgutter/plugin/gitgutter.vim	/^function! s:is_modified_and_added(from_count, to_count)$/;"	f
+is_modified_and_removed	bundle/vim-gitgutter/plugin/gitgutter.vim	/^function! s:is_modified_and_removed(from_count, to_count)$/;"	f
+is_other_sign	bundle/vim-gitgutter/plugin/gitgutter.vim	/^function! s:is_other_sign(line_number)$/;"	f
+is_removed	bundle/vim-gitgutter/plugin/gitgutter.vim	/^function! s:is_removed(from_count, to_count)$/;"	f
+is_tracked_by_git	bundle/vim-gitgutter/plugin/gitgutter.vim	/^function! s:is_tracked_by_git()$/;"	f
+iscmdwin	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:iscmdwin()$/;"	f
+ispathitem	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:ispathitem()$/;"	f
+javascriptEdit	bundle/vim-rails/autoload/rails.vim	/^function! s:javascriptEdit(cmd,...)$/;"	f
+javascriptList	bundle/vim-rails/autoload/rails.vim	/^function! s:javascriptList(A,L,P)$/;"	f
+lash	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:lash(...)$/;"	f
+lash	bundle/ctrlp.vim/autoload/ctrlp/utils.vim	/^fu! s:lash(...)$/;"	f
+last_child	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    last_child = property(get_last_child)$/;"	v	class:Element
+last_child	bundle/sparkup/sparkup	/^    last_child = property(get_last_child)$/;"	v	class:Element
+last_child	bundle/sparkup/sparkup.py	/^    last_child = property(get_last_child)$/;"	v	class:Element
+last_child	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    last_child = property(get_last_child)$/;"	v	class:Element
+lastmethod	bundle/vim-rails/autoload/rails.vim	/^function! s:lastmethod(...)$/;"	f
+lastmethodline	bundle/vim-rails/autoload/rails.vim	/^function! s:lastmethodline(start)$/;"	f
+lastopeningline	bundle/vim-rails/autoload/rails.vim	/^function! s:lastopeningline(pattern,limit,start)$/;"	f
+lastvisual	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:lastvisual()$/;"	f
+layoutEdit	bundle/vim-rails/autoload/rails.vim	/^function! s:layoutEdit(cmd,...)$/;"	f
+layoutList	bundle/vim-rails/autoload/rails.vim	/^function! s:layoutList(A,L,P)$/;"	f
+leavepre	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:leavepre()$/;"	f
+line.vim	bundle/ctrlp.vim/autoload/ctrlp/line.vim	1;"	F
+linechars	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:linechars(pattern)$/;"	f
+lineout	bundle/ctrlp.vim/autoload/ctrlp/quickfix.vim	/^fu! s:lineout(dict)$/;"	f
+linepeak	bundle/vim-rails/autoload/rails.vim	/^function! s:linepeak()$/;"	f
+load_scripts	bundle/vundle/autoload/vundle/scripts.vim	/^func! s:load_scripts(bang)$/;"	f
+load_string	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    def load_string(self, str):$/;"	m	class:Parser
+load_string	bundle/sparkup/sparkup	/^    def load_string(self, str):$/;"	m	class:Parser
+load_string	bundle/sparkup/sparkup.py	/^    def load_string(self, str):$/;"	m	class:Parser
+load_string	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    def load_string(self, str):$/;"	m	class:Parser
+loaded_tcomment	bundle/tComment/plugin/tcomment.vim	/^let loaded_tcomment = 208$/;"	v
+localeEdit	bundle/vim-rails/autoload/rails.vim	/^function! s:localeEdit(cmd,...)$/;"	f
+localeList	bundle/vim-rails/autoload/rails.vim	/^function! s:localeList(A,L,P)$/;"	f
+log	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:log(m)$/;"	f
+log	bundle/vundle/autoload/vundle/installer.vim	/^func! s:log(str) abort$/;"	f
+lsCmd	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:lsCmd()$/;"	f
+mailerEdit	bundle/vim-rails/autoload/rails.vim	/^function! s:mailerEdit(cmd,...)$/;"	f
+mailerList	bundle/vim-rails/autoload/rails.vim	/^function! s:mailerList(A,L,P)$/;"	f
+main_syntax	bundle/vim-ruby/syntax/eruby.vim	/^  let main_syntax = 'eruby'$/;"	v
+makewithruby	bundle/vim-rails/autoload/rails.vim	/^function! s:makewithruby(arg,bang,...)$/;"	f
+match_type	bundle/vim-rails/autoload/rails.vim	/^function! s:match_type(type,...)$/;"	f
+matchcursor	bundle/vim-rails/autoload/rails.vim	/^function! s:matchcursor(pat)$/;"	f
+matchfname	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:matchfname(item, pat)$/;"	f
+matchlens	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:matchlens(str, pat, ...)$/;"	f
+matchtabe	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:matchtabe(item, pat)$/;"	f
+matchtabs	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:matchtabs(item, pat)$/;"	f
+max	bundle/ctrlp.vim/autoload/ctrlp/dir.vim	/^fu! s:max(len, max)$/;"	f
+maxf	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:maxf(len)$/;"	f
+mergelists	bundle/ctrlp.vim/autoload/ctrlp/mrufiles.vim	/^fu! s:mergelists()$/;"	f
+mextargs	bundle/vim-rails/autoload/rails.vim	/^function! s:mextargs(str,num)$/;"	f
+mfunc	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:mfunc()$/;"	f
+migemo	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:migemo(str)$/;"	f
+migrationEdit	bundle/vim-rails/autoload/rails.vim	/^function! s:migrationEdit(cmd,...)$/;"	f
+migrationList	bundle/vim-rails/autoload/rails.vim	/^function! s:migrationList(A,L,P)$/;"	f
+migspc	bundle/vim-rails/autoload/rails.vim	/^function! s:migspc(line)$/;"	f
+minirc.vim	bundle/vundle/test/minirc.vim	1;"	F
+mixed.vim	bundle/ctrlp.vim/autoload/ctrlp/mixed.vim	1;"	F
+mixedsort	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:mixedsort(...)$/;"	f
+mkeep	bundle/vim-rails/autoload/rails.vim	/^function! s:mkeep(str)$/;"	f
+mkpath	bundle/vim-ruby/bin/vim-ruby-install.rb	/^  def mkpath(directory)$/;"	f	class:FileWriter
+mmc_logmon_sup	bundle/vundle/test/files/test.erl	/^-module(mmc_logmon_sup).$/;"	m
+mmode	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:mmode()$/;"	f
+model	bundle/vim-rails/autoload/rails.vim	/^function! s:model(...)$/;"	f
+modevar	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:modevar()$/;"	f
+modify	bundle/ctrlp.vim/autoload/ctrlp/bookmarkdir.vim	/^fu! s:modify(entry, type)$/;"	f
+molokai.vim	bundle/molokai/colors/molokai.vim	1;"	F
+mrufiles.vim	bundle/ctrlp.vim/autoload/ctrlp/mrufiles.vim	1;"	F
+msg	bundle/ctrlp.vim/autoload/ctrlp/bookmarkdir.vim	/^fu! s:msg(name, cwd)$/;"	f
+mtype	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:mtype()$/;"	f
+multiplier	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    multiplier = 1$/;"	v	class:Token
+multiplier	bundle/sparkup/sparkup	/^    multiplier = 1$/;"	v	class:Token
+multiplier	bundle/sparkup/sparkup.py	/^    multiplier = 1$/;"	v	class:Token
+multiplier	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    multiplier = 1$/;"	v	class:Token
+multipliers	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:multipliers(...)$/;"	f
+mysearchpair	bundle/vim-endwise/plugin/endwise.vim	/^function! s:mysearchpair(beginpat,endpat,synpat)$/;"	f
+name	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    name = ''$/;"	v	class:Element
+name	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    name = ''$/;"	v	class:Token
+name	bundle/sparkup/sparkup	/^    name = ''$/;"	v	class:Element
+name	bundle/sparkup/sparkup	/^    name = ''$/;"	v	class:Token
+name	bundle/sparkup/sparkup.py	/^    name = ''$/;"	v	class:Element
+name	bundle/sparkup/sparkup.py	/^    name = ''$/;"	v	class:Token
+name	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    name = ''$/;"	v	class:Element
+name	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    name = ''$/;"	v	class:Token
+narrowable	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:narrowable()$/;"	f
+nested_hashes.rb	bundle/vim-ruby/etc/examples/indent/nested_hashes.rb	1;"	F
+newcache	bundle/ctrlp.vim/autoload/ctrlp/mixed.vim	/^fu! s:newcache(cwd)$/;"	f
+next_sign_id	bundle/vim-gitgutter/plugin/gitgutter.vim	/^function! s:next_sign_id()$/;"	f
+nocache	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:nocache(...)$/;"	f
+nocache	bundle/ctrlp.vim/autoload/ctrlp/dir.vim	/^fu! s:nocache()$/;"	f
+nocache	bundle/ctrlp.vim/autoload/ctrlp/rtscript.vim	/^fu! s:nocache()$/;"	f
+nosort	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:nosort()$/;"	f
+nosplit	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:nosplit()$/;"	f
+onlybitmaps	bundle/vim-powerline/fontpatcher/fontpatcher	/^	onlybitmaps = font.onlybitmaps$/;"	v
+openfile	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:openfile(cmd, fid, tail, chkmod, ...)$/;"	f
+opening_tag	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    opening_tag = None$/;"	v	class:Element
+opening_tag	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    opening_tag = None$/;"	v	class:Token
+opening_tag	bundle/sparkup/sparkup	/^    opening_tag = None$/;"	v	class:Element
+opening_tag	bundle/sparkup/sparkup	/^    opening_tag = None$/;"	v	class:Token
+opening_tag	bundle/sparkup/sparkup.py	/^    opening_tag = None$/;"	v	class:Element
+opening_tag	bundle/sparkup/sparkup.py	/^    opening_tag = None$/;"	v	class:Token
+opening_tag	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    opening_tag = None$/;"	v	class:Element
+opening_tag	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    opening_tag = None$/;"	v	class:Token
+options	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    options = None$/;"	v	class:Parser
+options	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    options = {$/;"	v	class:Options
+options	bundle/sparkup/sparkup	/^    options = None$/;"	v	class:Parser
+options	bundle/sparkup/sparkup	/^    options = {$/;"	v	class:Options
+options	bundle/sparkup/sparkup-unittest.py	/^    options = {$/;"	v	class:SparkupTest
+options	bundle/sparkup/sparkup.py	/^    options = None$/;"	v	class:Parser
+options	bundle/sparkup/sparkup.py	/^    options = {$/;"	v	class:Options
+options	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    options = None$/;"	v	class:Parser
+options	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    options = {$/;"	v	class:Options
+opts	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:opts(...)$/;"	f
+opts	bundle/vim-rails/autoload/rails.vim	/^function! s:opts()$/;"	f
+os	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^import os$/;"	i
+os	bundle/sparkup/sparkup	/^import os$/;"	i
+os	bundle/sparkup/sparkup.py	/^import os$/;"	i
+os	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^import os$/;"	i
+os	bundle/vim-powerline/fontpatcher/fontpatcher	/^import os$/;"	i
+overlap_width	bundle/vim-powerline/fontpatcher/fontpatcher	/^			overlap_width = font.em \/ 48$/;"	v
+parent	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    parent = None$/;"	v	class:Element
+parent	bundle/sparkup/sparkup	/^    parent = None$/;"	v	class:Element
+parent	bundle/sparkup/sparkup.py	/^    parent = None$/;"	v	class:Element
+parent	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    parent = None$/;"	v	class:Element
+parse	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    def parse(self, str=None, ret=None):$/;"	m	class:Router
+parse	bundle/sparkup/sparkup	/^    def parse(self, str=None, ret=None):$/;"	m	class:Router
+parse	bundle/sparkup/sparkup.py	/^    def parse(self, str=None, ret=None):$/;"	m	class:Router
+parse	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    def parse(self, str=None, ret=None):$/;"	m	class:Router
+parse_diff	bundle/vim-gitgutter/plugin/gitgutter.vim	/^function! s:parse_diff(diff)$/;"	f
+parse_name	bundle/vundle/autoload/vundle/config.vim	/^func! s:parse_name(arg)$/;"	f
+parse_options	bundle/vundle/autoload/vundle/config.vim	/^func! s:parse_options(opts)$/;"	f
+parseline	bundle/ctrlp.vim/autoload/ctrlp/buffertag.vim	/^fu! s:parseline(line)$/;"	f
+parser	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    parser = None$/;"	v	class:Element
+parser	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    parser = None$/;"	v	class:Token
+parser	bundle/sparkup/sparkup	/^    parser = None$/;"	v	class:Element
+parser	bundle/sparkup/sparkup	/^    parser = None$/;"	v	class:Token
+parser	bundle/sparkup/sparkup.py	/^    parser = None$/;"	v	class:Element
+parser	bundle/sparkup/sparkup.py	/^    parser = None$/;"	v	class:Token
+parser	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    parser = None$/;"	v	class:Element
+parser	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    parser = None$/;"	v	class:Token
+parser	bundle/vim-powerline/fontpatcher/fontpatcher	/^parser = argparse.ArgumentParser(description='Font patcher for Powerline. Creates dividers and symbols in FontForge-compatible font files. Requires FontForge with Python bindings. Stores glyphs in the U+2B80-U+2BFF range ("Miscellaneous symbols and arrows"). Stores the patched font as a new, renamed font file by default.')$/;"	v
+parts	bundle/ctrlp.vim/autoload/ctrlp/bookmarkdir.vim	/^fu! s:parts(str)$/;"	f
+path	bundle/vim-ruby/bin/vim-ruby-install.rb	/^    def path$/;"	f	class:VimRubyInstaller.BackupDir
+path	bundle/vim-ruby/bin/vim-ruby-install.rb	/^  def path$/;"	f	class:TargetDirectory
+pathjoin	bundle/vim-rails/autoload/rails.vim	/^function! s:pathjoin(...) abort$/;"	f
+pathshorten	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:pathshorten(str)$/;"	f
+pathsplit	bundle/vim-rails/autoload/rails.vim	/^function! s:pathsplit(path) abort$/;"	f
+pluginEdit	bundle/vim-rails/autoload/rails.vim	/^function! s:pluginEdit(cmd,...)$/;"	f
+pluginList	bundle/vim-rails/autoload/rails.vim	/^function! s:pluginList(A,L,P)$/;"	f
+pop_command	bundle/vim-rails/autoload/rails.vim	/^function! s:pop_command()$/;"	f
+populate	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    populate = False$/;"	v	class:Element
+populate	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    populate = False$/;"	v	class:Token
+populate	bundle/sparkup/sparkup	/^    populate = False$/;"	v	class:Element
+populate	bundle/sparkup/sparkup	/^    populate = False$/;"	v	class:Token
+populate	bundle/sparkup/sparkup.py	/^    populate = False$/;"	v	class:Element
+populate	bundle/sparkup/sparkup.py	/^    populate = False$/;"	v	class:Token
+populate	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    populate = False$/;"	v	class:Element
+populate	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    populate = False$/;"	v	class:Token
+prefix	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    prefix = ''$/;"	v	class:Parser
+prefix	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    prefix = None$/;"	v	class:Element
+prefix	bundle/sparkup/sparkup	/^    prefix = ''$/;"	v	class:Parser
+prefix	bundle/sparkup/sparkup	/^    prefix = None$/;"	v	class:Element
+prefix	bundle/sparkup/sparkup.py	/^    prefix = ''$/;"	v	class:Parser
+prefix	bundle/sparkup/sparkup.py	/^    prefix = None$/;"	v	class:Element
+prefix	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    prefix = ''$/;"	v	class:Parser
+prefix	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    prefix = None$/;"	v	class:Element
+process	bundle/ctrlp.vim/autoload/ctrlp/bookmarkdir.vim	/^fu! s:process(entries, type)$/;"	f
+process	bundle/ctrlp.vim/autoload/ctrlp/buffertag.vim	/^fu! s:process(fname, ftype)$/;"	f
+process	bundle/ctrlp.vim/autoload/ctrlp/changes.vim	/^fu! s:process(clines, ...)$/;"	f
+process	bundle/vundle/autoload/vundle/installer.vim	/^func! s:process(bang, cmd)$/;"	f
+process_added	bundle/vim-gitgutter/plugin/gitgutter.vim	/^function! s:process_added(modifications, from_count, to_count, to_line)$/;"	f
+process_hunk	bundle/vim-gitgutter/plugin/gitgutter.vim	/^function! s:process_hunk(hunk)$/;"	f
+process_hunks	bundle/vim-gitgutter/plugin/gitgutter.vim	/^function! s:process_hunks(hunks)$/;"	f
+process_modified	bundle/vim-gitgutter/plugin/gitgutter.vim	/^function! s:process_modified(modifications, from_count, to_count, to_line)$/;"	f
+process_modified_and_added	bundle/vim-gitgutter/plugin/gitgutter.vim	/^function! s:process_modified_and_added(modifications, from_count, to_count, to_line)$/;"	f
+process_modified_and_removed	bundle/vim-gitgutter/plugin/gitgutter.vim	/^function! s:process_modified_and_removed(modifications, from_count, to_count, to_line)$/;"	f
+process_removed	bundle/vim-gitgutter/plugin/gitgutter.vim	/^function! s:process_removed(modifications, from_count, to_count, to_line)$/;"	f
+projection_pairs	bundle/vim-rails/autoload/rails.vim	/^function! s:projection_pairs(options)$/;"	f
+psMat	bundle/vim-powerline/fontpatcher/fontpatcher	/^	import psMat$/;"	i
+push_chdir	bundle/vim-rails/autoload/rails.vim	/^function! s:push_chdir(...)$/;"	f
+query_path	bundle/vim-ruby/ftplugin/ruby.vim	/^function! s:query_path(root)$/;"	f
+quickfix.vim	bundle/ctrlp.vim/autoload/ctrlp/quickfix.vim	1;"	F
+rails#app	bundle/vim-rails/autoload/rails.vim	/^function! rails#app(...)$/;"	f
+rails#buffer	bundle/vim-rails/autoload/rails.vim	/^function! rails#buffer(...)$/;"	f
+rails#cache_clear	bundle/vim-rails/autoload/rails.vim	/^function! rails#cache_clear(...)$/;"	f
+rails#camelize	bundle/vim-rails/autoload/rails.vim	/^function! rails#camelize(str)$/;"	f
+rails#json_parse	bundle/vim-rails/autoload/rails.vim	/^function! rails#json_parse(string) abort$/;"	f
+rails#log_syntax	bundle/vim-rails/autoload/rails.vim	/^function! rails#log_syntax()$/;"	f
+rails#new_app_command	bundle/vim-rails/autoload/rails.vim	/^function! rails#new_app_command(bang,...) abort$/;"	f
+rails#pluralize	bundle/vim-rails/autoload/rails.vim	/^function! rails#pluralize(word)$/;"	f
+rails#singularize	bundle/vim-rails/autoload/rails.vim	/^function! rails#singularize(word)$/;"	f
+rails#underscore	bundle/vim-rails/autoload/rails.vim	/^function! rails#underscore(str)$/;"	f
+rails.vim	bundle/vim-rails/autoload/rails.vim	1;"	F
+rails.vim	bundle/vim-rails/plugin/rails.vim	1;"	F
+railsPluginAbolish	bundle/vim-rails/plugin/rails.vim	/^augroup railsPluginAbolish$/;"	a
+railsPluginAuto	bundle/vim-rails/autoload/rails.vim	/^augroup railsPluginAuto$/;"	a
+railsPluginDetect	bundle/vim-rails/plugin/rails.vim	/^augroup railsPluginDetect$/;"	a
+re	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^import re$/;"	i
+re	bundle/sparkup/sparkup	/^import re$/;"	i
+re	bundle/sparkup/sparkup.py	/^import re$/;"	i
+re	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^import re$/;"	i
+re	bundle/vim-powerline/fontpatcher/fontpatcher	/^import re$/;"	i
+readable_absolute	bundle/vim-rails/autoload/rails.vim	/^function! s:readable_absolute() dict abort$/;"	f
+readable_alternate	bundle/vim-rails/autoload/rails.vim	/^function! s:readable_alternate(...) dict abort$/;"	f
+readable_alternate_candidates	bundle/vim-rails/autoload/rails.vim	/^function! s:readable_alternate_candidates(...) dict abort$/;"	f
+readable_app	bundle/vim-rails/autoload/rails.vim	/^function! s:readable_app() dict abort$/;"	f
+readable_calculate_file_type	bundle/vim-rails/autoload/rails.vim	/^function! s:readable_calculate_file_type() dict abort$/;"	f
+readable_controller_name	bundle/vim-rails/autoload/rails.vim	/^function! s:readable_controller_name(...) dict abort$/;"	f
+readable_default_rake_task	bundle/vim-rails/autoload/rails.vim	/^function! s:readable_default_rake_task(lnum) dict abort$/;"	f
+readable_define_pattern	bundle/vim-rails/autoload/rails.vim	/^function! s:readable_define_pattern() dict abort$/;"	f
+readable_end_of	bundle/vim-rails/autoload/rails.vim	/^function! s:readable_end_of(lnum) dict abort$/;"	f
+readable_format	bundle/vim-rails/autoload/rails.vim	/^function! s:readable_format(start) dict abort$/;"	f
+readable_last_method	bundle/vim-rails/autoload/rails.vim	/^function! s:readable_last_method(start) dict abort$/;"	f
+readable_last_method_line	bundle/vim-rails/autoload/rails.vim	/^function! s:readable_last_method_line(start) dict abort$/;"	f
+readable_last_opening_line	bundle/vim-rails/autoload/rails.vim	/^function! s:readable_last_opening_line(start,pattern,limit) dict abort$/;"	f
+readable_line_count	bundle/vim-rails/autoload/rails.vim	/^function! s:readable_line_count() dict abort$/;"	f
+readable_model_name	bundle/vim-rails/autoload/rails.vim	/^function! s:readable_model_name(...) dict abort$/;"	f
+readable_open_command	bundle/vim-rails/autoload/rails.vim	/^function! s:readable_open_command(cmd, argument, name, options) dict abort$/;"	f
+readable_preview_urls	bundle/vim-rails/autoload/rails.vim	/^function! s:readable_preview_urls(lnum) dict abort$/;"	f
+readable_related	bundle/vim-rails/autoload/rails.vim	/^function! s:readable_related(...) dict abort$/;"	f
+readable_relative	bundle/vim-rails/autoload/rails.vim	/^function! s:readable_relative() dict abort$/;"	f
+readable_resolve_layout	bundle/vim-rails/autoload/rails.vim	/^function! s:readable_resolve_layout(name, ...) dict abort$/;"	f
+readable_resolve_view	bundle/vim-rails/autoload/rails.vim	/^function! s:readable_resolve_view(name,...) dict abort$/;"	f
+readable_spec	bundle/vim-rails/autoload/rails.vim	/^function! s:readable_spec() dict abort$/;"	f
+readable_type_name	bundle/vim-rails/autoload/rails.vim	/^function! s:readable_type_name(...) dict abort$/;"	f
+readfile	bundle/vim-rails/autoload/rails.vim	/^function! s:readfile(path,...)$/;"	f
+recall	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:recall()$/;"	f
+record	bundle/ctrlp.vim/autoload/ctrlp/mrufiles.vim	/^fu! s:record(bufnr)$/;"	f
+reformat	bundle/ctrlp.vim/autoload/ctrlp/mrufiles.vim	/^fu! s:reformat(mrufs)$/;"	f
+regexfilter	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:regexfilter(str)$/;"	f
+regisfilter	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:regisfilter(reg)$/;"	f
+relglob	bundle/vim-rails/autoload/rails.vim	/^function! s:relglob(...)$/;"	f
+remarksigns	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:remarksigns()$/;"	f
+remember_sign	bundle/vim-gitgutter/plugin/gitgutter.vim	/^function! s:remember_sign(id, file_name)$/;"	f
+render	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    def render(self):$/;"	m	class:Element
+render	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    def render(self):$/;"	m	class:Parser
+render	bundle/sparkup/sparkup	/^    def render(self):$/;"	m	class:Element
+render	bundle/sparkup/sparkup	/^    def render(self):$/;"	m	class:Parser
+render	bundle/sparkup/sparkup.py	/^    def render(self):$/;"	m	class:Element
+render	bundle/sparkup/sparkup.py	/^    def render(self):$/;"	m	class:Parser
+render	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    def render(self):$/;"	m	class:Element
+render	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    def render(self):$/;"	m	class:Parser
+repo	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:repo(...) abort$/;"	f
+repo_aliases	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:repo_aliases() dict abort$/;"	f
+repo_bare	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:repo_bare() dict abort$/;"	f
+repo_config	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:repo_config(conf) dict abort$/;"	f
+repo_configured_tree	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:repo_configured_tree() dict abort$/;"	f
+repo_dir	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:repo_dir(...) dict abort$/;"	f
+repo_dirglob	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:repo_dirglob(base) dict abort$/;"	f
+repo_git_chomp	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:repo_git_chomp(...) dict abort$/;"	f
+repo_git_chomp_in_tree	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:repo_git_chomp_in_tree(...) dict abort$/;"	f
+repo_git_command	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:repo_git_command(...) dict abort$/;"	f
+repo_head	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:repo_head(...) dict abort$/;"	f
+repo_head_ref	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:repo_head_ref() dict abort$/;"	f
+repo_keywordprg	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:repo_keywordprg() dict abort$/;"	f
+repo_rev_parse	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:repo_rev_parse(rev) dict abort$/;"	f
+repo_superglob	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:repo_superglob(base) dict abort$/;"	f
+repo_translate	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:repo_translate(spec) dict abort$/;"	f
+repo_tree	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:repo_tree(...) dict abort$/;"	f
+repo_user	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:repo_user() dict abort$/;"	f
+required	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    required = {$/;"	v	class:HtmlDialect
+required	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    required = {}$/;"	v	class:Dialect
+required	bundle/sparkup/sparkup	/^    required = {$/;"	v	class:HtmlDialect
+required	bundle/sparkup/sparkup	/^    required = {}$/;"	v	class:Dialect
+required	bundle/sparkup/sparkup.py	/^    required = {$/;"	v	class:HtmlDialect
+required	bundle/sparkup/sparkup.py	/^    required = {}$/;"	v	class:Dialect
+required	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    required = {$/;"	v	class:HtmlDialect
+required	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    required = {}$/;"	v	class:Dialect
+resetomnicomplete	bundle/vim-rails/autoload/rails.vim	/^function! s:resetomnicomplete()$/;"	f
+rgb	bundle/desert-warm-256/colors/desert-warm-256.vim	/^    fun <SID>rgb(rgb)$/;"	f
+rgb_color	bundle/desert-warm-256/colors/desert-warm-256.vim	/^    fun <SID>rgb_color(x, y, z)$/;"	f
+rgb_level	bundle/desert-warm-256/colors/desert-warm-256.vim	/^    fun <SID>rgb_level(n)$/;"	f
+rgb_number	bundle/desert-warm-256/colors/desert-warm-256.vim	/^    fun <SID>rgb_number(x)$/;"	f
+root	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    root = None $/;"	v	class:Parser
+root	bundle/sparkup/sparkup	/^    root = None $/;"	v	class:Parser
+root	bundle/sparkup/sparkup.py	/^    root = None $/;"	v	class:Parser
+root	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    root = None $/;"	v	class:Parser
+router	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    router = 1$/;"	v	class:Options
+router	bundle/sparkup/sparkup	/^    router = 1$/;"	v	class:Options
+router	bundle/sparkup/sparkup.py	/^    router = 1$/;"	v	class:Options
+router	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    router = 1$/;"	v	class:Options
+rquote	bundle/vim-rails/autoload/rails.vim	/^function! s:rquote(str)$/;"	f
+rspec.vim	bundle/vim-ruby/compiler/rspec.vim	1;"	F
+rtp_add	bundle/vundle/autoload/vundle/config.vim	/^func! s:rtp_add(dir) abort$/;"	f
+rtp_add_a	bundle/vundle/autoload/vundle/config.vim	/^func! s:rtp_add_a()$/;"	f
+rtp_rm	bundle/vundle/autoload/vundle/config.vim	/^func! s:rtp_rm(dir) abort$/;"	f
+rtp_rm_a	bundle/vundle/autoload/vundle/config.vim	/^func! s:rtp_rm_a()$/;"	f
+rtpath	bundle/vundle/autoload/vundle/config.vim	/^func! s:rtpath(opts)$/;"	f
+rtscript.vim	bundle/ctrlp.vim/autoload/ctrlp/rtscript.vim	1;"	F
+ruby.vim	bundle/vim-ruby/compiler/ruby.vim	1;"	F
+ruby.vim	bundle/vim-ruby/ftdetect/ruby.vim	1;"	F
+ruby.vim	bundle/vim-ruby/ftplugin/ruby.vim	1;"	F
+ruby.vim	bundle/vim-ruby/indent/ruby.vim	1;"	F
+ruby.vim	bundle/vim-ruby/syntax/ruby.vim	1;"	F
+ruby_minlines	bundle/vim-ruby/syntax/ruby.vim	/^    let ruby_minlines = 500$/;"	v
+rubycomplete#Complete	bundle/vim-ruby/autoload/rubycomplete.vim	/^function! rubycomplete#Complete(findstart, base)$/;"	f
+rubycomplete#Init	bundle/vim-ruby/autoload/rubycomplete.vim	/^function! rubycomplete#Init()$/;"	f
+rubycomplete.vim	bundle/vim-ruby/autoload/rubycomplete.vim	1;"	F
+rubyunit.vim	bundle/vim-ruby/compiler/rubyunit.vim	1;"	F
+run	bundle/sparkup/sparkup-unittest.py	/^    def run(self):$/;"	m	class:SparkupTest
+run_diff	bundle/vim-gitgutter/plugin/gitgutter.vim	/^function! s:run_diff()$/;"	f
+rvm.vim	bundle/vim-powerline/autoload/Powerline/Segments/rvm.vim	1;"	F
+s	bundle/sparkup/sparkup-unittest.py	/^    s = SparkupTest()$/;"	v	class:SparkupTest
+s:CACHE_REVISION	bundle/vim-powerline/autoload/Pl.vim	/^	let s:CACHE_REVISION = 7$/;"	v
+s:EMPTY_SEGMENT	bundle/vim-powerline/autoload/Pl/Parser.vim	/^let s:EMPTY_SEGMENT = { 'type': 'empty' }$/;"	v
+s:HARD_DIVIDER	bundle/vim-powerline/autoload/Pl/Parser.vim	/^let s:HARD_DIVIDER = 0$/;"	v
+s:LEFT_SIDE	bundle/vim-powerline/autoload/Pl/Parser.vim	/^let s:LEFT_SIDE = 0$/;"	v
+s:PADDING	bundle/vim-powerline/autoload/Pl/Parser.vim	/^let s:PADDING = 1$/;"	v
+s:RIGHT_SIDE	bundle/vim-powerline/autoload/Pl/Parser.vim	/^let s:RIGHT_SIDE = 2$/;"	v
+s:SOFT_DIVIDER	bundle/vim-powerline/autoload/Pl/Parser.vim	/^let s:SOFT_DIVIDER = 1$/;"	v
+s:abstract_prototype	bundle/vim-fugitive/plugin/fugitive.vim	/^let s:abstract_prototype = {}$/;"	v
+s:ackcommand	bundle/ack.vim/plugin/ack.vim	/^  let s:ackcommand = executable('ack-grep') ? 'ack-grep' : 'ack'$/;"	v
+s:allocated_colors	bundle/vim-powerline/autoload/Pl/Hi.vim	/^let s:allocated_colors = {$/;"	v
+s:app_prototype	bundle/vim-rails/autoload/rails.vim	/^let s:app_prototype = {}$/;"	v
+s:app_prototype	bundle/vim-rails/autoload/rails.vim	/^let s:app_prototype.cache = s:cache_prototype$/;"	v
+s:apps	bundle/vim-rails/autoload/rails.vim	/^  let s:apps = {}$/;"	v
+s:ars	bundle/ctrlp.vim/autoload/ctrlp/dir.vim	/^let s:ars = ['s:maxdepth', 's:maxfiles', 's:compare_lim', 's:glob', 's:caching']$/;"	v
+s:bins	bundle/ctrlp.vim/autoload/ctrlp/buffertag.vim	/^let s:bins = [$/;"	v
+s:block_continuation_regex	bundle/vim-ruby/indent/ruby.vim	/^let s:block_continuation_regex = '^\\s*[^])}\\t ].*'.s:block_regex$/;"	v
+s:block_regex	bundle/vim-ruby/indent/ruby.vim	/^let s:block_regex =$/;"	v
+s:bracket_continuation_regex	bundle/vim-ruby/indent/ruby.vim	/^let s:bracket_continuation_regex = '%\\@<!\\%([({[]\\)\\s*\\%(#.*\\)\\=$'$/;"	v
+s:browsefilter	bundle/vim-ruby/ftplugin/eruby.vim	/^  let s:browsefilter = b:browsefilter$/;"	v
+s:browsefilter	bundle/vim-ruby/ftplugin/eruby.vim	/^  let s:browsefilter = substitute(b:browsefilter,'\\cAll Files (\\*\\.\\*)\\t\\*\\.\\*\\n','','') . s:browsefilter$/;"	v
+s:browsefilter	bundle/vim-ruby/ftplugin/eruby.vim	/^let s:browsefilter = "All Files (*.*)\\t*.*\\n"$/;"	v
+s:buffer_prototype	bundle/vim-fugitive/plugin/fugitive.vim	/^let s:buffer_prototype = {}$/;"	v
+s:buffer_prototype	bundle/vim-rails/autoload/rails.vim	/^let s:buffer_prototype = {}$/;"	v
+s:bundle	bundle/vundle/autoload/vundle/config.vim	/^let s:bundle = {}$/;"	v
+s:cache_prototype	bundle/vim-rails/autoload/rails.vim	/^let s:cache_prototype = {'dict': {}}$/;"	v
+s:ccex	bundle/ctrlp.vim/autoload/ctrlp.vim	/^let s:ccex = s:pref.'clear_cache_on_exit'$/;"	v
+s:commands	bundle/vim-fugitive/plugin/fugitive.vim	/^let s:commands = []$/;"	v
+s:compare_lim	bundle/ctrlp.vim/autoload/ctrlp.vim	/^let s:compare_lim = 3000$/;"	v
+s:continuation_regex	bundle/vim-ruby/indent/ruby.vim	/^let s:continuation_regex =$/;"	v
+s:cpo_save	bundle/vim-ruby/compiler/eruby.vim	/^let s:cpo_save = &cpo$/;"	v
+s:cpo_save	bundle/vim-ruby/compiler/rspec.vim	/^let s:cpo_save = &cpo$/;"	v
+s:cpo_save	bundle/vim-ruby/compiler/ruby.vim	/^let s:cpo_save = &cpo$/;"	v
+s:cpo_save	bundle/vim-ruby/compiler/rubyunit.vim	/^let s:cpo_save = &cpo$/;"	v
+s:cpo_save	bundle/vim-ruby/ftplugin/ruby.vim	/^let s:cpo_save = &cpo$/;"	v
+s:cpo_save	bundle/vim-ruby/indent/ruby.vim	/^let s:cpo_save = &cpo$/;"	v
+s:cterm2gui_dict	bundle/vim-powerline/autoload/Pl/Hi.vim	/^let s:cterm2gui_dict = {$/;"	v
+s:defaultCommentString	bundle/tComment/autoload/tcomment.vim	/^let s:defaultCommentString = s:DefaultValue('commentstring')$/;"	v
+s:defaultComments	bundle/tComment/autoload/tcomment.vim	/^let s:defaultComments      = s:DefaultValue('comments')$/;"	v
+s:default_modes	bundle/vim-powerline/autoload/Pl/Segment.vim	/^let s:default_modes = ['n', 'N', 'v', 'i', 'r', 's']$/;"	v
+s:definitions	bundle/tComment/autoload/tcomment.vim	/^let s:definitions = {}$/;"	v
+s:dircounts	bundle/ctrlp.vim/autoload/ctrlp/dir.vim	/^let s:dircounts = {}$/;"	v
+s:efm_backtrace	bundle/vim-rails/autoload/rails.vim	/^let s:efm_backtrace='%D(in\\ %f),'$/;"	v
+s:efm_generate	bundle/vim-rails/autoload/rails.vim	/^let s:efm_generate =$/;"	v
+s:end_end_regex	bundle/vim-ruby/indent/ruby.vim	/^let s:end_end_regex = '\\%(^\\|[^.:@$]\\)\\@<=\\<end:\\@!\\>'$/;"	v
+s:end_middle_regex	bundle/vim-ruby/indent/ruby.vim	/^let s:end_middle_regex = '\\<\\%(ensure\\|else\\|\\%(\\%(^\\|;\\)\\s*\\)\\@<=\\<rescue:\\@!\\>\\|when\\|elsif\\):\\@!\\>'$/;"	v
+s:end_skip_expr	bundle/vim-ruby/indent/ruby.vim	/^let s:end_skip_expr = s:skip_expr .$/;"	v
+s:end_start_regex	bundle/vim-ruby/indent/ruby.vim	/^let s:end_start_regex =$/;"	v
+s:ficounts	bundle/ctrlp.vim/autoload/ctrlp.vim	/^let s:ficounts = {}$/;"	v
+s:file	bundle/vim-rails/autoload/rails.vim	/^let s:file = expand('<sfile>:p')$/;"	v
+s:file_prototype	bundle/vim-rails/autoload/rails.vim	/^let s:file_prototype = {}$/;"	v
+s:filecounts	bundle/ctrlp.vim/autoload/ctrlp/rtscript.vim	/^let s:filecounts = {}$/;"	v
+s:fpats	bundle/ctrlp.vim/autoload/ctrlp.vim	/^let s:fpats = {$/;"	v
+s:glbs	bundle/ctrlp.vim/autoload/ctrlp.vim	/^let s:glbs = { 'magic': 1, 'to': 1, 'tm': 0, 'sb': 1, 'hls': 0, 'im': 0,$/;"	v
+s:grouping_algorithms	bundle/vim-easymotion/autoload/EasyMotion.vim	/^	let s:grouping_algorithms = {$/;"	v
+s:hlgrps	bundle/ctrlp.vim/autoload/ctrlp.vim	/^let s:hlgrps = {$/;"	v
+s:id	bundle/ctrlp.vim/autoload/ctrlp/bookmarkdir.vim	/^let s:id = g:ctrlp_builtins + len(g:ctrlp_ext_vars)$/;"	v
+s:id	bundle/ctrlp.vim/autoload/ctrlp/buffertag.vim	/^let s:id = g:ctrlp_builtins + len(g:ctrlp_ext_vars)$/;"	v
+s:id	bundle/ctrlp.vim/autoload/ctrlp/changes.vim	/^let s:id = g:ctrlp_builtins + len(g:ctrlp_ext_vars)$/;"	v
+s:id	bundle/ctrlp.vim/autoload/ctrlp/dir.vim	/^let s:id = g:ctrlp_builtins + len(g:ctrlp_ext_vars)$/;"	v
+s:id	bundle/ctrlp.vim/autoload/ctrlp/line.vim	/^let s:id = g:ctrlp_builtins + len(g:ctrlp_ext_vars)$/;"	v
+s:id	bundle/ctrlp.vim/autoload/ctrlp/mixed.vim	/^let s:id = g:ctrlp_builtins + len(g:ctrlp_ext_vars)$/;"	v
+s:id	bundle/ctrlp.vim/autoload/ctrlp/quickfix.vim	/^let s:id = g:ctrlp_builtins + len(g:ctrlp_ext_vars)$/;"	v
+s:id	bundle/ctrlp.vim/autoload/ctrlp/rtscript.vim	/^let s:id = g:ctrlp_builtins + len(g:ctrlp_ext_vars)$/;"	v
+s:id	bundle/ctrlp.vim/autoload/ctrlp/tag.vim	/^let s:id = g:ctrlp_builtins + len(g:ctrlp_ext_vars)$/;"	v
+s:id	bundle/ctrlp.vim/autoload/ctrlp/undo.vim	/^let s:id = g:ctrlp_builtins + len(g:ctrlp_ext_vars)$/;"	v
+s:kprange	bundle/ctrlp.vim/autoload/ctrlp.vim	/^let s:kprange = {$/;"	v
+s:lines	bundle/vim-ruby/ftplugin/eruby.vim	/^  let s:lines = getline(1)."\\n".getline(2)."\\n".getline(3)."\\n".getline(4)."\\n".getline(5)."\\n".getline("$")$/;"	v
+s:lines	bundle/vim-ruby/syntax/eruby.vim	/^  let s:lines = getline(1)."\\n".getline(2)."\\n".getline(3)."\\n".getline(4)."\\n".getline(5)."\\n".getline("$")$/;"	v
+s:match_words	bundle/vim-ruby/ftplugin/eruby.vim	/^  let s:match_words = b:match_words . ',' . s:match_words$/;"	v
+s:match_words	bundle/vim-ruby/ftplugin/eruby.vim	/^  let s:match_words = b:match_words$/;"	v
+s:match_words	bundle/vim-ruby/ftplugin/eruby.vim	/^let s:match_words = ""$/;"	v
+s:molokai_original	bundle/molokai/colors/molokai.vim	/^    let s:molokai_original = 0$/;"	v
+s:molokai_original	bundle/molokai/colors/molokai.vim	/^    let s:molokai_original = g:molokai_original$/;"	v
+s:non_bracket_continuation_regex	bundle/vim-ruby/indent/ruby.vim	/^let s:non_bracket_continuation_regex = '\\%([\\\\.,:*\/%+]\\|\\<and\\|\\<or\\|\\%(<%\\)\\@<![=-]\\|\\W[|&?]\\|||\\|&&\\)\\s*\\%(#.*\\)\\=$'$/;"	v
+s:nullCommentString	bundle/tComment/autoload/tcomment.vim	/^let s:nullCommentString    = '%s'$/;"	v
+s:readable_prototype	bundle/vim-rails/autoload/rails.vim	/^let s:readable_prototype = {}$/;"	v
+s:repo_prototype	bundle/vim-fugitive/plugin/fugitive.vim	/^let s:repo_prototype = {}$/;"	v
+s:repos	bundle/vim-fugitive/plugin/fugitive.vim	/^let s:repos = {}$/;"	v
+s:ruby_deindent_keywords	bundle/vim-ruby/indent/ruby.vim	/^let s:ruby_deindent_keywords =$/;"	v
+s:ruby_indent_keywords	bundle/vim-ruby/indent/ruby.vim	/^let s:ruby_indent_keywords = '^\\s*\\zs\\<\\%(module\\|class\\|def\\|if\\|for' .$/;"	v
+s:ruby_path	bundle/vim-ruby/ftplugin/ruby.vim	/^  let s:ruby_path = s:build_path(s:ruby_paths)$/;"	v
+s:ruby_path	bundle/vim-ruby/ftplugin/ruby.vim	/^  let s:ruby_path = type(g:ruby_path) == type([]) ? join(g:ruby_path, ',') : g:ruby_path$/;"	v
+s:ruby_paths	bundle/vim-ruby/ftplugin/ruby.vim	/^  let s:ruby_paths = g:ruby_default_path$/;"	v
+s:ruby_paths	bundle/vim-ruby/ftplugin/ruby.vim	/^  let s:ruby_paths = g:ruby_version_paths[b:ruby_version]$/;"	v
+s:rubycomplete_debug	bundle/vim-ruby/autoload/rubycomplete.vim	/^let s:rubycomplete_debug = 0$/;"	v
+s:rubycomplete_rails_loaded	bundle/vim-ruby/autoload/rubycomplete.vim	/^let s:rubycomplete_rails_loaded = 0$/;"	v
+s:save_cpo	bundle/vim-ruby/ftplugin/eruby.vim	/^let s:save_cpo = &cpo$/;"	v
+s:segment_mods	bundle/vim-powerline/autoload/Pl/Mod.vim	/^let s:segment_mods = []$/;"	v
+s:shade_hl_defaults	bundle/vim-easymotion/plugin/EasyMotion.vim	/^		let s:shade_hl_defaults = {$/;"	v
+s:sid	bundle/vim-rails/autoload/rails.vim	/^let s:sid = s:sub(maparg("<SID>xx"),'xx$','')$/;"	v
+s:skip_expr	bundle/vim-ruby/indent/ruby.vim	/^let s:skip_expr =$/;"	v
+s:splat_regex	bundle/vim-ruby/indent/ruby.vim	/^let s:splat_regex = '[[,(]\\s*\\*\\s*\\%(#.*\\)\\=$'$/;"	v
+s:syng_strcom	bundle/vim-ruby/indent/ruby.vim	/^let s:syng_strcom = '\\<ruby\\%(Regexp\\|RegexpDelimiter\\|RegexpEscape' .$/;"	v
+s:syng_string	bundle/vim-ruby/indent/ruby.vim	/^let s:syng_string =$/;"	v
+s:syng_stringdoc	bundle/vim-ruby/indent/ruby.vim	/^let s:syng_stringdoc =$/;"	v
+s:target_hl_defaults	bundle/vim-easymotion/plugin/EasyMotion.vim	/^		let s:target_hl_defaults = {$/;"	v
+s:temp_files	bundle/vim-fugitive/plugin/fugitive.vim	/^  let s:temp_files = {}$/;"	v
+s:text	bundle/ctrlp.vim/autoload/ctrlp/undo.vim	/^let s:text = map(['second', 'seconds', 'minutes', 'hours', 'days', 'weeks',$/;"	v
+s:types	bundle/ctrlp.vim/autoload/ctrlp/buffertag.vim	/^let s:types = {$/;"	v
+s:typesDirty	bundle/tComment/autoload/tcomment.vim	/^let s:typesDirty = 1$/;"	v
+s:undo_ftplugin	bundle/vim-ruby/ftplugin/eruby.vim	/^  let s:undo_ftplugin = b:undo_ftplugin . " | " . s:undo_ftplugin$/;"	v
+s:undo_ftplugin	bundle/vim-ruby/ftplugin/eruby.vim	/^  let s:undo_ftplugin = b:undo_ftplugin$/;"	v
+s:undo_ftplugin	bundle/vim-ruby/ftplugin/eruby.vim	/^let s:undo_ftplugin = ""$/;"	v
+s:version_file	bundle/vim-ruby/ftplugin/ruby.vim	/^  let s:version_file = findfile('.ruby-version', '.;')$/;"	v
+s:view_types	bundle/vim-rails/autoload/rails.vim	/^let s:view_types = split('rhtml,erb,rxml,builder,rjs,haml',',')$/;"	v
+s:wig_cond	bundle/ctrlp.vim/autoload/ctrlp/utils.vim	/^let s:wig_cond = v:version > 702 || ( v:version == 702 && has('patch051') )$/;"	v
+samerootsyml	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:samerootsyml(each, isfile, cwd)$/;"	f
+sanstail	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:sanstail(str)$/;"	f
+savebookmark	bundle/ctrlp.vim/autoload/ctrlp/bookmarkdir.vim	/^fu! s:savebookmark(name, cwd)$/;"	f
+savetofile	bundle/ctrlp.vim/autoload/ctrlp/mrufiles.vim	/^fu! s:savetofile(mrufs)$/;"	f
+scale_matrix	bundle/vim-powerline/fontpatcher/fontpatcher	/^			scale_matrix = psMat.scale(font_dim['width'] \/ sym_dim['width'], 1)$/;"	v
+scale_ratio	bundle/vim-powerline/fontpatcher/fontpatcher	/^			scale_ratio = font_dim['height'] \/ sym_dim['height']$/;"	v
+scale_ratio	bundle/vim-powerline/fontpatcher/fontpatcher	/^			scale_ratio = font_dim['width'] \/ sym_dim['width']$/;"	v
+scanlineforuris	bundle/vim-rails/autoload/rails.vim	/^function! s:scanlineforuris(line)$/;"	f
+schemaEdit	bundle/vim-rails/autoload/rails.vim	/^function! s:schemaEdit(cmd,...)$/;"	f
+schemaList	bundle/vim-rails/autoload/rails.vim	/^function! s:schemaList(A,L,P)$/;"	f
+scripts.vim	bundle/vundle/autoload/vundle/scripts.vim	1;"	F
+searchsyn	bundle/vim-ruby/ftplugin/ruby.vim	/^function! s:searchsyn(pattern,syn,flags,mode)$/;"	f
+selectiveexpand	bundle/vim-rails/autoload/rails.vim	/^function! s:selectiveexpand(pat,good,default,...)$/;"	f
+setentries	bundle/ctrlp.vim/autoload/ctrlp/bookmarkdir.vim	/^fu! s:setentries()$/;"	f
+setopt	bundle/vim-rails/autoload/rails.vim	/^function! s:setopt(opt,val)$/;"	f
+settype	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:settype(type)$/;"	f
+setupblank	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:setupblank()$/;"	f
+shellesc	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:shellesc(arg) abort$/;"	f
+shellslash	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:shellslash(path)$/;"	f
+short_tags	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    short_tags = ($/;"	v	class:HtmlDialect
+short_tags	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    short_tags = ()$/;"	v	class:Dialect
+short_tags	bundle/sparkup/sparkup	/^    short_tags = ($/;"	v	class:HtmlDialect
+short_tags	bundle/sparkup/sparkup	/^    short_tags = ()$/;"	v	class:Dialect
+short_tags	bundle/sparkup/sparkup.py	/^    short_tags = ($/;"	v	class:HtmlDialect
+short_tags	bundle/sparkup/sparkup.py	/^    short_tags = ()$/;"	v	class:Dialect
+short_tags	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    short_tags = ($/;"	v	class:HtmlDialect
+short_tags	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    short_tags = ()$/;"	v	class:Dialect
+shortcuts	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    shortcuts = {$/;"	v	class:HtmlDialect
+shortcuts	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    shortcuts = {}$/;"	v	class:Dialect
+shortcuts	bundle/sparkup/sparkup	/^    shortcuts = {$/;"	v	class:HtmlDialect
+shortcuts	bundle/sparkup/sparkup	/^    shortcuts = {}$/;"	v	class:Dialect
+shortcuts	bundle/sparkup/sparkup.py	/^    shortcuts = {$/;"	v	class:HtmlDialect
+shortcuts	bundle/sparkup/sparkup.py	/^    shortcuts = {}$/;"	v	class:Dialect
+shortcuts	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    shortcuts = {$/;"	v	class:HtmlDialect
+shortcuts	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    shortcuts = {}$/;"	v	class:Dialect
+shortest	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:shortest(lens)$/;"	f
+show_signs	bundle/vim-gitgutter/plugin/gitgutter.vim	/^function! s:show_signs(file_name, modified_lines)$/;"	f
+sign	bundle/vundle/autoload/vundle/installer.vim	/^func! s:sign(status) $/;"	f
+sname	bundle/vim-rails/autoload/rails.vim	/^function! s:sname()$/;"	f
+solarized.vim	bundle/vim-powerline/autoload/Powerline/Colorschemes/solarized.vim	1;"	F
+solarized16.vim	bundle/vim-powerline/autoload/Powerline/Colorschemes/solarized16.vim	1;"	F
+solarized16.vim	bundle/vim-powerline/autoload/Powerline/Themes/solarized16.vim	1;"	F
+solarized256.vim	bundle/vim-powerline/autoload/Powerline/Colorschemes/solarized256.vim	1;"	F
+solarized256.vim	bundle/vim-powerline/autoload/Powerline/Themes/solarized256.vim	1;"	F
+sparkup	bundle/sparkup/sparkup	1;"	F
+sparkup	bundle/sparkup/sparkup-unittest.py	/^import sparkup$/;"	i
+sparkup-unittest.py	bundle/sparkup/sparkup-unittest.py	1;"	F
+sparkup.py	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	1;"	F
+sparkup.py	bundle/sparkup/sparkup.py	1;"	F
+sparkup.py	bundle/sparkup/vim/ftplugin/html/sparkup.py	1;"	F
+sparkup.vim	bundle/sparkup/vim/ftplugin/html/sparkup.vim	1;"	F
+specEdit	bundle/vim-rails/autoload/rails.vim	/^function! s:specEdit(cmd,...) abort$/;"	f
+specList	bundle/vim-rails/autoload/rails.vim	/^function! s:specList(A,L,P)$/;"	f
+splat.rb	bundle/vim-ruby/etc/examples/indent/splat.rb	1;"	F
+split	bundle/vim-rails/autoload/rails.vim	/^function! s:split(arg, ...)$/;"	f
+stage_info	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:stage_info(lnum) abort$/;"	f
+start	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    def start(self, options=None, str=None, ret=None):$/;"	m	class:Router
+start	bundle/sparkup/sparkup	/^    def start(self, options=None, str=None, ret=None):$/;"	m	class:Router
+start	bundle/sparkup/sparkup.py	/^    def start(self, options=None, str=None, ret=None):$/;"	m	class:Router
+start	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    def start(self, options=None, str=None, ret=None):$/;"	m	class:Router
+startswith	bundle/vim-rails/autoload/rails.vim	/^function! s:startswith(string,prefix)$/;"	f
+str	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    str = ''$/;"	v	class:Parser
+str	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    str = ''$/;"	v	class:Token
+str	bundle/sparkup/sparkup	/^    str = ''$/;"	v	class:Parser
+str	bundle/sparkup/sparkup	/^    str = ''$/;"	v	class:Token
+str	bundle/sparkup/sparkup.py	/^    str = ''$/;"	v	class:Parser
+str	bundle/sparkup/sparkup.py	/^    str = ''$/;"	v	class:Token
+str	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    str = ''$/;"	v	class:Parser
+str	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    str = ''$/;"	v	class:Token
+strings.rb	bundle/vim-ruby/etc/examples/indent/strings.rb	1;"	F
+strwidth	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:strwidth(str)$/;"	f
+stylesheetEdit	bundle/vim-rails/autoload/rails.vim	/^function! s:stylesheetEdit(cmd,...)$/;"	f
+stylesheetList	bundle/vim-rails/autoload/rails.vim	/^function! s:stylesheetList(A,L,P)$/;"	f
+sub	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:sub(str,pat,rep) abort$/;"	f
+sub	bundle/vim-rails/autoload/rails.vim	/^function! s:sub(str,pat,rep)$/;"	f
+sublist	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:sublist(l, s, e)$/;"	f
+sublist7071	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:sublist7071(l, s, e)$/;"	f
+suffix	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    suffix = ''$/;"	v	class:Parser
+suffix	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    suffix = None$/;"	v	class:Element
+suffix	bundle/sparkup/sparkup	/^    suffix = ''$/;"	v	class:Parser
+suffix	bundle/sparkup/sparkup	/^    suffix = None$/;"	v	class:Element
+suffix	bundle/sparkup/sparkup.py	/^    suffix = ''$/;"	v	class:Parser
+suffix	bundle/sparkup/sparkup.py	/^    suffix = None$/;"	v	class:Element
+suffix	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    suffix = ''$/;"	v	class:Parser
+suffix	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    suffix = None$/;"	v	class:Element
+sym_attr	bundle/vim-powerline/fontpatcher/fontpatcher	/^		sym_attr = SYM_ATTR[sym_glyph.unicode]$/;"	v
+sym_dim	bundle/vim-powerline/fontpatcher/fontpatcher	/^			sym_dim = get_dim(font[sym_glyph.unicode])$/;"	v
+sym_dim	bundle/vim-powerline/fontpatcher/fontpatcher	/^		sym_dim = get_dim(font[sym_glyph.unicode])$/;"	v
+sym_dim	bundle/vim-powerline/fontpatcher/fontpatcher	/^		sym_dim = get_dim(sym_glyph)$/;"	v
+sym_ycenter	bundle/vim-powerline/fontpatcher/fontpatcher	/^		sym_ycenter  = sym_dim['height'] \/ 2$/;"	v
+symbols	bundle/vim-powerline/fontpatcher/fontpatcher	/^	symbols = fontforge.open(args.symbol_font)$/;"	v
+sync	bundle/vundle/autoload/vundle/installer.vim	/^func! s:sync(bang, bundle) abort$/;"	f
+synname	bundle/vim-endwise/plugin/endwise.vim	/^function! s:synname()$/;"	f
+synname	bundle/vim-ruby/ftplugin/ruby.vim	/^function! s:synname()$/;"	f
+synonyms	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    synonyms = {$/;"	v	class:HtmlDialect
+synonyms	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    synonyms = {}$/;"	v	class:Dialect
+synonyms	bundle/sparkup/sparkup	/^    synonyms = {$/;"	v	class:HtmlDialect
+synonyms	bundle/sparkup/sparkup	/^    synonyms = {}$/;"	v	class:Dialect
+synonyms	bundle/sparkup/sparkup.py	/^    synonyms = {$/;"	v	class:HtmlDialect
+synonyms	bundle/sparkup/sparkup.py	/^    synonyms = {}$/;"	v	class:Dialect
+synonyms	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    synonyms = {$/;"	v	class:HtmlDialect
+synonyms	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    synonyms = {}$/;"	v	class:Dialect
+syntastic.vim	bundle/vim-powerline/autoload/Powerline/Functions/syntastic.vim	1;"	F
+syntastic.vim	bundle/vim-powerline/autoload/Powerline/Segments/syntastic.vim	1;"	F
+syntax	bundle/ctrlp.vim/autoload/ctrlp/bookmarkdir.vim	/^fu! s:syntax()$/;"	f
+syntax	bundle/ctrlp.vim/autoload/ctrlp/buffertag.vim	/^fu! s:syntax()$/;"	f
+syntax	bundle/ctrlp.vim/autoload/ctrlp/changes.vim	/^fu! s:syntax()$/;"	f
+syntax	bundle/ctrlp.vim/autoload/ctrlp/line.vim	/^fu! s:syntax()$/;"	f
+syntax	bundle/ctrlp.vim/autoload/ctrlp/quickfix.vim	/^fu! s:syntax()$/;"	f
+syntax	bundle/ctrlp.vim/autoload/ctrlp/tag.vim	/^fu! s:syntax()$/;"	f
+syntax	bundle/ctrlp.vim/autoload/ctrlp/undo.vim	/^fu! s:syntax()$/;"	f
+sys	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^import sys$/;"	i
+sys	bundle/sparkup/sparkup	/^import sys$/;"	i
+sys	bundle/sparkup/sparkup-unittest.py	/^import sys$/;"	i
+sys	bundle/sparkup/sparkup.py	/^import sys$/;"	i
+sys	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^import sys$/;"	i
+sys	bundle/vim-powerline/fontpatcher/fontpatcher	/^import sys$/;"	i
+system	bundle/vundle/autoload/vundle/installer.vim	/^func! s:system(cmd) abort$/;"	f
+tag.vim	bundle/ctrlp.vim/autoload/ctrlp/tag.vim	1;"	F
+tagbar.vim	bundle/vim-powerline/autoload/Powerline/Segments/tagbar.vim	1;"	F
+tail	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:tail()$/;"	f
+tcomment#CollectFileTypes	bundle/tComment/autoload/tcomment.vim	/^function! tcomment#CollectFileTypes()$/;"	f
+tcomment#Comment	bundle/tComment/autoload/tcomment.vim	/^function! tcomment#Comment(beg, end, ...)$/;"	f
+tcomment#CommentAs	bundle/tComment/autoload/tcomment.vim	/^function! tcomment#CommentAs(beg, end, commentAnyway, filetype, ...)$/;"	f
+tcomment#Complete	bundle/tComment/autoload/tcomment.vim	/^function! tcomment#Complete(ArgLead, CmdLine, CursorPos) "{{{3$/;"	f
+tcomment#CompleteArgs	bundle/tComment/autoload/tcomment.vim	/^function! tcomment#CompleteArgs(ArgLead, CmdLine, CursorPos) "{{{3$/;"	f
+tcomment#DefineType	bundle/tComment/autoload/tcomment.vim	/^function! tcomment#DefineType(name, commentdef)$/;"	f
+tcomment#GetCommentDef	bundle/tComment/autoload/tcomment.vim	/^function! tcomment#GetCommentDef(name)$/;"	f
+tcomment#GuessCommentType	bundle/tComment/autoload/tcomment.vim	/^function! tcomment#GuessCommentType(...) "{{{3$/;"	f
+tcomment#Operator	bundle/tComment/autoload/tcomment.vim	/^function! tcomment#Operator(type, ...) "{{{3$/;"	f
+tcomment#OperatorAnyway	bundle/tComment/autoload/tcomment.vim	/^function! tcomment#OperatorAnyway(type) "{{{3$/;"	f
+tcomment#OperatorLine	bundle/tComment/autoload/tcomment.vim	/^function! tcomment#OperatorLine(type) "{{{3$/;"	f
+tcomment#OperatorLineAnyway	bundle/tComment/autoload/tcomment.vim	/^function! tcomment#OperatorLineAnyway(type) "{{{3$/;"	f
+tcomment#SetOption	bundle/tComment/autoload/tcomment.vim	/^function! tcomment#SetOption(name, arg) "{{{3$/;"	f
+tcomment#TypeExists	bundle/tComment/autoload/tcomment.vim	/^function! tcomment#TypeExists(name)$/;"	f
+tcomment.vim	bundle/tComment/autoload/tcomment.vim	1;"	F
+tcomment.vim	bundle/tComment/plugin/tcomment.vim	1;"	F
+test.erl	bundle/vundle/test/files/test.erl	1;"	F
+text	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    text = ''$/;"	v	class:Element
+text	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    text = ''$/;"	v	class:Token
+text	bundle/sparkup/sparkup	/^    text = ''$/;"	v	class:Element
+text	bundle/sparkup/sparkup	/^    text = ''$/;"	v	class:Token
+text	bundle/sparkup/sparkup.py	/^    text = ''$/;"	v	class:Element
+text	bundle/sparkup/sparkup.py	/^    text = ''$/;"	v	class:Token
+text	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    text = ''$/;"	v	class:Element
+text	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    text = ''$/;"	v	class:Token
+textdialog	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:textdialog(str)$/;"	f
+throw	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:throw(string) abort$/;"	f
+tokens	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    tokens = []$/;"	v	class:Parser
+tokens	bundle/sparkup/sparkup	/^    tokens = []$/;"	v	class:Parser
+tokens	bundle/sparkup/sparkup.py	/^    tokens = []$/;"	v	class:Parser
+tokens	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    tokens = []$/;"	v	class:Parser
+try	bundle/vim-rails/autoload/rails.vim	/^function! s:try(cmd) abort$/;"	f
+type	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    type = 0$/;"	v	class:Token
+type	bundle/sparkup/sparkup	/^    type = 0$/;"	v	class:Token
+type	bundle/sparkup/sparkup.py	/^    type = 0$/;"	v	class:Token
+type	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    type = 0$/;"	v	class:Token
+undo.vim	bundle/ctrlp.vim/autoload/ctrlp/undo.vim	1;"	F
+uniq	bundle/vim-rails/autoload/rails.vim	/^function! s:uniq(list) abort$/;"	f
+unmarksigns	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:unmarksigns()$/;"	f
+update_line_highlights	bundle/vim-gitgutter/plugin/gitgutter.vim	/^function! s:update_line_highlights(highlight_lines)$/;"	f
+usrign	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:usrign(item, type)$/;"	f
+utils.vim	bundle/ctrlp.vim/autoload/ctrlp/utils.vim	1;"	F
+vacantdict	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:vacantdict(dict)$/;"	f
+validfile	bundle/ctrlp.vim/autoload/ctrlp/buffertag.vim	/^fu! s:validfile(fname, ftype)$/;"	f
+version	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    def version(self):$/;"	m	class:Router
+version	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^version = "0.1.3"$/;"	v
+version	bundle/sparkup/sparkup	/^    def version(self):$/;"	m	class:Router
+version	bundle/sparkup/sparkup	/^version = "0.1.3"$/;"	v
+version	bundle/sparkup/sparkup.py	/^    def version(self):$/;"	m	class:Router
+version	bundle/sparkup/sparkup.py	/^version = "0.1.3"$/;"	v
+version	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    def version(self):$/;"	m	class:Router
+version	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^version = "0.1.3"$/;"	v
+viewEdit	bundle/vim-rails/autoload/rails.vim	/^function! s:viewEdit(cmd,...)$/;"	f
+viewList	bundle/vim-rails/autoload/rails.vim	/^function! s:viewList(A,L,P)$/;"	f
+view_changelog	bundle/vundle/autoload/vundle/scripts.vim	/^func! s:view_changelog()$/;"	f
+view_log	bundle/vundle/autoload/vundle/scripts.vim	/^func! s:view_log()$/;"	f
+vim-ruby-install.rb	bundle/vim-ruby/bin/vim-ruby-install.rb	1;"	F
+virtualenv.vim	bundle/vim-powerline/autoload/Powerline/Segments/virtualenv.vim	1;"	F
+vundle#config#bundle	bundle/vundle/autoload/vundle/config.vim	/^func! vundle#config#bundle(arg, ...)$/;"	f
+vundle#config#init	bundle/vundle/autoload/vundle/config.vim	/^func! vundle#config#init()$/;"	f
+vundle#config#init_bundle	bundle/vundle/autoload/vundle/config.vim	/^func! vundle#config#init_bundle(name, opts)$/;"	f
+vundle#config#require	bundle/vundle/autoload/vundle/config.vim	/^func! vundle#config#require(bundles) abort$/;"	f
+vundle#installer#clean	bundle/vundle/autoload/vundle/installer.vim	/^func! vundle#installer#clean(bang) abort$/;"	f
+vundle#installer#delete	bundle/vundle/autoload/vundle/installer.vim	/^func! vundle#installer#delete(bang, dir_name) abort$/;"	f
+vundle#installer#docs	bundle/vundle/autoload/vundle/installer.vim	/^func! vundle#installer#docs() abort$/;"	f
+vundle#installer#helptags	bundle/vundle/autoload/vundle/installer.vim	/^func! vundle#installer#helptags(bundles) abort$/;"	f
+vundle#installer#install	bundle/vundle/autoload/vundle/installer.vim	/^func! vundle#installer#install(bang, name) abort$/;"	f
+vundle#installer#install_and_require	bundle/vundle/autoload/vundle/installer.vim	/^func! vundle#installer#install_and_require(bang, name) abort$/;"	f
+vundle#installer#list	bundle/vundle/autoload/vundle/installer.vim	/^func! vundle#installer#list(bang) abort$/;"	f
+vundle#installer#new	bundle/vundle/autoload/vundle/installer.vim	/^func! vundle#installer#new(bang, ...) abort$/;"	f
+vundle#installer#run	bundle/vundle/autoload/vundle/installer.vim	/^func! vundle#installer#run(func_name, name, ...) abort$/;"	f
+vundle#rc	bundle/vundle/autoload/vundle.vim	/^func! vundle#rc(...) abort$/;"	f
+vundle#scripts#all	bundle/vundle/autoload/vundle/scripts.vim	/^func! vundle#scripts#all(bang, ...)$/;"	f
+vundle#scripts#bundle_names	bundle/vundle/autoload/vundle/scripts.vim	/^func! vundle#scripts#bundle_names(names)$/;"	f
+vundle#scripts#complete	bundle/vundle/autoload/vundle/scripts.vim	/^func! vundle#scripts#complete(a,c,d)$/;"	f
+vundle#scripts#reload	bundle/vundle/autoload/vundle/scripts.vim	/^func! vundle#scripts#reload() abort$/;"	f
+vundle#scripts#view	bundle/vundle/autoload/vundle/scripts.vim	/^func! vundle#scripts#view(title, headers, results)$/;"	f
+vundle.vim	bundle/vundle/autoload/vundle.vim	1;"	F
+walker	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:walker(m, p, d)$/;"	f
+warn	bundle/vim-fugitive/plugin/fugitive.vim	/^function! s:warn(str)$/;"	f
+warn	bundle/vim-rails/autoload/rails.vim	/^function! s:warn(str)$/;"	f
+wrap_a	bundle/vim-ruby/ftplugin/ruby.vim	/^function! s:wrap_a(back,forward)$/;"	f
+wrap_i	bundle/vim-ruby/ftplugin/ruby.vim	/^function! s:wrap_i(back,forward)$/;"	f
+writecache	bundle/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:writecache(cafile)$/;"	f
+writecache	bundle/ctrlp.vim/autoload/ctrlp/bookmarkdir.vim	/^fu! s:writecache(lines)$/;"	f
+z	bundle/sparkup/TextMate/Sparkup.tmbundle/Support/sparkup.py	/^    z = Router()$/;"	v
+z	bundle/sparkup/sparkup	/^    z = Router()$/;"	v
+z	bundle/sparkup/sparkup.py	/^    z = Router()$/;"	v
+z	bundle/sparkup/vim/ftplugin/html/sparkup.py	/^    z = Router()$/;"	v
+zenburn.vim	bundle/Zenburn/colors/zenburn.vim	1;"	F
