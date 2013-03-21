@@ -83,10 +83,13 @@ filetype plugin indent on     " required!
 " see :h vundle for more details or wiki for FAQ
 " NOTE: comments after Bundle command are not allowed..
 
-" vim gutter configuration
+" CtrlP configuration
+let g:ctrlp_map = '<Leader>f' 
+
+" Vim gutter configuration
 let g:gitgutter_enabled = 1
 
-"powerline configuration
+" Powerline configuration
 let g:Powerline_symbols = "fancy"
 
 " Available colorschemes
@@ -95,8 +98,12 @@ let g:Powerline_symbols = "fancy"
 colorscheme molokai 
 " colorscheme zenburn
 
-" ,a to Ack (search in files)
-nnoremap <leader>a :Ack
+" Use <Leader>a to prompt you for an Ack search
+" Automatically include quotes, because they never hurt and forgetting them is a pain.
+nnoremap <Leader>a :Ack!<SPACE>"<LEFT>"
+
+" Use <Leader>A to ack for the word under the cursor
+nnoremap <leader>A *<C-O>:AckFromSearch!<CR>
 
 " Go learn vim 
 nnoremap <Left> :echoe "Use h"<CR>
@@ -118,10 +125,10 @@ map <Leader>n :bnext<CR>
 map <Leader>p :bprevious<CR>
 
 " Navigate in splits.
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
+nnoremap <Leader>h <C-w>h
+nnoremap <Leader>j <C-w>j
+nnoremap <Leader>k <C-w>k
+nnoremap <Leader>l <C-w>l
 
 " use C-j and C-k to 'bubble' lines (see
 " " http://vimcasts.org/episodes/bubbling-text/)
@@ -130,6 +137,7 @@ map <C-k> ddkP
 
 " NerdTree
 map <C-n> :NERDTreeToggle<CR>
+nnoremap <F1> :NERDTreeFind<CR>
 
 " Generate ctags 
 map <leader>ct :!ctags --extra=+f --languages=-javascript --exclude=.git --exclude=log -R .<CR>
