@@ -136,7 +136,7 @@ map <C-j> ddp
 map <C-k> ddkP
 
 " NerdTree
-map <C-n> :NERDTreeToggle<CR>
+map <Leader>t :NERDTreeToggle<CR>
 nnoremap <F1> :NERDTreeFind<CR>
 
 " Generate ctags 
