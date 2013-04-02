@@ -54,6 +54,7 @@ Bundle 'airblade/vim-gitgutter'
 Bundle 'kien/ctrlp.vim'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'Lokaltog/vim-powerline'
+Bundle 'maxbrunsfeld/vim-yankstack'
 Bundle "mileszs/ack.vim"
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'scrooloose/nerdtree'
@@ -91,6 +92,11 @@ let g:gitgutter_enabled = 1
 
 " Powerline configuration
 let g:Powerline_symbols = "fancy"
+
+" Yankstack configuration
+let g:yankstack_map_keys = 0
+nmap <leader>v <Plug>yankstack_substitute_older_paste
+nmap <leader>V <Plug>yankstack_substitute_newer_paste
 
 " Available colorschemes
 " colorscheme desert-warm-256 
