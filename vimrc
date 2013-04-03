@@ -25,8 +25,12 @@ set autoread          " automatically reload a file if it's changed outside vim
 set backspace=indent,eol,start " backspace deletes back 
 
 " Use Ack instead of Grep when available
-if executable("ack")
-  set grepprg=ack\ -H\ --nogroup\ --nocolor
+if executable("ag")
+  set grepprg=ag\ --nogroup\ --nocolor\ --column
+else
+  if executable("ack")
+    set grepprg=ack\ -H\ --nogroup\ --nocolor
+  endif
 endif
 
 set tags=./tags;       " TagList
@@ -51,6 +55,7 @@ Bundle 'gmarik/vundle'
 
 " Original repos on github
 Bundle 'airblade/vim-gitgutter'
+Bundle 'iepmatsw/ag.vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'Lokaltog/vim-powerline'
@@ -106,10 +111,12 @@ colorscheme molokai
 
 " Use <Leader>a to prompt you for an Ack search
 " Automatically include quotes, because they never hurt and forgetting them is a pain.
-nnoremap <Leader>a :Ack!<SPACE>"<LEFT>"
+" nnoremap <Leader>a :Ack!<SPACE>"<LEFT>"
+nnoremap <Leader>a :Ag!<SPACE>"<LEFT>"
 
 " Use <Leader>A to ack for the word under the cursor
-nnoremap <leader>A *<C-O>:AckFromSearch!<CR>
+" nnoremap <leader>A *<C-O>:AckFromSearch!<CR>
+nnoremap <leader>A *<C-O>:AgFromSearch!<CR>
 
 " Go learn vim 
 nnoremap <Left> :echoe "Use h"<CR>
