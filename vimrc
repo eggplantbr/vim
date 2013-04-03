@@ -11,6 +11,7 @@ set tabstop=2
 set shiftwidth=2 
 set softtabstop=2
 set autoindent
+set nowrap
 
 set number
 set history=100       " Save the last 100 commands/search terms
