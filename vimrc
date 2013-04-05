@@ -12,6 +12,8 @@ set shiftwidth=2
 set softtabstop=2
 set autoindent
 set nowrap
+set foldmethod=syntax
+set foldlevelstart=2
 
 set number
 set history=100       " Save the last 100 commands/search terms
@@ -36,7 +38,7 @@ endif
 
 set tags=./tags;       " TagList
 
-set gfn=Inconsolata:h16
+set gfn=Inconsolata:h14
 
 " check to make sure vim has been compiled with colorcolumn support before enabling it
 if exists("+colorcolumn")
