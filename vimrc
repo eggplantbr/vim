@@ -30,9 +30,23 @@ set backspace=indent,eol,start " backspace deletes back
 " Use Ack instead of Grep when available
 if executable("ag")
   set grepprg=ag\ --nogroup\ --nocolor\ --column
+
+  " Automatically include quotes, because they never hurt and forgetting them is a pain.
+  " Use <Leader>a to prompt you for an Ag search
+  nnoremap <Leader>a :Ag!<SPACE>"<LEFT>"
+
+  " Use <Leader>A to ag for the word under the cursor
+  nnoremap <leader>A *<C-O>:AgFromSearch!<CR>
 else
   if executable("ack")
     set grepprg=ack\ -H\ --nogroup\ --nocolor
+
+    " Automatically include quotes, because they never hurt and forgetting them is a pain.
+    " Use <Leader>a to prompt you for an Ack search
+    nnoremap <Leader>a :Ack!<SPACE>"<LEFT>"
+
+    " Use <Leader>A to ag for the word under the cursor
+    nnoremap <leader>A *<C-O>:AckFromSearch!<CR>
   endif
 endif
 
@@ -101,6 +115,10 @@ let g:gitgutter_enabled = 1
 " Powerline configuration
 let g:Powerline_symbols = "fancy"
 
+" Center screen when scrolling search results
+nmap n nzz
+nmap N Nzz
+
 " Yankstack configuration
 let g:yankstack_map_keys = 0
 nmap <leader>v <Plug>yankstack_substitute_older_paste
@@ -111,15 +129,6 @@ nmap <leader>V <Plug>yankstack_substitute_newer_paste
 " colorscheme github
 colorscheme molokai 
 " colorscheme zenburn
-
-" Use <Leader>a to prompt you for an Ack search
-" Automatically include quotes, because they never hurt and forgetting them is a pain.
-" nnoremap <Leader>a :Ack!<SPACE>"<LEFT>"
-nnoremap <Leader>a :Ag!<SPACE>"<LEFT>"
-
-" Use <Leader>A to ack for the word under the cursor
-" nnoremap <leader>A *<C-O>:AckFromSearch!<CR>
-nnoremap <leader>A *<C-O>:AgFromSearch!<CR>
 
 " Go learn vim 
 nnoremap <Left> :echoe "Use h"<CR>
@@ -158,3 +167,6 @@ nnoremap <F1> :NERDTreeFind<CR>
 " Generate ctags 
 map <leader>ct :!ctags --extra=+f --languages=-javascript --exclude=.git --exclude=log -R .<CR>
 
+" When vimrc, either directly or via symlink, is edited, automatically reload it
+autocmd! bufwritepost .vimrc source %
+autocmd! bufwritepost vimrc source %
