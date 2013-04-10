@@ -12,13 +12,17 @@ set shiftwidth=2
 set softtabstop=2
 set autoindent
 set nowrap
+
+" fold settings
 set foldmethod=syntax
 set foldlevelstart=2
+set foldnestmax=3
 
 set number
 set history=100       " Save the last 100 commands/search terms
 set laststatus=2      " Always display the status line
 
+" search settings
 set hlsearch
 set ignorecase        " Ignore case in searches.
 set smartcase         " Case sensitive if capitals are included.
@@ -27,7 +31,7 @@ set autoread          " automatically reload a file if it's changed outside vim
 
 set backspace=indent,eol,start " backspace deletes back 
 
-" Use Ack instead of Grep when available
+" Use Ag instead of Grep when available
 if executable("ag")
   set grepprg=ag\ --nogroup\ --nocolor\ --column
 
@@ -38,6 +42,7 @@ if executable("ag")
   " Use <Leader>A to ag for the word under the cursor
   nnoremap <leader>A *<C-O>:AgFromSearch!<CR>
 else
+  " Use Ack instead of Grep when available
   if executable("ack")
     set grepprg=ack\ -H\ --nogroup\ --nocolor
 
@@ -45,7 +50,7 @@ else
     " Use <Leader>a to prompt you for an Ack search
     nnoremap <Leader>a :Ack!<SPACE>"<LEFT>"
 
-    " Use <Leader>A to ag for the word under the cursor
+    " Use <Leader>A to Ack for the word under the cursor
     nnoremap <leader>A *<C-O>:AckFromSearch!<CR>
   endif
 endif
@@ -80,6 +85,7 @@ Bundle 'maxbrunsfeld/vim-yankstack'
 Bundle "mileszs/ack.vim"
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'scrooloose/nerdtree'
+Bundle 'Raimondi/delimitMate'
 Bundle 'sjl/gundo.vim'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-bundler'
