@@ -13,6 +13,13 @@ set softtabstop=2
 set autoindent
 set nowrap
 
+" allow vim to put buffers on the background without writing to disk and
+" remember history and marks when buffer becomes current
+set hidden
+
+" shows file title when editing 
+set title
+
 " fold settings
 set foldmethod=syntax
 set foldlevelstart=2
