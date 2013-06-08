@@ -1,6 +1,7 @@
 " Leader key
 let mapleader = ","
 
+set binary
 set nocompatible      " Be iMproved
 set nobackup
 set nowritebackup
