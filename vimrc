@@ -49,6 +49,8 @@ if executable("ag")
 
   " Use <Leader>A to ag for the word under the cursor
   nnoremap <leader>A *<C-O>:AgFromSearch!<CR>
+
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 else
   " Use Ack instead of Grep when available
   if executable("ack")
