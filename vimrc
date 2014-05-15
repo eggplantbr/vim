@@ -87,7 +87,6 @@ Bundle 'gmarik/vundle'
 
 " Original repos on github
 Bundle 'airblade/vim-gitgutter'
-Bundle 'epmatsw/ag.vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'Lokaltog/vim-powerline'
